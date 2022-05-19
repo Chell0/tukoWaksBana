@@ -1,0 +1,33 @@
+{% load static %}
+<!-- Normalize CSS -->
+<link rel="stylesheet" href="{% static 'css/vendors/normalize.css' %}">
+
+<!-- Grid CSS -->
+<link rel="stylesheet" href="{% static 'css/vendors/grid.css' %}">
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+    href="https://fonts.googleapis.com/css2?family=Space+Mono:ital@0;1&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,300&display=swap"
+    rel="stylesheet">
+
+<!-- AOS -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+<!-- MainCSS -->
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+<!-- WorkCSS -->
+<link rel="stylesheet" href="{% static 'css/work.css' %}">
+<!-- ServicesCSS -->
+<link rel="stylesheet" href="{% static 'css/services.css' %}">
+<!-- ApproachCSS -->
+<link rel="stylesheet" href="{% static 'css/approach.css' %}">
+<!-- ContactCSS -->
+<link rel="stylesheet" href="{% static 'css/contact.css' %}">
+
+<body>
+    {% block content %}
+    replace me
+    {% endblock %}
+</body>

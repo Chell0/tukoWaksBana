@@ -1,0 +1,108 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+<header>
+    <nav>
+        <div id="logo">
+            <a href="{% url 'home:home' %}">
+                <h3>tukoWorks</h3>
+            </a>
+        </div>
+        <ul class="nav__links">
+            <li><a href="{% url 'home:works' %}">Work</a></li>
+            <li><a href="{% url 'home:approach' %}">Approach</a></li>
+            <li><a href="{% url 'home:services' %}">Services</a></li>
+            <li><a href="{% url 'home:contact' %}">Contact</a></li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+    <div class="content">
+        <div class="hero">
+            <p>
+                Welcome, we are tukoWorks &mdash;<br>
+                a Kenyan-based web development <br> agency. <br>We work closely with our
+                <br>
+                clients to create unique <br>and strong solutions.
+
+            </p>
+        </div>
+    </div>
+</header>
+
+<!-- Projects -->
+<section class="projects__section">
+    <div class="row">
+        <h2>Selected projects</h2>
+    </div>
+    <div class="row">
+        <div class="col span-1-of-2" data-aos="fade-up" data-aos-duration="900">
+            <img src="../static/img/design.jpg" alt="Design photo">
+            <p>Lorem ipsum dolor, sit amet consectetur</p>
+            <p class="skill">Visual Design</p>
+        </div>
+        <div class="col span-1-of-2" data-aos="fade-up" data-aos-duration="900">
+            <img src="../static/img/web.jpg" alt="Web photo">
+            <p>Lorem ipsum dolor, sit amet consectetur</p>
+            <p class="skill">Web Development</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col span-1-of-2" data-aos="fade-up" data-aos-duration="900">
+            <img src="../static/img/web.jpg" alt="Design photo">
+            <p>Lorem ipsum dolor, sit amet consectetur</p>
+            <p class="skill">Graphic Design</p>
+        </div>
+        <div class="col span-1-of-2" data-aos="fade-up" data-aos-duration="900">
+            <img src="../static/img/design.jpg" alt="Web photo">
+            <p>Lorem ipsum dolor, sit amet consectetur</p>
+            <p class="skill">Wire Framing</p>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<section class="footer">
+    <div class="row">
+
+        <!-- Address -->
+        <div class="col span-1-of-3">
+            <p>tukoWorks</p>
+            <p>Nairobi+Hamburg</p>
+            <p>Kenya+Germany</p>
+        </div>
+
+        <!-- Contacts -->
+        <div class="col span-1-of-3">
+            <p>Contact us</p>
+            <p class="contacts socials">+254711594901</p>
+            <p class="contacts socials">hello@tukoWorks.com</p>
+        </div>
+
+        <!-- Socials -->
+        <div class="col span-1-of-3">
+            <p>Follow us</p>
+            <p class="socials"><a href="https://twitter.com" target="_blank">Twitter</a></p>
+            <p class="socials"><a href="https://linkedin.com" target="_blank">LinkedIn</a>
+            </p>
+            <p class="socials"><a href="https://github.com" target="_blank">GitHub</a></p>
+        </div>
+    </div>
+</section>
+
+<!-- Scripts -->
+<!-- AOS -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init({
+        offset: 400
+    });
+</script>
+
+<!-- JavaScript -->
+<script src="../static/js/app.js"></script>
+{% endblock %}
