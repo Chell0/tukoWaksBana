@@ -28,7 +28,9 @@
 <section class="projects__section">
     <div class="row">
         <div class="col span-1-of-2" data-aos="fade-up" data-aos-duration="900">
-            <img src="{% static project.images %}" alt="Design photo">
+            <!-- <img src="{% static project.images %}" alt="Design photo"> -->
+            <a href="{% url 'work_detail' project.project_id %}"><img
+                    src="{% static project.images %}" alt="Design photo"></a>
         </div>
         <div class="col span-1-of-2" data-aos="fade-up" data-aos-duration="900">
             <div class="row">
