@@ -32,7 +32,9 @@
     <div class="row">
         {% for project in projects %}
         <div class="col " data-aos="fade-up" data-aos-duration="900">
-            <img src="{% static project.images %}">
+            <a href="{% url 'home:work_detail' project.project_id %}">
+                <img src="{% static project.images %}">
+            </a>
             <p class="skill">{{ project.title }}</p>
             <p>{{ project.description }}</p>
         </div>
