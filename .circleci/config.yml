@@ -7,7 +7,7 @@ version: 2.1
 orbs:
   python: circleci/python@2.0.3
 jobs:
-  build:
+  build-and-test:
     # Specify the execution environment. You can specify an image from Dockerhub or use one of our Convenience Images from CircleCI's Developer Hub.
     # See: https://circleci.com/docs/2.0/configuration-reference/#docker-machine-macos-windows-executor
     docker:
@@ -26,11 +26,13 @@ jobs:
       - run:
           name: "install dependencies"
           command: pip install -r requirements.txt
-      - run: python manage.py test
+      - run:
+          name: run tests 
+          command: python manage.py test
 
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
 workflows:
   test-build:
     jobs:
-      - build
+      - build-and-test
