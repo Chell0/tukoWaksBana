@@ -36,7 +36,7 @@
                 <img src="{% static project.images %}">
             </a>
             <p class="skill">{{ project.title }}</p>
-            <p>{{ project.description }}</p>
+            <p>{{ project.description | slice:"200" }}...</p>
         </div>
         {% endfor %}
     </div>
@@ -70,16 +70,4 @@
         </div>
     </div>
 </section>
-
-<!-- Scripts -->
-<!-- AOS -->
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-    AOS.init({
-        offset: 400
-    });
-</script>
-
-<!-- JavaScript -->
-<script src="../static/js/app.js"></script>
 {% endblock %}
