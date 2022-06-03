@@ -15,12 +15,16 @@ class ProjectModelTest(TestCase):
         self.assertEqual(id_label, 'project id')
 
     def test_title_length(self):
-        project = Project.objects.get(project_id=1)
-        max_len = project._meta.get_field('title').max_length
+        title = Project.objects.get(project_id=1)
+        max_len = title._meta.get_field('title').max_length
         self.assertEqual(max_len, 100)
 
+    def test_description_length(self):
+        description = Project.objects.get(project_id=1)
+        max_len = description._meta.get_field('description').max_length
+        self.assertEqual(max_len, 200)
+
     # def test_get_absolute_url(self):
-    #     project = Project.objects.get(project_id=1)
-    #     # should fail if not defined in urlconf
-    #     self.assertEqual(project.get_absolute_url(),'/works/1')
-        
+        # project = Project.objects.get(project_id=1)
+        # should fail if not defined in urlconf
+        # self.assertEqual(project.get_absolute_url(),'/works/1')

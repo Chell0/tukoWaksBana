@@ -14,8 +14,8 @@ jobs:
       - image: cimg/python:3.10
       - image: cimg/postgres:14.0
         environment:
-          POSTGRES_USER: mwai
-          POSTGRES_PASSWORD: 
+          POSTGRES_USER: test
+          POSTGRES_PASSWORD:
           POSTGRES_DB: blog
     # Add steps to the job
     # See: https://circleci.com/docs/2.0/configuration-reference/#steps

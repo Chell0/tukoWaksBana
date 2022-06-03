@@ -127,6 +127,8 @@ nav {
 	margin-bottom: 70px;
 }
 
+/* .projects__section .wrapper */
+
 .projects__section .row h2 {
 	float: left;
 	font-size: 240%;
@@ -136,7 +138,7 @@ nav {
 }
 
 .projects__section .row .col {
-	margin-bottom: 50px;
+	margin-bottom: 30px;
 }
 
 .projects__section .row .col img {
@@ -154,6 +156,8 @@ nav {
 
 .projects__section .row .col .skill {
 	color: #999;
+	/* font-size: 120%; */
+	/* margin-bottom: 10px; */
 }
 /* ----------------------------------------- */
 
