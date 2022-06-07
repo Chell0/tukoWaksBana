@@ -25,13 +25,13 @@
 </div>
 
 <!-- Projects -->
-<section class="projects__section">
+<section class="works__section">
     <div class="row">
         <h2>Projects</h2>
     </div>
-    <div class="row">
+    <div class="wrapper">
         {% for project in projects %}
-        <div class="col " data-aos="fade-up" data-aos-duration="900">
+        <div class="projects" data-aos="fade-up" data-aos-duration="900">
             <a href="{% url 'home:work_detail' project.project_id %}">
                 <img src="{% static project.images %}">
             </a>

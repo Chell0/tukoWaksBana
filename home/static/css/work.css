@@ -122,42 +122,45 @@ nav {
 /* ------------------------------------------------------------ */
 
 /* --------------Projects Section------------ */
-.projects__section {
-	padding: 3%;
-	margin-bottom: 70px;
-}
-
-/* .projects__section .wrapper */
-
-.projects__section .row h2 {
-	float: left;
+.works__section .row h2 {
 	font-size: 240%;
 	font-weight: 400;
 	color: #f1f1f1;
 	padding-bottom: 20px;
+	text-align: center;
 }
 
-.projects__section .row .col {
-	margin-bottom: 30px;
+.works__section .wrapper {
+    padding: 3em;
+    display: grid;
+    grid-gap: 2em;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
 }
 
-.projects__section .row .col img {
-	padding: 10px;
-	height: 400px;
+.works__section .wrapper .projects {
+    padding: 2em;
+    border-radius: .3em;
+	box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
-.projects__section .row .col p {
+.works__section .wrapper .projects a img {
+    width: 100%;
+}
+
+.works__section .wrapper .projects p {
 	text-align: left;
-	font-size: 70%;
-	padding-top: 0;
+	font-size: 60%;
+	padding-bottom: 10px;
 	margin-left: 10px;
 	color: #f1f1f1;
 }
 
-.projects__section .row .col .skill {
-	color: #999;
-	/* font-size: 120%; */
-	/* margin-bottom: 10px; */
+.works__section .wrapper .projects p.skill {
+	padding-top: 10px;
+	font-size: 80%;
+	font-weight: 700;
+	color: #000000;
+	margin-bottom: 10px;
 }
 /* ----------------------------------------- */
 
