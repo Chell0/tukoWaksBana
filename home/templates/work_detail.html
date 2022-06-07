@@ -24,19 +24,17 @@
     </nav>
 </div>
 
+
+
 <!-- Project -->
-<section class="projects__section">
-    <div class="row">
-        <div class="col span-1-of-2" data-aos="fade-up" data-aos-duration="900">
+<section class="project_detail_section">
+    <div class="wrapper">
+        <div class="project" data-aos="fade-up" data-aos-duration="900">
             <img src="{% static project.images %}" alt="Design photo">
         </div>
-        <div class="col span-1-of-2" data-aos="fade-up" data-aos-duration="900">
-            <div class="row">
-                <h2>{{ project.title }}</h2>
-            </div>
-            <div class="row">
-                <p>{{ project.description }}</p>
-            </div>
+        <div class="project" data-aos="fade-up" data-aos-duration="900">
+            <h2>{{ project.title }}</h2>
+            <p>{{ project.description }}</p>
         </div>
     </div>
 </section>
