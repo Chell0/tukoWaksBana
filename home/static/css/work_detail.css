@@ -50,7 +50,7 @@ nav {
 	color: #f1f1f1;
 }
 
-.nav__links {
+/* .nav__links {
 	position: absolute;
 	justify-content: space-around;
 	width: 50%;
@@ -75,10 +75,10 @@ nav {
 	font-size: 240%;
 	font-weight: bold;
 	color: #ffffff;
-}
+} */
 
 /* ------------ Burger Menu ------------------------ */
-.burger {
+/* .burger {
 	cursor: default;
 	display: block;
 }
@@ -88,7 +88,7 @@ nav {
 	height: 3px;
 	background-color: #f1f1f1;
 	margin: 5px;
-}
+} */
 /* ------------------------------------------------- */
 
 .nav__active {
