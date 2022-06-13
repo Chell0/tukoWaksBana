@@ -2,7 +2,7 @@ from django.db import models
 from django.urls import reverse
 
 
-# Create your models here.
+# Project Model
 class Project(models.Model):
     '''Model representing a project'''
     project_id = models.IntegerField(primary_key=True)
@@ -15,4 +15,4 @@ class Project(models.Model):
         return self.title
    
     def get_absolute_url(self):
-        return reverse('work_detail', args=[str(self.project_id)])
+        return reverse('home:work_detail', kwargs={'project_id': self.project_id})
