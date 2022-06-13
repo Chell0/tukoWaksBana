@@ -1,12 +1,13 @@
+from audioop import reverse
 from django.test import TestCase
 from home.models import Project
 
-
+      
 class ProjectModelTest(TestCase):
     @classmethod
     def setUpTestData(cls) -> None:
        # return super().setUpTestData()
-       Project.objects.create(project_id=1,title='project one',description='project one description')
+       Project.objects.create(project_id=1, title='project one', description='project one description')
 
     
     def test_project_id(self):
@@ -24,7 +25,6 @@ class ProjectModelTest(TestCase):
         max_len = description._meta.get_field('description').max_length
         self.assertEqual(max_len, 200)
 
-    # def test_get_absolute_url(self):
-        # project = Project.objects.get(project_id=1)
-        # should fail if not defined in urlconf
-        # self.assertEqual(project.get_absolute_url(),'/works/1')
+    def test_get_absolute_url(self):
+        _id = Project.objects.get(project_id=1)
+        self.assertEqual(_id.get_absolute_url(), '/works/1/')
