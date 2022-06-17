@@ -9,6 +9,8 @@ body {
 	/* font-family: "Spectral", serif; */
 	font-weight: 200;
 	font-size: 21px;
+	-webkit-font-smoothing: antialiased;
+	text-rendering: geometricPrecision;
 	text-rendering: optimizeLegibility;
 	overflow-x: hidden;
 }
@@ -205,3 +207,6 @@ nav {
 	height: 7vh;
 }
 /* -------------------------------------------- */
+
+
+
