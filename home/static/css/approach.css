@@ -28,7 +28,7 @@ body {
 
 /* ------------------- Navigation -------------------------- */
 nav {
-	background-color: #d5d5d5;
+	background-color: #c5c5c5;
 	min-height: 8vh;
 	align-items: center;
 	position: fixed;
@@ -136,22 +136,19 @@ nav {
 }
 
 .approach__section .row .white {
-	font-size: 300%;
+	font-size: 280%;
 	font-weight: 600;
 	color: #ffffff;
+	margin-top: -20px;
+	margin-bottom: -30px;
 }
 
 .approach__section .row p {
-	font-size: 300%;
+	font-size: 245%;
 }
 
 .approach__section .row .col {
 	padding: 1%;
-}
-
-.approach__section .row .col h2 {
-	margin-bottom: 30px;
-	font-weight: 200;
 }
 
 .approach__section .row .col p {
@@ -159,7 +156,7 @@ nav {
 }
 
 .approach__section .row__fluid {
-	margin-left: 400px;
+	margin: auto;
 }
 
 .approach__section .row .col .section__one {

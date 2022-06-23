@@ -34,7 +34,7 @@ nav {
 	width: 100%;
 	display: flex;
 	justify-content: space-around;
-	background-color: #fff;
+	background-color: #c5c5c5;
 	z-index: 999;
 }
 
@@ -184,7 +184,7 @@ nav {
 /* ---------------------------------- */
 
 /* -------- Footer Section ------ */
-.footer .row .col {
+.footer__section .row .col p {
 	padding: 5%;
 	font-size: 50%;
 }

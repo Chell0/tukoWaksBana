@@ -11,7 +11,6 @@ body {
 	font-size: 21px;
 	text-rendering: optimizeLegibility;
 	overflow-x: hidden;
-	background-color: #242222;
 }
 
 /* Re-usable components */
@@ -27,15 +26,15 @@ body {
 /* -------------------------------------------- */
 
 /* ------------------- Navigation -------------------------- */
-.work_detail_nav {
-	background-color: #242222;
-	min-height: 8vh;
+.header__section .work_detail_nav {
+	min-height: 6vh;
 	align-items: center;
 	position: fixed;
 	width: 100%;
 	display: flex;
 	justify-content: space-around;
 	z-index: 999;
+	background-color: #c5c5c5;
 }
 
 /* Logo */
@@ -48,7 +47,7 @@ body {
 
 #work_detail_logo a {
 	text-decoration: none;
-	color: #f1f1f1;
+	color: #000000;
 }
 
 /* .nav__links {
