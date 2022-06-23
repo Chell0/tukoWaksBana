@@ -21,9 +21,10 @@ body {
 }
 
 /* Header */
-header {
-	height: 88vh;
+.header__section {
+	height: 7vh;
 }
+/* -------------------------------------------- */
 
 /* ------------------- Navigation -------------------------- */
 nav {
@@ -138,18 +139,21 @@ nav {
 	font-size: 280%;
 }
 
-.services__section .row .white {
-	color: #ffffff;
-}
-
 .services__section .row .col {
 	padding: 1%;
 }
 
-.services__section .row h2 {
+.services__section .row .white {
 	margin-bottom: 30px;
 	font-size: 280%;
 	font-weight: 200;
+	color: #ffffff;
+}
+
+.services__section .row .col h3 {
+	font-size: 200%;
+	font-weight: 200;
+	color: #ffffff;
 }
 
 .services__section .row .col p {

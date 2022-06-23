@@ -21,9 +21,10 @@ body {
 }
 
 /* Header */
-header {
-	height: 88vh;
+.header__section {
+	height: 7vh;
 }
+/* -------------------------------------------- */
 
 /* ------------------- Navigation -------------------------- */
 nav {
@@ -121,7 +122,7 @@ nav {
 /* ------------------------------------------------ */
 /* ------------------------------------------------------------ */
 
-/* --------THE SERVICES PAGE ---------------------- */
+/* -------- THE APPROACH PAGE ---------------------- */
 .header__section {
 	height: 8vh;
 }
@@ -134,17 +135,14 @@ nav {
 	margin-bottom: 60px;
 }
 
-.approach__section .row h2 {
+.approach__section .row .white {
 	font-size: 300%;
-	font-weight: normal;
+	font-weight: 600;
+	color: #ffffff;
 }
 
 .approach__section .row p {
 	font-size: 300%;
-}
-
-.approach__section .row .white {
-	color: #ffffff;
 }
 
 .approach__section .row .col {

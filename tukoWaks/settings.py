@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-m5mr=i+epidb*!a(+gy!k3es1+ec)70#0q0w$ehmu07-)ada$r
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['testserver']
+ALLOWED_HOSTS = ['testserver', '127.0.0.1']
 
 
 # Application definition

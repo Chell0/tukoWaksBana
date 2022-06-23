@@ -1,0 +1,3638 @@
+/* ----------- Phones and Handhelds ---------  */
+
+/* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
+/* Portrait */
+@media only screen 
+	and (min-device-width: 320px) 
+	and (max-device-width: 568px)
+	and (-webkit-min-device-pixel-ratio: 2)
+	and (orientation: portrait) {
+				
+		/* MainCSS */
+		/* Re-usable components */
+		/* Row */
+		.row {
+			margin: 0 auto;
+		}
+
+		/* Header */
+		header {
+			height: 50vh;
+		}
+
+		/* ------------------- Navigation -------------------------- */
+		nav {
+			min-height: 6vh;
+			align-items: center;
+            position: fixed;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            /* background-color: rgb(197, 191, 191); */
+            z-index: 999;
+		}
+
+		/* Logo */
+		#logo {
+            font-size: 100%;
+            font-weight: bold;
+            margin-right: 520px;
+            cursor: hand;
+		}
+
+		#logo a {
+            text-decoration: none;
+            color: #000000;
+		}
+
+		.nav__links {
+            position: absolute;
+            justify-content: space-around;
+            width: 100%;
+            right: 0;
+            height: 46vh;
+            top: 4vh;
+            background-color: #000000;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            transform: translateX(100%);
+            transition: transform 0.3s ease-in;
+		}
+
+		.nav__links li {
+            list-style: none;
+            opacity: 0;
+		}
+
+		.nav__links a {
+            letter-spacing: 2px;
+            font-size: 240%;
+            font-weight: bold;
+            color: #ffffff;
+		}
+
+		/* ------------ Burger Menu ------------------------ */
+		.burger {
+            cursor: default;
+            display: block;
+		}
+
+		.burger div {
+            width: 25px;
+            height: 3px;
+            background-color: #000000;
+            margin: 5px;
+		}
+		/* ------------------------------------------------- */
+
+		.nav__active {
+            transform: translateX(0%);
+		}
+
+		/* -------- Animations ----------------------------- */
+		@keyframes navLinkFade {
+    		from {
+                opacity: 0;
+                transform: translateX(50px);
+            }
+    		to {
+	    		opacity: 1;
+		    	transform: translateX(0px);
+		    }   
+		}
+
+		.toggle .line1 {
+            transform: rotate(-45deg) translate(-5px, 6px);
+		}
+
+		.toggle .line2 {
+            opacity: 0;
+		}
+
+		.toggle .line3 {
+            transform: rotate(45deg) translate(-5px, -6px);
+		}
+		/* ------------------------------------------------ */
+		/* ------------------------------------------------------------ */
+
+		.content {
+    		display: flex;
+	    	height: 80vh;
+		    justify-content: center;
+		    align-items: center;
+		}
+
+		.hero {
+            height: 90%;
+            width: 90%;
+            margin-top: 90px;
+		}
+
+		.hero p {
+            height: 100%;
+            width: 100%;
+            font-size: 290%;
+            font-weight: 300;
+		}
+
+		/* Projects Section */
+		.projects__section {
+            padding: 3%;
+            margin-bottom: 70px;
+		}
+
+		.projects__section .row h2 {
+            float: left;
+            font-size: 260%;
+            font-weight: 400;
+            color: #f1f1f1;
+            padding-bottom: 20px;
+		}
+
+		.projects__section .row .col {
+            margin-bottom: 50px;
+            border-radius: .3em;
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+		}
+
+		.projects__section .row .col a img {
+            padding: 10px;
+            height: 300px;
+		}
+
+		.projects__section .row .col p {
+            text-align: left;
+            font-size: 60%;
+            padding-bottom: 10px;
+            margin-left: 10px;
+            color: #f1f1f1;
+		}
+
+		.projects__section .row .col p.skill {
+            font-size: 80%;
+            font-weight: 700;
+            color: #000;
+            margin-bottom: 10px;
+		}
+		/* ---------------------------------- */
+
+		/* -------- Footer Section ------ */
+		.footer .row .col {
+            padding: 5%;
+            font-size: 70%;
+		}
+
+		.contacts {
+            text-decoration: underline;
+		}
+
+		.socials {
+            color: #999;
+		}
+
+		.socials a {
+            color: #999;
+		}
+		/* ------------------------------ */
+
+		/* ------------------------------------------------------------------------------- */
+
+        /* --------THE APPROACH PAGE ---------------------- */
+        .header__section {
+            height: 8vh;
+        }
+
+        .approach__section {
+            padding: 4%;
+        }
+
+        .approach__section .row {
+            margin-bottom: 70px;
+        }
+
+        .approach__section .row h2 {
+            font-size: 270%;
+            font-weight: normal;
+        }
+
+        .approach__section .row p {
+            font-size: 240%;
+        }
+
+        .approach__section .row .white {
+            color: #ffffff;
+        }
+
+        .approach__section .row .col {
+            padding: 1%;
+        }
+
+        .approach__section .row .col h2 {
+            margin-bottom: 30px;
+            font-weight: 200;
+        }
+
+        .approach__section .row .col p {
+            font-size: 80%;
+        }
+
+        .approach__section .row__fluid {
+            margin: auto;
+        }
+
+        .approach__section .row .col .section__one {
+            margin-bottom: 20px;
+        }
+
+        /* --------THE SERVICES PAGE ---------------------- */
+        .services__section .row {
+            margin-bottom: 60px;
+        }
+
+        .services__section .row p {
+            font-size: 230%;
+        }
+
+        .services__section .row .white {
+            color: #ffffff;
+        }
+
+        .services__section .row .white {
+            margin-bottom: 30px;
+            font-size: 280%;
+            font-weight: 400;
+        }
+
+        .services__section .row .col {
+            padding: 1%;
+        }
+
+        .services__section .row .col h3 {
+            font-size: 180%;
+            font-weight: 600;
+            margin-bottom: 30px;
+        }
+
+        .services__section .row .col p {
+            font-size: 80%;
+        }
+
+        /* ---------- THE WORKDETAIL PAGE -------------------------- */
+        /* ------------------- Navigation ----------------- */
+        .work_detail_nav {
+            min-height: 6vh;
+            align-items: center;
+            position: fixed;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            z-index: 999;
+        }
+
+        /* Logo */
+        #work_detail_logo {
+            font-size: 130%;
+            margin-right: 720px;
+        }
+
+        #work_detail_logo a {
+            text-decoration: none;
+            color: #000000;
+        }
+
+        /* --------------Projects Detail Section------------ */
+        .project_detail_section .wrapper {
+            padding: 3em;
+            display: grid;
+            grid-gap: 2em;
+            grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+        }
+
+        .project_detail_section .wrapper .project {
+            padding: 1em;
+            border-radius: .3em;
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        }
+
+        .project_detail_section .wrapper .project img {
+            width: 100%;
+        }
+
+        .project_detail_section .wrapper .project h2 {
+            font-size: 150%;
+            font-weight: 600;
+            color: #000000;
+            padding-bottom: 20px;
+            text-align: center;
+        }
+
+        .project_detail_section .wrapper .project p {
+            text-align: left;
+            font-size: 90%;
+            padding-bottom: 10px;
+            margin-left: 10px;
+            color: #f1f1f1;
+        }
+        /* ----------------------------------------- */
+
+        /* -------------- CONTACT PAGE ------------- */
+        /* -----------------Contact Page----------------- */
+        .contact__section {
+            padding: 4%;
+        }
+
+        .contact__section .row {
+            margin-bottom: 60px;
+        }
+
+        .contact__section .row p {
+            font-size: 300%;
+        }
+
+        .contact__section .row .white {
+            color: #ffffff;
+        }
+
+        .contact__section .row .mail {
+            text-decoration: underline;
+        }
+}
+
+/* Landscape */
+@media only screen 
+	and (min-device-width: 320px) 
+	and (max-device-width: 568px)
+	and (-webkit-min-device-pixel-ratio: 2)
+	and (orientation: landscape) {
+        /* MainCSS */
+		/* Re-usable components */
+		/* Row */
+		.row {
+			margin: 0 auto;
+		}
+
+		/* Header */
+		header {
+			height: 93vh;
+		}
+
+		/* ------------------- Navigation -------------------------- */
+		nav {
+			min-height: 14vh;
+			align-items: center;
+            position: fixed;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            z-index: 999;
+		}
+
+		/* Logo */
+		#logo {
+            font-size: 100%;
+            font-weight: bold;
+            margin-right: 600px;
+            cursor: hand;
+		}
+
+		#logo a {
+            text-decoration: none;
+            color: #000000;
+		}
+
+		.nav__links {
+            position: absolute;
+            justify-content: space-around;
+            width: 50%;
+            right: 0;
+            height: 90vh;
+            top: 11vh;
+            background-color: #000000;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            transform: translateX(100%);
+            transition: transform 0.3s ease-in;
+		}
+
+		.nav__links li {
+            list-style: none;
+            opacity: 0;
+		}
+
+		.nav__links a {
+            letter-spacing: 2px;
+            font-size: 200%;
+            font-weight: bold;
+            color: #ffffff;
+		}
+
+		/* ------------ Burger Menu ------------------------ */
+		.burger {
+            cursor: default;
+            display: block;
+		}
+
+		.burger div {
+            width: 25px;
+            height: 3px;
+            background-color: #000000;
+            margin: 5px;
+		}
+		/* ------------------------------------------------- */
+
+		.nav__active {
+            transform: translateX(0%);
+		}
+
+		/* -------- Animations ----------------------------- */
+		@keyframes navLinkFade {
+    		from {
+                opacity: 0;
+                transform: translateX(50px);
+            }
+    		to {
+	    		opacity: 1;
+		    	transform: translateX(0px);
+		    }   
+		}
+
+		.toggle .line1 {
+            transform: rotate(-45deg) translate(-5px, 6px);
+		}
+
+		.toggle .line2 {
+            opacity: 0;
+		}
+
+		.toggle .line3 {
+            transform: rotate(45deg) translate(-5px, -6px);
+		}
+		/* ------------------------------------------------ */
+		/* ------------------------------------------------------------ */
+
+		.content {
+    		display: flex;
+	    	height: 80vh;
+		    justify-content: center;
+		    align-items: center;
+		}
+
+		.hero {
+            height: 90%;
+            width: 90%;
+            margin-top: 90px;
+		}
+
+		.hero p {
+            height: 100%;
+            width: 100%;
+            font-size: 250%;
+            font-weight: 300;
+		}
+
+		/* Projects Section */
+		.projects__section {
+            padding: 3%;
+            margin-bottom: 70px;
+		}
+
+		.projects__section .row h2 {
+            float: left;
+            font-size: 260%;
+            font-weight: 400;
+            color: #f1f1f1;
+            padding-bottom: 20px;
+		}
+
+		.projects__section .row .col {
+            margin-bottom: 50px;
+            border-radius: .3em;
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+		}
+
+		.projects__section .row .col a img {
+            padding: 10px;
+            height: 300px;
+		}
+
+		.projects__section .row .col p {
+            text-align: left;
+            font-size: 60%;
+            padding-bottom: 10px;
+            margin-left: 10px;
+            color: #f1f1f1;
+		}
+
+		.projects__section .row .col p.skill {
+            font-size: 80%;
+            font-weight: 700;
+            color: #000;
+            margin-bottom: 10px;
+		}
+		/* ---------------------------------- */
+
+		/* -------- Footer Section ------ */
+		.footer .row .col {
+            padding: 5%;
+            font-size: 70%;
+		}
+
+		.contacts {
+            text-decoration: underline;
+		}
+
+		.socials {
+            color: #999;
+		}
+
+		.socials a {
+            color: #999;
+		}
+		/* ------------------------------ */
+
+		/* ------------------------------------------------------------------------------- */
+
+        /* --------THE APPROACH PAGE ---------------------- */
+        .header__section {
+            height: 8vh;
+        }
+
+        .approach__section {
+            padding: 4%;
+        }
+
+        .approach__section .row {
+            margin-bottom: 10px;
+        }
+
+        .approach__section .row .white {
+            font-size: 220%;
+            font-weight: 600;
+            color: #ffffff;
+        }
+        
+        .approach__section .row p {
+            font-size: 183%;
+        }
+        
+
+        .approach__section .row .col {
+            padding: 1%;
+        }
+
+        .approach__section .row .col p {
+            font-size: 80%;
+        }
+
+        .approach__section .row__fluid {
+            margin: auto;
+        }
+
+        /* --------THE SERVICES PAGE ---------------------- */
+        .services__section .row {
+            margin-bottom: 8px;
+        }
+
+        .services__section .row p {
+            font-size: 178%;
+        }
+        
+        .services__section .row .white {
+            margin-bottom: 30px;
+            font-size: 220%;
+            font-weight: 600;
+            color: #ffffff;
+        }
+
+        .services__section .row .col {
+            padding: 1%;
+        }
+
+        .services__section .row .col h3 {
+            font-size: 180%;
+            font-weight: 600;
+            margin-bottom: 30px;
+        }
+
+        .services__section .row .col p {
+            font-size: 80%;
+        }
+
+        /* ---------- THE WORK PAGE -------------------------------- */
+        /* --------------Projects Section------------ */
+        .works__section .row h2 {
+            font-size: 200%;
+            font-weight: 400;
+            color: #f1f1f1;
+            padding-top: 60px;
+            padding-bottom: 20px;
+            text-align: center;
+        }
+        /* ----------------------------------------- */
+
+        /* ---------- THE WORKDETAIL PAGE -------------------------- */
+        /* ------------------- Navigation ----------------- */
+        .work_detail_nav {
+            min-height: 16vh;
+            align-items: center;
+            position: fixed;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            z-index: 999;
+        }
+
+        /* Logo */
+        #work_detail_logo {
+            font-size: 100%;
+            margin-right: 720px;
+        }
+
+        #work_detail_logo a {
+            text-decoration: none;
+            color: #000000;
+        }
+
+        /* --------------Projects Detail Section------------ */
+        .project_detail_section .wrapper {
+            padding: 3em;
+            display: grid;
+            grid-gap: 2em;
+            grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+        }
+
+        .project_detail_section .wrapper .project {
+            padding: 1em;
+            border-radius: .3em;
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        }
+
+        .project_detail_section .wrapper .project img {
+            width: 100%;
+        }
+
+        .project_detail_section .wrapper .project h2 {
+            font-size: 150%;
+            font-weight: 600;
+            color: #000000;
+            padding-bottom: 20px;
+            text-align: center;
+        }
+
+        .project_detail_section .wrapper .project p {
+            text-align: left;
+            font-size: 90%;
+            padding-bottom: 10px;
+            margin-left: 10px;
+            color: #f1f1f1;
+        }
+        /* ----------------------------------------- */
+
+        /* -------------- CONTACT PAGE ------------- */
+        /* -----------------Contact Page----------------- */
+        .contact__section {
+            padding: 4%;
+        }
+
+        .contact__section .row {
+            margin-bottom: 30px;
+        }
+
+        .contact__section .row p {
+            font-size: 300%;
+        }
+
+        .contact__section .row .white {
+            color: #ffffff;
+        }
+
+        .contact__section .row .mail {
+            text-decoration: underline;
+        }
+}
+
+
+
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+/* Portrait */
+@media only screen 
+	and (min-device-width: 375px) 
+	and (max-device-width: 667px) 
+	and (-webkit-min-device-pixel-ratio: 2)
+	and (orientation: portrait) {
+        /* MainCSS */
+		/* Re-usable components */
+		/* Row */
+		.row {
+			margin: 0 auto;
+		}
+
+		/* Header */
+		header {
+			height: 50vh;
+		}
+
+		/* ------------------- Navigation -------------------------- */
+		nav {
+			min-height: 4vh;
+			align-items: center;
+            position: fixed;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            /* background-color: rgb(197, 191, 191); */
+            z-index: 999;
+		}
+
+		/* Logo */
+		#logo {
+            font-size: 100%;
+            font-weight: bold;
+            margin-right: 520px;
+            cursor: hand;
+		}
+
+		#logo a {
+            text-decoration: none;
+            color: #000000;
+		}
+
+		.nav__links {
+            position: absolute;
+            justify-content: space-around;
+            width: 100%;
+            right: 0;
+            height: 46vh;
+            top: 4vh;
+            background-color: #000000;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            transform: translateX(100%);
+            transition: transform 0.3s ease-in;
+		}
+
+		.nav__links li {
+            list-style: none;
+            opacity: 0;
+		}
+
+		.nav__links a {
+            letter-spacing: 2px;
+            font-size: 240%;
+            font-weight: bold;
+            color: #ffffff;
+		}
+
+		/* ------------ Burger Menu ------------------------ */
+		.burger {
+            cursor: default;
+            display: block;
+		}
+
+		.burger div {
+            width: 25px;
+            height: 3px;
+            background-color: #000000;
+            margin: 5px;
+		}
+		/* ------------------------------------------------- */
+
+		.nav__active {
+            transform: translateX(0%);
+		}
+
+		/* -------- Animations ----------------------------- */
+		@keyframes navLinkFade {
+    		from {
+                opacity: 0;
+                transform: translateX(50px);
+            }
+    		to {
+	    		opacity: 1;
+		    	transform: translateX(0px);
+		    }   
+		}
+
+		.toggle .line1 {
+            transform: rotate(-45deg) translate(-5px, 6px);
+		}
+
+		.toggle .line2 {
+            opacity: 0;
+		}
+
+		.toggle .line3 {
+            transform: rotate(45deg) translate(-5px, -6px);
+		}
+		/* ------------------------------------------------ */
+		/* ------------------------------------------------------------ */
+
+		.content {
+    		display: flex;
+	    	height: 80vh;
+		    justify-content: center;
+		    align-items: center;
+		}
+
+		.hero {
+            height: 90%;
+            width: 90%;
+            margin-top: 90px;
+		}
+
+		.hero p {
+            height: 100%;
+            width: 100%;
+            font-size: 290%;
+            font-weight: 300;
+		}
+
+		/* Projects Section */
+		.projects__section {
+            padding: 3%;
+            margin-bottom: 70px;
+		}
+
+		.projects__section .row h2 {
+            float: left;
+            font-size: 260%;
+            font-weight: 400;
+            color: #f1f1f1;
+            padding-bottom: 20px;
+		}
+
+		.projects__section .row .col {
+            margin-bottom: 50px;
+            border-radius: .3em;
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+		}
+
+		.projects__section .row .col a img {
+            padding: 10px;
+            height: 300px;
+		}
+
+		.projects__section .row .col p {
+            text-align: left;
+            font-size: 60%;
+            padding-bottom: 10px;
+            margin-left: 10px;
+            color: #f1f1f1;
+		}
+
+		.projects__section .row .col p.skill {
+            font-size: 80%;
+            font-weight: 700;
+            color: #000;
+            margin-bottom: 10px;
+		}
+		/* ---------------------------------- */
+
+		/* -------- Footer Section ------ */
+		.footer .row .col {
+            padding: 5%;
+            font-size: 70%;
+		}
+
+		.contacts {
+            text-decoration: underline;
+		}
+
+		.socials {
+            color: #999;
+		}
+
+		.socials a {
+            color: #999;
+		}
+		/* ------------------------------ */
+
+		/* ------------------------------------------------------------------------------- */
+
+        /* --------THE APPROACH PAGE ---------------------- */
+        .header__section {
+            height: 4vh;
+        }
+
+        .approach__section {
+            padding: 4%;
+        }
+
+        .approach__section .row {
+            margin-bottom: 70px;
+        }
+
+        .approach__section .row h2 {
+            font-size: 270%;
+            font-weight: normal;
+        }
+
+        .approach__section .row p {
+            font-size: 230%;
+        }
+
+        .approach__section .row .white {
+            color: #ffffff;
+        }
+
+        .approach__section .row .col {
+            padding: 1%;
+        }
+
+        .approach__section .row .col h2 {
+            margin-bottom: 30px;
+            font-weight: 200;
+        }
+
+        .approach__section .row .col p {
+            font-size: 80%;
+        }
+
+        .approach__section .row__fluid {
+            margin: auto;
+            margin-bottom: 180px;
+        }
+
+        .approach__section .row .col .section__one {
+            margin-bottom: 30px;
+        }
+
+        /* --------THE SERVICES PAGE ---------------------- */
+        .services__section .row {
+            margin-bottom: 60px;
+        }
+
+        .services__section .row p {
+            font-size: 230%;
+        }
+
+        .services__section .row .white {
+            color: #ffffff;
+        }
+
+        .services__section .row .white {
+            margin-bottom: 30px;
+            font-size: 280%;
+            font-weight: 400;
+        }
+
+        .services__section .row .col {
+            padding: 1%;
+        }
+
+        .services__section .row .col h3 {
+            font-size: 180%;
+            font-weight: 600;
+            margin-bottom: 30px;
+        }
+
+        .services__section .row .col p {
+            font-size: 80%;
+        }
+
+        /* ---------- THE WORKDETAIL PAGE -------------------------- */
+        /* ------------------- Navigation ----------------- */
+        .work_detail_nav {
+            min-height: 6vh;
+            align-items: center;
+            position: fixed;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            z-index: 999;
+        }
+
+        /* Logo */
+        #work_detail_logo {
+            font-size: 130%;
+            margin-right: 720px;
+        }
+
+        #work_detail_logo a {
+            text-decoration: none;
+            color: #000000;
+        }
+
+        /* --------------Projects Detail Section------------ */
+        .project_detail_section .wrapper {
+            padding: 3em;
+            display: grid;
+            grid-gap: 2em;
+            grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+        }
+
+        .project_detail_section .wrapper .project {
+            padding: 1em;
+            border-radius: .3em;
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        }
+
+        .project_detail_section .wrapper .project img {
+            width: 100%;
+        }
+
+        .project_detail_section .wrapper .project h2 {
+            font-size: 150%;
+            font-weight: 600;
+            color: #000000;
+            padding-bottom: 20px;
+            text-align: center;
+        }
+
+        .project_detail_section .wrapper .project p {
+            text-align: left;
+            font-size: 90%;
+            padding-bottom: 10px;
+            margin-left: 10px;
+            color: #f1f1f1;
+        }
+        /* ----------------------------------------- */
+
+        /* -------------- CONTACT PAGE ------------- */
+        /* -----------------Contact Page----------------- */
+        .contact__section {
+            padding: 4%;
+        }
+
+        .contact__section .row {
+            margin-bottom: 60px;
+        }
+
+        .contact__section .row p {
+            font-size: 300%;
+        }
+
+        .contact__section .row .white {
+            color: #ffffff;
+        }
+
+        .contact__section .row .mail {
+            text-decoration: underline;
+        }
+
+}
+
+/* Landscape */
+@media only screen 
+	and (min-device-width: 375px) 
+	and (max-device-width: 667px) 
+	and (-webkit-min-device-pixel-ratio: 2)
+	and (orientation: landscape) {
+        /* MainCSS */
+		/* Re-usable components */
+		/* Row */
+		.row {
+			margin: 0 auto;
+		}
+
+		/* Header */
+		header {
+			height: 95vh;
+		}
+
+		/* ------------------- Navigation -------------------------- */
+		nav {
+			min-height: 12vh;
+			align-items: center;
+            position: fixed;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            z-index: 999;
+		}
+
+		/* Logo */
+		#logo {
+            font-size: 100%;
+            font-weight: bold;
+            margin-right: 520px;
+            cursor: hand;
+		}
+
+		#logo a {
+            text-decoration: none;
+            color: #000000;
+		}
+
+		.nav__links {
+            position: absolute;
+            justify-content: space-around;
+            width: 50%;
+            right: 0;
+            height: 88vh;
+            top: 12vh;
+            background-color: #000000;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            transform: translateX(100%);
+            transition: transform 0.3s ease-in;
+		}
+
+		.nav__links li {
+            list-style: none;
+            opacity: 0;
+		}
+
+		.nav__links a {
+            letter-spacing: 2px;
+            font-size: 200%;
+            font-weight: bold;
+            color: #ffffff;
+		}
+
+		/* ------------ Burger Menu ------------------------ */
+		.burger {
+            cursor: default;
+            display: block;
+		}
+
+		.burger div {
+            width: 25px;
+            height: 3px;
+            background-color: #000000;
+            margin: 5px;
+		}
+		/* ------------------------------------------------- */
+
+		.nav__active {
+            transform: translateX(0%);
+		}
+
+		/* -------- Animations ----------------------------- */
+		@keyframes navLinkFade {
+    		from {
+                opacity: 0;
+                transform: translateX(50px);
+            }
+    		to {
+	    		opacity: 1;
+		    	transform: translateX(0px);
+		    }   
+		}
+
+		.toggle .line1 {
+            transform: rotate(-45deg) translate(-5px, 6px);
+		}
+
+		.toggle .line2 {
+            opacity: 0;
+		}
+
+		.toggle .line3 {
+            transform: rotate(45deg) translate(-5px, -6px);
+		}
+		/* ------------------------------------------------ */
+		/* ------------------------------------------------------------ */
+
+		.content {
+    		display: flex;
+	    	height: 90vh;
+		    justify-content: center;
+		    align-items: center;
+		}
+
+		.hero {
+            height: 90%;
+            width: 90%;
+            margin-top: 90px;
+		}
+
+		.hero p {
+            height: 100%;
+            width: 100%;
+            font-size: 250%;
+            font-weight: 300;
+		}
+
+		/* Projects Section */
+		.projects__section {
+            padding: 3%;
+            margin-bottom: 70px;
+		}
+
+		.projects__section .row h2 {
+            float: left;
+            font-size: 260%;
+            font-weight: 600;
+            color: #f1f1f1;
+            padding-bottom: 20px;
+		}
+
+		.projects__section .row .col {
+            margin-bottom: 50px;
+            border-radius: .3em;
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+		}
+
+		.projects__section .row .col a img {
+            padding: 10px;
+            height: 300px;
+		}
+
+		.projects__section .row .col p {
+            text-align: left;
+            font-size: 60%;
+            padding-bottom: 10px;
+            margin-left: 10px;
+            color: #f1f1f1;
+		}
+
+		.projects__section .row .col p.skill {
+            font-size: 80%;
+            font-weight: 700;
+            color: #000;
+            margin-bottom: 10px;
+		}
+		/* ---------------------------------- */
+
+		/* -------- Footer Section ------ */
+		.footer .row .col {
+            padding: 5%;
+            font-size: 70%;
+		}
+
+		.contacts {
+            text-decoration: underline;
+		}
+
+		.socials {
+            color: #999;
+		}
+
+		.socials a {
+            color: #999;
+		}
+		/* ------------------------------ */
+
+		/* ------------------------------------------------------------------------------- */
+
+        /* --------THE APPROACH PAGE ---------------------- */
+        .header__section {
+            height: 8vh;
+        }
+
+        .approach__section {
+            padding: 4%;
+        }
+        
+        .approach__section .row .white {
+            font-size: 240%;
+            font-weight: 600;
+            color: #ffffff;
+            margin-bottom: -30px;
+            margin-top: -20px;
+        }
+
+        .approach__section .row p {
+            font-size: 183%;
+        }
+
+        .approach__section .row .col {
+            padding: 1%;
+        }
+
+        .approach__section .row .col p {
+            font-size: 80%;
+        }
+
+        .approach__section .row__fluid {
+            margin: auto;
+        }
+
+        .approach__section .row .col .section__one {
+            margin-bottom: 20px;
+        }
+
+        /* --------THE SERVICES PAGE ---------------------- */
+        .services__section .row {
+            margin-bottom: 33px;
+        }
+
+        .services__section .row p {
+            font-size: 180%;
+        }
+        
+        .services__section .row .white {
+            color: #ffffff;
+            margin-bottom: -30px;
+            font-size: 230%;
+            font-weight: 600;
+        }
+
+        .services__section .row .col {
+            padding: 1%;
+        }
+
+        .services__section .row .col h3 {
+            font-size: 180%;
+            font-weight: 600;
+            margin-bottom: 30px;
+        }
+
+        .services__section .row .col p {
+            font-size: 80%;
+        }
+
+        /* ---------- THE WORK PAGE -------------------------------- */
+        /* --------------Projects Section------------ */
+        .works__section .row h2 {
+            font-size: 200%;
+            font-weight: 600;
+            color: #f1f1f1;
+            padding-top: 15px;
+            padding-bottom: 20px;
+            text-align: center;
+        }
+        /* ----------------------------------------- */
+
+        /* ---------- THE WORKDETAIL PAGE -------------------------- */
+        /* ------------------- Navigation ----------------- */
+        .work_detail_nav {
+            min-height: 10vh;
+            align-items: center;
+            position: fixed;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            z-index: 999;
+            background-color: rgb(195, 195, 195);
+        }
+
+        /* Logo */
+        #work_detail_logo {
+            font-size: 100%;
+            margin-right: 720px;
+            margin-top: 20px;
+        }
+
+        #work_detail_logo a {
+            text-decoration: none;
+            color: #000000;
+        }
+
+        /* --------------Projects Detail Section------------ */
+        .project_detail_section .wrapper {
+            padding: 3em;
+            display: grid;
+            grid-gap: 2em;
+            grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+        }
+
+        .project_detail_section .wrapper .project {
+            padding: 4em;
+            border-radius: .3em;
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        }
+
+        .project_detail_section .wrapper .project img {
+            width: 100%;
+        }
+
+        .project_detail_section .wrapper .project h2 {
+            font-size: 130%;
+            font-weight: 600;
+            color: #000000;
+            padding-bottom: 10px;
+            text-align: center;
+        }
+
+        .project_detail_section .wrapper .project p {
+            text-align: left;
+            font-size: 80%;
+            margin-left: 10px;
+            color: #f1f1f1;
+        }
+        /* ----------------------------------------- */
+
+        /* -------------- CONTACT PAGE ------------- */
+        /* -----------------Contact Page----------------- */
+        .contact__section {
+            padding: 4%;
+        }
+
+        .contact__section .row {
+            margin-bottom: 30px;
+        }
+
+        .contact__section .row p {
+            font-size: 200%;
+        }
+
+        .contact__section .row .white {
+            color: #ffffff;
+        }
+
+        .contact__section .row .mail {
+            text-decoration: underline;
+        }
+
+}
+
+/* ----------- iPhone 6+, 7+ and 8+ ----------- */
+/* Landscape */
+@media only screen 
+	and (min-device-width: 414px) 
+	and (max-device-width: 736px) 
+	and (-webkit-min-device-pixel-ratio: 3)
+	and (orientation: landscape) {
+
+         /* MainCSS */
+		/* Re-usable components */
+		/* Row */
+		.row {
+			margin: 0 auto;
+		}
+
+		/* Header */
+		header {
+			height: 95vh;
+		}
+
+		/* ------------------- Navigation -------------------------- */
+		nav {
+			min-height: 12vh;
+			align-items: center;
+            position: fixed;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            z-index: 999;
+		}
+
+		/* Logo */
+		#logo {
+            font-size: 100%;
+            font-weight: bold;
+            margin-right: 640px;
+            cursor: hand;
+		}
+
+		#logo a {
+            text-decoration: none;
+            color: #000000;
+		}
+
+		.nav__links {
+            position: absolute;
+            justify-content: space-around;
+            width: 50%;
+            right: 0;
+            height: 88vh;
+            top: 12vh;
+            background-color: #000000;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            transform: translateX(100%);
+            transition: transform 0.3s ease-in;
+		}
+
+		.nav__links li {
+            list-style: none;
+            opacity: 0;
+		}
+
+		.nav__links a {
+            letter-spacing: 2px;
+            font-size: 200%;
+            font-weight: bold;
+            color: #ffffff;
+		}
+
+		/* ------------ Burger Menu ------------------------ */
+		.burger {
+            cursor: default;
+            display: block;
+		}
+
+		.burger div {
+            width: 25px;
+            height: 3px;
+            background-color: #000000;
+            margin: 5px;
+		}
+		/* ------------------------------------------------- */
+
+		.nav__active {
+            transform: translateX(0%);
+		}
+
+		/* -------- Animations ----------------------------- */
+		@keyframes navLinkFade {
+    		from {
+                opacity: 0;
+                transform: translateX(50px);
+            }
+    		to {
+	    		opacity: 1;
+		    	transform: translateX(0px);
+		    }   
+		}
+
+		.toggle .line1 {
+            transform: rotate(-45deg) translate(-5px, 6px);
+		}
+
+		.toggle .line2 {
+            opacity: 0;
+		}
+
+		.toggle .line3 {
+            transform: rotate(45deg) translate(-5px, -6px);
+		}
+		/* ------------------------------------------------ */
+		/* ------------------------------------------------------------ */
+
+		.content {
+    		display: flex;
+	    	height: 90vh;
+		    justify-content: center;
+		    align-items: center;
+		}
+
+		.hero {
+            height: 90%;
+            width: 90%;
+            margin-top: 90px;
+		}
+
+		.hero p {
+            height: 100%;
+            width: 100%;
+            font-size: 250%;
+            font-weight: 300;
+		}
+
+		/* Projects Section */
+		.projects__section {
+            padding: 3%;
+            margin-bottom: 70px;
+		}
+
+		.projects__section .row h2 {
+            float: left;
+            font-size: 260%;
+            font-weight: 600;
+            color: #f1f1f1;
+            padding-bottom: 20px;
+		}
+
+		.projects__section .row .col {
+            margin-bottom: 50px;
+            border-radius: .3em;
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+		}
+
+		.projects__section .row .col a img {
+            padding: 10px;
+            height: 300px;
+		}
+
+		.projects__section .row .col p {
+            text-align: left;
+            font-size: 60%;
+            padding-bottom: 10px;
+            margin-left: 10px;
+            color: #f1f1f1;
+		}
+
+		.projects__section .row .col p.skill {
+            font-size: 80%;
+            font-weight: 700;
+            color: #000;
+            margin-bottom: 10px;
+		}
+		/* ---------------------------------- */
+
+		/* -------- Footer Section ------ */
+		.footer .row .col {
+            padding: 5%;
+            font-size: 70%;
+		}
+
+		.contacts {
+            text-decoration: underline;
+		}
+
+		.socials {
+            color: #999;
+		}
+
+		.socials a {
+            color: #999;
+		}
+		/* ------------------------------ */
+
+		/* ------------------------------------------------------------------------------- */
+
+        /* --------THE APPROACH PAGE ---------------------- */
+        .header__section {
+            height: 8vh;
+        }
+
+        .approach__section {
+            padding: 4%;
+        }
+        
+        .approach__section .row .white {
+            font-size: 240%;
+            font-weight: 600;
+            color: #ffffff;
+            margin-bottom: -30px;
+            margin-top: -20px;
+        }
+
+        .approach__section .row p {
+            font-size: 183%;
+        }
+
+        .approach__section .row .col {
+            padding: 1%;
+        }
+
+        .approach__section .row .col p {
+            font-size: 80%;
+        }
+
+        .approach__section .row__fluid {
+            margin: auto;
+        }
+
+        .approach__section .row .col .section__one {
+            margin-bottom: 20px;
+        }
+
+        /* --------THE SERVICES PAGE ---------------------- */
+        .header__section {
+            height: 8vh;
+        }
+
+        .services__section .row p {
+            font-size: 183%;
+        }
+        
+        .services__section .row .white {
+            color: #ffffff;
+            margin-bottom: -60px;
+            margin-top: -20px;
+            font-size: 240%;
+            font-weight: 600;
+        }
+
+        .services__section .row .col {
+            padding: 1%;
+        }
+
+        .services__section .row .col h3 {
+            font-size: 180%;
+            font-weight: 600;
+            margin-bottom: 30px;
+        }
+
+        .services__section .row .col p {
+            font-size: 80%;
+        }
+
+        /* ---------- THE WORK PAGE -------------------------------- */
+        /* --------------Projects Section------------ */
+        .works__section .row h2 {
+            font-size: 200%;
+            font-weight: 600;
+            color: #f1f1f1;
+            padding-top: 15px;
+            padding-bottom: 20px;
+            text-align: center;
+        }
+        /* ----------------------------------------- */
+
+        /* ---------- THE WORKDETAIL PAGE -------------------------- */
+        /* ------------------- Navigation ----------------- */
+        .work_detail_nav {
+            min-height: 10vh;
+            align-items: center;
+            position: fixed;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            z-index: 999;
+            background-color: rgb(195, 195, 195);
+        }
+
+        /* Logo */
+        #work_detail_logo {
+            font-size: 100%;
+            margin-right: 720px;
+            margin-top: 20px;
+        }
+
+        #work_detail_logo a {
+            text-decoration: none;
+            color: #000000;
+        }
+
+        /* --------------Projects Detail Section------------ */
+        .project_detail_section .wrapper {
+            padding: 3em;
+            display: grid;
+            grid-gap: 2em;
+            grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+        }
+
+        .project_detail_section .wrapper .project {
+            padding: 4em;
+            border-radius: .3em;
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        }
+
+        .project_detail_section .wrapper .project img {
+            width: 100%;
+        }
+
+        .project_detail_section .wrapper .project h2 {
+            font-size: 130%;
+            font-weight: 600;
+            color: #000000;
+            padding-bottom: 10px;
+            text-align: center;
+        }
+
+        .project_detail_section .wrapper .project p {
+            text-align: left;
+            font-size: 80%;
+            margin-left: 10px;
+            color: #f1f1f1;
+        }
+        /* ----------------------------------------- */
+
+        /* -------------- CONTACT PAGE ------------- */
+        /* -----------------Contact Page----------------- */
+        .contact__section {
+            padding: 4%;
+        }
+
+        .contact__section .row {
+            margin-bottom: 30px;
+        }
+
+        .contact__section .row p {
+            font-size: 200%;
+        }
+
+        .contact__section .row .white {
+            color: #ffffff;
+        }
+
+        .contact__section .row .mail {
+            text-decoration: underline;
+        }
+}
+
+/* ----------- iPhone X ----------- */
+/* Portrait */
+@media only screen 
+	and (min-device-width: 375px) 
+	and (max-device-width: 812px) 
+	and (-webkit-min-device-pixel-ratio: 3)
+	and (orientation: portrait) {
+        /* MainCSS */
+		/* Re-usable components */
+		/* Row */
+		.row {
+			margin: 0 auto;
+		}
+
+		/* Header */
+		header {
+			height: 50vh;
+		}
+
+		/* ------------------- Navigation -------------------------- */
+		nav {
+			min-height: 4vh;
+			align-items: center;
+            position: fixed;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            /* background-color: rgb(197, 191, 191); */
+            z-index: 999;
+		}
+
+		/* Logo */
+		#logo {
+            font-size: 100%;
+            font-weight: bold;
+            margin-right: 590px;
+            cursor: hand;
+		}
+
+		#logo a {
+            text-decoration: none;
+            color: #000000;
+		}
+
+		.nav__links {
+            position: absolute;
+            justify-content: space-around;
+            width: 100%;
+            right: 0;
+            height: 46vh;
+            top: 4vh;
+            background-color: #000000;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            transform: translateX(100%);
+            transition: transform 0.3s ease-in;
+		}
+
+		.nav__links li {
+            list-style: none;
+            opacity: 0;
+		}
+
+		.nav__links a {
+            letter-spacing: 2px;
+            font-size: 240%;
+            font-weight: bold;
+            color: #ffffff;
+		}
+
+		/* ------------ Burger Menu ------------------------ */
+		.burger {
+            cursor: default;
+            display: block;
+		}
+
+		.burger div {
+            width: 25px;
+            height: 3px;
+            background-color: #000000;
+            margin: 5px;
+		}
+		/* ------------------------------------------------- */
+
+		.nav__active {
+            transform: translateX(0%);
+		}
+
+		/* -------- Animations ----------------------------- */
+		@keyframes navLinkFade {
+    		from {
+                opacity: 0;
+                transform: translateX(50px);
+            }
+    		to {
+	    		opacity: 1;
+		    	transform: translateX(0px);
+		    }   
+		}
+
+		.toggle .line1 {
+            transform: rotate(-45deg) translate(-5px, 6px);
+		}
+
+		.toggle .line2 {
+            opacity: 0;
+		}
+
+		.toggle .line3 {
+            transform: rotate(45deg) translate(-5px, -6px);
+		}
+		/* ------------------------------------------------ */
+		/* ------------------------------------------------------------ */
+
+		.content {
+    		display: flex;
+	    	height: 80vh;
+		    justify-content: center;
+		    align-items: center;
+		}
+
+		.hero {
+            height: 90%;
+            width: 90%;
+            margin-top: 90px;
+		}
+
+		.hero p {
+            height: 100%;
+            width: 100%;
+            font-size: 350%;
+            font-weight: 300;
+		}
+
+		/* Projects Section */
+		.projects__section {
+            padding: 3%;
+            margin-bottom: 70px;
+		}
+
+		.projects__section .row h2 {
+            float: left;
+            font-size: 260%;
+            font-weight: 400;
+            color: #f1f1f1;
+            padding-bottom: 20px;
+		}
+
+		.projects__section .row .col {
+            margin-bottom: 50px;
+            border-radius: .3em;
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+		}
+
+		.projects__section .row .col a img {
+            padding: 10px;
+            height: 300px;
+		}
+
+		.projects__section .row .col p {
+            text-align: left;
+            font-size: 60%;
+            padding-bottom: 10px;
+            margin-left: 10px;
+            color: #f1f1f1;
+		}
+
+		.projects__section .row .col p.skill {
+            font-size: 80%;
+            font-weight: 700;
+            color: #000;
+            margin-bottom: 10px;
+		}
+		/* ---------------------------------- */
+
+		/* -------- Footer Section ------ */
+		.footer .row .col {
+            padding: 5%;
+            font-size: 70%;
+		}
+
+		.contacts {
+            text-decoration: underline;
+		}
+
+		.socials {
+            color: #999;
+		}
+
+		.socials a {
+            color: #999;
+		}
+		/* ------------------------------ */
+
+		/* ------------------------------------------------------------------------------- */
+
+        /* --------THE APPROACH PAGE ---------------------- */
+        .header__section {
+            height: 4vh;
+        }
+
+        .approach__section {
+            padding: 4%;
+        }
+
+        .approach__section .row {
+            margin-bottom: 70px;
+        }
+        
+        .approach__section .row p {
+            font-size: 260%;
+        }
+        
+        .approach__section .row .white {
+            font-size: 300%;
+            font-weight: 600;
+            color: #ffffff;
+        }
+
+        .approach__section .row .col {
+            padding: 1%;
+        }
+
+        .approach__section .row .col h2 {
+            margin-bottom: 30px;
+            font-weight: 200;
+        }
+
+        .approach__section .row .col p {
+            font-size: 80%;
+        }
+
+        .approach__section .row__fluid {
+            margin: auto;
+            margin-bottom: 180px;
+        }
+
+        .approach__section .row .col .section__one {
+            margin-bottom: 30px;
+        }
+
+        /* --------THE SERVICES PAGE ---------------------- */
+        .services__section {
+            margin-bottom: 120px;
+        }
+
+        .services__section .row p {
+            font-size: 260%;
+        }
+        
+        .services__section .row .white {
+            font-size: 280%;
+            font-weight: 600;
+            color: #ffffff;
+            margin-bottom: -30px;
+            margin-top: -10px;
+        }
+
+        .services__section .row .col {
+            padding: 1%;
+        }
+
+        .services__section .row .col h3 {
+            font-size: 180%;
+            font-weight: 600;
+            margin-bottom: 30px;
+        }
+
+        .services__section .row .col p {
+            font-size: 80%;
+        }
+
+        /* ---------- THE WORK PAGE -------------------------------- */
+        /* ------------- Footer Section------------ */
+        .works__footer {
+            padding-top: 180px;
+        }
+        /* ----------------------------------------- */
+
+        /* ---------- THE WORKDETAIL PAGE -------------------------- */
+        /* ------------------- Navigation ----------------- */
+        .work_detail_nav {
+            min-height: 6vh;
+            align-items: center;
+            position: fixed;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            z-index: 999;
+            background-color: #c5c5c5;
+        }
+
+        /* Logo */
+        #work_detail_logo {
+            font-size: 130%;
+            margin-right: 720px;
+        }
+
+        #work_detail_logo a {
+            text-decoration: none;
+            color: #000000;
+        }
+
+        /* --------------Projects Detail Section------------ */
+        .project_detail_section .wrapper {
+            padding: 3em;
+            display: grid;
+            grid-gap: 8em;
+            grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+        }
+
+        .project_detail_section .wrapper .project {
+            padding: 1em;
+            border-radius: .3em;
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        }
+
+        .project_detail_section .wrapper .project img {
+            width: 100%;
+        }
+
+        .project_detail_section .wrapper .project h2 {
+            font-size: 170%;
+            font-weight: 600;
+            color: #000000;
+            padding-bottom: 20px;
+            text-align: center;
+        }
+
+        .project_detail_section .wrapper .project p {
+            text-align: left;
+            font-size: 90%;
+            padding-bottom: 50px;
+            margin-left: 10px;
+            color: #f1f1f1;
+        }
+
+        .project_detail_section {
+            margin-bottom: 250px;
+        }
+        /* ----------------------------------------- */
+
+        /* -------------- CONTACT PAGE ------------- */
+        /* -----------------Contact Page----------------- */
+        .contact__section {
+            padding: 4%;
+        }
+
+        .contact__section .row {
+            margin-bottom: 60px;
+        }
+
+        .contact__section .row p {
+            font-size: 350%;
+        }
+
+        .contact__section .row .white {
+            color: #ffffff;
+        }
+
+        .contact__section .row .mail {
+            text-decoration: underline;
+        }
+}
+
+/* Landscape */
+@media only screen 
+	and (min-device-width: 375px) 
+	and (max-device-width: 812px) 
+	and (-webkit-min-device-pixel-ratio: 3)
+	and (orientation: landscape) {
+        /* MainCSS */
+		/* Re-usable components */
+		/* Row */
+		.row {
+			margin: 0 auto;
+		}
+
+		/* Header */
+		header {
+			height: 91vh;
+		}
+
+		/* ------------------- Navigation -------------------------- */
+		nav {
+			min-height: 10vh;
+			align-items: center;
+            position: fixed;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            z-index: 999;
+		}
+
+		/* Logo */
+		#logo {
+            font-size: 80%;
+            font-weight: 600;
+            margin-right: 570px;
+            cursor: hand;
+		}
+
+		#logo a {
+            text-decoration: none;
+            color: #000000;
+		}
+
+		.nav__links {
+            position: absolute;
+            justify-content: space-around;
+            width: 50%;
+            right: 0;
+            height: 90vh;
+            top: 10vh;
+            background-color: #000000;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            transform: translateX(100%);
+            transition: transform 0.3s ease-in;
+		}
+
+		.nav__links li {
+            list-style: none;
+            opacity: 0;
+		}
+
+		.nav__links a {
+            letter-spacing: 2px;
+            font-size: 200%;
+            font-weight: bold;
+            color: #ffffff;
+		}
+
+		/* ------------ Burger Menu ------------------------ */
+		.burger {
+            cursor: default;
+            display: block;
+		}
+
+		.burger div {
+            width: 25px;
+            height: 3px;
+            background-color: #000000;
+            margin: 5px;
+		}
+		/* ------------------------------------------------- */
+
+		.nav__active {
+            transform: translateX(0%);
+		}
+
+		/* -------- Animations ----------------------------- */
+		@keyframes navLinkFade {
+    		from {
+                opacity: 0;
+                transform: translateX(50px);
+            }
+    		to {
+	    		opacity: 1;
+		    	transform: translateX(0px);
+		    }   
+		}
+
+		.toggle .line1 {
+            transform: rotate(-45deg) translate(-5px, 6px);
+		}
+
+		.toggle .line2 {
+            opacity: 0;
+		}
+
+		.toggle .line3 {
+            transform: rotate(45deg) translate(-5px, -6px);
+		}
+		/* ------------------------------------------------ */
+		/* ------------------------------------------------------------ */
+
+		.content {
+    		display: flex;
+	    	height: 80vh;
+		    justify-content: center;
+		    align-items: center;
+		}
+
+		.hero {
+            height: 90%;
+            width: 90%;
+            margin-top: 90px;
+		}
+
+		.hero p {
+            height: 100%;
+            width: 100%;
+            font-size: 228%;
+            font-weight: 300;
+		}
+
+		/* Projects Section */
+		.projects__section {
+            padding: 3%;
+            margin-bottom: 70px;
+		}
+
+		.projects__section .row h2 {
+            float: left;
+            font-size: 200%;
+            font-weight: 400;
+            color: #f1f1f1;
+            padding-bottom: 20px;
+		}
+
+		.projects__section .row .col {
+            margin-bottom: 50px;
+            border-radius: .3em;
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+		}
+
+		.projects__section .row .col a img {
+            padding: 10px;
+            height: 300px;
+		}
+
+		.projects__section .row .col p {
+            text-align: left;
+            font-size: 60%;
+            padding-bottom: 10px;
+            margin-left: 10px;
+            color: #f1f1f1;
+		}
+
+		.projects__section .row .col p.skill {
+            font-size: 80%;
+            font-weight: 700;
+            color: #000;
+            margin-bottom: 10px;
+		}
+		/* ---------------------------------- */
+
+		/* -------- Footer Section ------ */
+		.footer .row .col {
+            padding: 5%;
+            font-size: 70%;
+		}
+
+		.contacts {
+            text-decoration: underline;
+		}
+
+		.socials {
+            color: #999;
+		}
+
+		.socials a {
+            color: #999;
+		}
+		/* ------------------------------ */
+
+		/* ------------------------------------------------------------------------------- */
+
+        /* --------THE APPROACH PAGE ---------------------- */
+        .header__section {
+            height: 4vh;
+        }
+
+        .approach__section {
+            padding: 4%;
+        }
+
+        .approach__section .row {
+            margin-bottom: 70px;
+        }
+        
+        .approach__section .row .white {
+            font-size: 250%;
+            font-weight: 600;
+            color: #ffffff;
+            margin-bottom: -50px;
+        }
+        
+        .approach__section .row p {
+            font-size: 167%;
+        }
+        
+        .approach__section .row .col {
+            padding: 1%;
+        }
+
+        .approach__section .row .col p {
+            font-size: 80%;
+        }
+
+        .approach__section .row__fluid {
+            margin: auto;
+            margin-bottom: 180px;
+        }
+
+        /* --------THE SERVICES PAGE ---------------------- */
+        .services__section {
+            margin-bottom: 40px;
+        }
+
+        .services__section .row .white {
+            font-size: 230%;
+            font-weight: 600;
+            color: #ffffff;
+            margin-bottom: -30px;
+            margin-top: -10px;
+        }
+
+        .services__section .row p {
+            font-size: 220%;
+        }
+
+        .services__section .row .col {
+            padding: 1%;
+        }
+
+        .services__section .row .col h3 {
+            font-size: 180%;
+            font-weight: 600;
+            margin-bottom: 30px;
+        }
+
+        .services__section .row .col p {
+            font-size: 80%;
+        }
+
+        /* ---------- THE WORK PAGE ----------------------- */
+        /* -------------- Projects Section ------------ */
+        .works__section .row h2 {
+            font-size: 200%;
+            font-weight: 600;
+            color: #f1f1f1;
+            padding-top: 60px;
+            padding-bottom: -80px;
+            text-align: center;
+        }
+        
+        /* ------------- Footer Section ------------ */
+        .works__footer {
+            padding-top: 180px;
+        }
+        /* ----------------------------------------- */
+
+        /* ---------- THE WORKDETAIL PAGE -------------------------- */
+        /* ------------------- Navigation ----------------- */
+        .work_detail_nav {
+            min-height: 12vh;
+            align-items: center;
+            position: fixed;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            z-index: 999;
+            background-color: #c5c5c5;
+        }
+
+        /* Logo */
+        #work_detail_logo {
+            font-size: 70%;
+            font-weight: 600;
+            margin-right: 820px;
+        }
+
+        #work_detail_logo a {
+            text-decoration: none;
+            color: #000000;
+        }
+
+        /* --------------Projects Detail Section------------ */
+        .project_detail_section .wrapper {
+            margin-top: 30px;
+            padding: 1em;
+            display: grid;
+            grid-gap: 2em;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        }
+
+        .project_detail_section .wrapper .project {
+            padding: 1.5em;
+            border-radius: .3em;
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        }
+
+        .project_detail_section .wrapper .project img {
+            width: 100%;
+        }
+
+        .project_detail_section .wrapper .project h2 {
+            font-size: 90%;
+            font-weight: 600;
+            color: #000000;
+            /* padding-bottom: 20px; */
+            text-align: center;
+        }
+
+        .project_detail_section .wrapper .project p {
+            text-align: left;
+            font-size: 50%;
+            padding-bottom: 50px;
+            margin-left: 10px;
+            color: #f1f1f1;
+        }
+        /* ----------------------------------------- */
+
+        /* -------------- CONTACT PAGE ------------- */
+        /* -----------------Contact Page----------------- */
+        .contact__section {
+            padding: 4%;
+        }
+
+        .contact__section .row {
+            margin-bottom: 60px;
+        }
+
+        .contact__section .row p {
+            font-size: 333%;
+        }
+
+        .contact__section .row .white {
+            color: #ffffff;
+        }
+
+        .contact__section .row .mail {
+            text-decoration: underline;
+        }
+}
+
+/* -------------------------------------------------- */
+
+/* --------------------- Tablets -------------------- */
+/* ----------------- iPad ---------------- */
+/* ----------- iPad 1, 2, 3 and Air ----------- */
+/* Portrait */
+@media only screen 
+	and (min-device-width: 768px) 
+	and (max-device-width: 1024px) 
+	and (orientation: portrait) 
+	and (-webkit-min-device-pixel-ratio: 1) {
+        /* MainCSS */
+		/* Re-usable components */
+		/* Row */
+		.row {
+			margin: 0 auto;
+		}
+
+		/* Header */
+		header {
+			height: 60vh;
+		}
+
+		/* ------------------- Navigation -------------------------- */
+		nav {
+			min-height: 6vh;
+			align-items: center;
+            position: fixed;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            z-index: 999;
+		}
+
+		/* Logo */
+		#logo {
+            font-size: 70%;
+            font-weight: bold;
+            margin-right: 410px;
+            cursor: hand;
+		}
+
+		#logo a {
+            text-decoration: none;
+            color: #000000;
+		}
+
+		.nav__links {
+            position: absolute;
+            justify-content: space-around;
+            width: 100%;
+            right: 0;
+            height: 57.6vh;
+            top: 6vh;
+            background-color: #000000;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            transform: translateX(100%);
+            transition: transform 0.3s ease-in;
+		}
+
+		.nav__links li {
+            list-style: none;
+            opacity: 0;
+		}
+
+		.nav__links a {
+            letter-spacing: 2px;
+            font-size: 200%;
+            font-weight: bold;
+            color: #ffffff;
+		}
+
+		/* ------------ Burger Menu ------------------------ */
+		.burger {
+            cursor: default;
+            display: block;
+		}
+
+		.burger div {
+            width: 25px;
+            height: 3px;
+            background-color: #000000;
+            margin: 5px;
+		}
+		/* ------------------------------------------------- */
+
+		.nav__active {
+            transform: translateX(0%);
+		}
+
+		/* -------- Animations ----------------------------- */
+		@keyframes navLinkFade {
+    		from {
+                opacity: 0;
+                transform: translateX(50px);
+            }
+    		to {
+	    		opacity: 1;
+		    	transform: translateX(0px);
+		    }   
+		}
+
+		.toggle .line1 {
+            transform: rotate(-45deg) translate(-5px, 6px);
+		}
+
+		.toggle .line2 {
+            opacity: 0;
+		}
+
+		.toggle .line3 {
+            transform: rotate(45deg) translate(-5px, -6px);
+		}
+		/* ------------------------------------------------ */
+		/* ------------------------------------------------------------ */
+
+		.content {
+    		display: flex;
+	    	height: 80vh;
+		    justify-content: center;
+		    align-items: center;
+		}
+
+		.hero {
+            height: 90%;
+            width: 90%;
+            margin-top: 50px;
+		}
+
+		.hero p {
+            height: 100%;
+            width: 100%;
+            font-size: 225%;
+            font-weight: 300;
+		}
+
+		/* Projects Section */
+		.projects__section {
+            padding: 3%;
+            margin-bottom: 70px;
+		}
+
+		.projects__section .row h2 {
+            float: left;
+            font-size: 240%;
+            font-weight: 400;
+            color: #f1f1f1;
+            padding-bottom: 20px;
+		}
+
+		.projects__section .row .col {
+            margin-bottom: 50px;
+            border-radius: .3em;
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+		}
+
+		.projects__section .row .col a img {
+            padding: 20px;
+            height: 250px;
+		}
+
+		.projects__section .row .col p {
+            text-align: left;
+            font-size: 50%;
+            padding-bottom: 10px;
+            margin-left: 10px;
+            color: #f1f1f1;
+		}
+
+		.projects__section .row .col p.skill {
+            font-size: 80%;
+            font-weight: 700;
+            color: #000;
+            margin-bottom: 10px;
+		}
+		/* ---------------------------------- */
+
+		/* -------- Footer Section ------ */
+		.footer .row .col {
+            padding: 5%;
+            font-size: 50%;
+		}
+
+		.contacts {
+            text-decoration: underline;
+		}
+
+		.socials {
+            color: #999;
+		}
+
+		.socials a {
+            color: #999;
+		}
+		/* ------------------------------ */
+
+		/* ------------------------------------------------------------------------------- */
+
+        /* --------THE APPROACH PAGE ---------------------- */
+        .header__section {
+            height: 4vh;
+        }
+
+        /* .approach__section {
+            padding: 4%;
+        } */
+
+        .approach__section .row {
+            margin-bottom: 20px;
+            margin-top: -10px;
+        }
+        
+        .approach__section .row p {
+            font-size: 180%;
+        }
+        
+        .approach__section .row .white {
+            font-size: 250%;
+            font-weight: 600;
+            color: #ffffff;
+        }
+
+        .approach__section .row .col {
+            padding: 1%;
+        }
+
+        .approach__section .row .col p {
+            font-size: 80%;
+        }
+
+        .approach__section .row__fluid {
+            margin: auto;
+            margin-bottom: 180px;
+        }
+
+        .approach__section .row .col .section__one {
+            margin-bottom: 30px;
+        }
+
+        /* --------THE SERVICES PAGE ---------------------- */
+        .services__section {
+            margin-bottom: 80px;
+        }
+
+        .services__section .row {
+            margin-bottom: 5px;
+            margin-top: -20px;
+        }
+
+        .services__section .row p {
+            font-size: 180%;
+        }
+        
+        .services__section .row .white {
+            font-size: 250%;
+            font-weight: 600;
+            color: #ffffff;
+        }
+
+        .services__section .row .col {
+            padding: 1%;
+        }
+
+        .services__section .row .col h3 {
+            font-size: 150%;
+            font-weight: 600;
+            margin-bottom: 30px;
+            color: #ffffff;
+        }
+
+        .services__section .row .col p {
+            font-size: 50%;
+        }
+
+        /* ---------- THE WORK PAGE -------------------------------- */
+        .works__section .row h2 {
+        	font-size: 200%;
+	        font-weight: 600;
+            color: #f1f1f1;
+            margin-top: 40px;
+            margin-bottom: -60px;
+            text-align: center;
+        }
+
+        .works__section .wrapper {
+            padding: 6em;
+            display: grid;
+            grid-gap: 2em;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+        }
+
+        /* ---------- THE WORKDETAIL PAGE -------------------------- */
+        /* ------------------- Navigation ----------------- */
+        .work_detail_nav {
+            min-height: 6vh;
+            align-items: center;
+            position: fixed;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            z-index: 999;
+            background-color: #c5c5c5;
+        }
+
+        /* Logo */
+        #work_detail_logo {
+            font-size: 80%;
+            margin-right: 620px;
+        }
+
+        #work_detail_logo a {
+            text-decoration: none;
+            color: #000000;
+        }
+
+        /* --------------Projects Detail Section------------ */
+        .project_detail_section .wrapper {
+            padding: 6em;
+            display: grid;
+            grid-gap: 2em;
+            grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+        }
+
+        .project_detail_section .wrapper .project {
+            padding: 1em;
+            border-radius: .3em;
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        }
+
+        .project_detail_section .wrapper .project img {
+            width: 100%;
+        }
+
+        .project_detail_section .wrapper .project h2 {
+            font-size: 120%;
+            font-weight: 600;
+            color: #000000;
+            padding-bottom: 20px;
+            text-align: center;
+        }
+
+        .project_detail_section .wrapper .project p {
+            text-align: left;
+            font-size: 60%;
+            padding-bottom: 50px;
+            margin-left: 10px;
+            color: #f1f1f1;
+        }
+
+        .project_detail_section {
+            margin-bottom: 250px;
+        }
+        /* ----------------------------------------- */
+
+        /* -------------- CONTACT PAGE ------------- */
+        /* -----------------Contact Page----------------- */
+        .contact__section {
+            padding: 4%;
+        }
+
+        .contact__section .row {
+            margin-bottom: 60px;
+        }
+
+        .contact__section .row p {
+            font-size: 280%;
+        }
+
+        .contact__section .row .white {
+            color: #ffffff;
+        }
+
+        .contact__section .row .mail {
+            text-decoration: underline;
+        }
+}
+
+/* Landscape */
+@media only screen 
+	and (min-device-width: 768px) 
+	and (max-device-width: 1024px) 
+	and (orientation: landscape) 
+	and (-webkit-min-device-pixel-ratio: 1) {
+        /* MainCSS */
+		/* Re-usable components */
+		/* Row */
+		.row {
+			margin: 0 auto;
+		}
+
+		/* Header */
+		header {
+			height: 69vh;
+		}
+
+		/* ------------------- Navigation -------------------------- */
+		nav {
+			min-height: 7vh;
+			align-items: center;
+            position: fixed;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            z-index: 999;
+		}
+
+		/* Logo */
+		#logo {
+            font-size: 70%;
+            font-weight: bold;
+            margin-right: 700px;
+            cursor: hand;
+		}
+
+		#logo a {
+            text-decoration: none;
+            color: #000000;
+		}
+
+		.nav__links {
+            position: absolute;
+            justify-content: space-around;
+            width: 100%;
+            right: 0;
+            height: 74vh;
+            top: 7vh;
+            background-color: #000000;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            transform: translateX(100%);
+            transition: transform 0.3s ease-in;
+		}
+
+		.nav__links li {
+            list-style: none;
+            opacity: 0;
+		}
+
+		.nav__links a {
+            letter-spacing: 2px;
+            font-size: 200%;
+            font-weight: bold;
+            color: #ffffff;
+		}
+
+		/* ------------ Burger Menu ------------------------ */
+		.burger {
+            cursor: default;
+            display: block;
+		}
+
+		.burger div {
+            width: 25px;
+            height: 3px;
+            background-color: #000000;
+            margin: 5px;
+		}
+		/* ------------------------------------------------- */
+
+		.nav__active {
+            transform: translateX(0%);
+		}
+
+		/* -------- Animations ----------------------------- */
+		@keyframes navLinkFade {
+    		from {
+                opacity: 0;
+                transform: translateX(50px);
+            }
+    		to {
+	    		opacity: 1;
+		    	transform: translateX(0px);
+		    }   
+		}
+
+		.toggle .line1 {
+            transform: rotate(-45deg) translate(-5px, 6px);
+		}
+
+		.toggle .line2 {
+            opacity: 0;
+		}
+
+		.toggle .line3 {
+            transform: rotate(45deg) translate(-5px, -6px);
+		}
+		/* ------------------------------------------------ */
+		/* ------------------------------------------------------------ */
+
+		.content {
+    		display: flex;
+	    	height: 100vh;
+		    justify-content: center;
+		    align-items: center;
+		}
+
+		.hero {
+            height: 90%;
+            width: 90%;
+		}
+
+		.hero p {
+            height: 100%;
+            width: 100%;
+            font-size: 260%;
+            font-weight: 300;
+		}
+
+		/* Projects Section */
+		.projects__section {
+            padding: 3%;
+            margin-bottom: 70px;
+		}
+
+		.projects__section .row h2 {
+            float: left;
+            font-size: 240%;
+            font-weight: 400;
+            color: #f1f1f1;
+            padding-bottom: 20px;
+		}
+
+		.projects__section .row .col {
+            margin-bottom: 50px;
+            border-radius: .3em;
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+		}
+
+		.projects__section .row .col a img {
+            padding: 20px;
+            height: 330px;
+		}
+
+		.projects__section .row .col p {
+            text-align: left;
+            font-size: 50%;
+            padding-bottom: 10px;
+            margin-left: 10px;
+            color: #f1f1f1;
+		}
+
+		.projects__section .row .col p.skill {
+            font-size: 80%;
+            font-weight: 700;
+            color: #000;
+            margin-bottom: 10px;
+		}
+		/* ---------------------------------- */
+
+		/* -------- Footer Section ------ */
+		.footer .row .col {
+            padding: 5%;
+            font-size: 50%;
+		}
+
+		.contacts {
+            text-decoration: underline;
+		}
+
+		.socials {
+            color: #999;
+		}
+
+		.socials a {
+            color: #999;
+		}
+		/* ------------------------------ */
+
+		/* ------------------------------------------------------------------------------- */
+
+        /* --------THE APPROACH PAGE ---------------------- */
+        .header__section {
+            height: 4vh;
+        }
+
+        .approach__section .row {
+            margin-top: -10px;
+        }
+        
+        .approach__section .row p {
+            font-size: 200%;
+        }
+        
+        .approach__section .row .white {
+            font-size: 250%;
+            font-weight: 600;
+            color: #ffffff;
+        }
+
+        .approach__section .row .col {
+            padding: 1%;
+        }
+
+        .approach__section .row .col p {
+            font-size: 80%;
+        }
+
+        .approach__section .row__fluid {
+            margin: auto;
+            margin-bottom: 100px;
+        }
+
+        .approach__section .row .col .section__one {
+            margin-bottom: 30px;
+        }
+
+        /* --------THE SERVICES PAGE ---------------------- */
+        .services__section {
+            margin-bottom: 80px;
+        }
+
+        .services__section .row {
+            margin-bottom: 5px;
+            margin-top: -20px;
+        }
+
+        .services__section .row p {
+            font-size: 200%;
+        }
+        
+        .services__section .row .white {
+            font-size: 250%;
+            font-weight: 600;
+            color: #ffffff;
+        }
+
+        .services__section .row .col {
+            padding: 1%;
+        }
+
+        .services__section .row .col h3 {
+            font-size: 180%;
+            font-weight: 600;
+            margin-bottom: 30px;
+            color: #ffffff;
+        }
+
+        .services__section .row .col p {
+            font-size: 80%;
+        }
+
+        /* ---------- THE WORK PAGE -------------------------------- */
+        .works__section .row h2 {
+        	font-size: 200%;
+	        font-weight: 600;
+            color: #f1f1f1;
+            margin-top: 40px;
+            margin-bottom: -60px;
+            text-align: center;
+        }
+
+        .works__section .wrapper {
+            padding: 3em;
+            display: grid;
+            grid-gap: 2em;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        }
+
+        /* ---------- THE WORKDETAIL PAGE -------------------------- */
+        /* ------------------- Navigation ----------------- */
+        .work_detail_nav {
+            min-height: 9vh;
+            align-items: center;
+            position: fixed;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            z-index: 999;
+            background-color: #c5c5c5;
+        }
+
+        /* Logo */
+        #work_detail_logo {
+            font-size: 70%;
+            margin-right: 820px;
+        }
+
+        #work_detail_logo a {
+            text-decoration: none;
+            color: #000000;
+        }
+
+        /* --------------Projects Detail Section------------ */
+        .project_detail_section .wrapper {
+            margin-top: 40px;
+            padding: 1em;
+            display: grid;
+            grid-gap: 1em;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        }
+
+        .project_detail_section .wrapper .project {
+            padding: 1em;
+            border-radius: .3em;
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        }
+
+        .project_detail_section .wrapper .project img {
+            width: 100%;
+        }
+
+        .project_detail_section .wrapper .project h2 {
+            font-size: 100%;
+            font-weight: 600;
+            color: #000000;
+            padding-bottom: 20px;
+            text-align: center;
+        }
+
+        .project_detail_section .wrapper .project p {
+            text-align: left;
+            font-size: 50%;
+            padding-bottom: 50px;
+            margin-left: 10px;
+            color: #f1f1f1;
+        }
+
+        /* .project_detail_section {
+            margin-bottom: 250px;
+        } */
+        /* ----------------------------------------- */
+
+        /* -------------- CONTACT PAGE ------------- */
+        /* -----------------Contact Page----------------- */
+        .contact__section .row {
+            margin-bottom: 60px;
+        }
+
+        .contact__section .row p {
+            font-size: 320%;
+        }
+
+        .contact__section .row .white {
+            color: #ffffff;
+        }
+
+        .contact__section .row .mail {
+            text-decoration: underline;
+        }
+}
+
+/* ----------- iPad Pro 12.9" ----------- */
+
+/* Portrait */
+@media only screen 
+	and (min-device-width: 1024px) 
+	and (max-device-width: 1366px)
+    and (orientation: portrait)
+	and (-webkit-min-device-pixel-ratio: 2) {
+        /* MainCSS */
+		/* Re-usable components */
+		/* Row */
+		.row {
+			margin: 0 auto;
+		}
+
+		/* Header */
+		header {
+			height: 40vh;
+		}
+
+		/* ------------------- Navigation -------------------------- */
+		nav {
+			min-height: 4vh;
+			align-items: center;
+            position: fixed;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            z-index: 999;
+		}
+
+		/* Logo */
+		#logo {
+            font-size: 70%;
+            font-weight: bold;
+            margin-right: 710px;
+            cursor: hand;
+		}
+
+		#logo a {
+            text-decoration: none;
+            color: #000000;
+		}
+
+		.nav__links {
+            position: absolute;
+            justify-content: space-around;
+            width: 50%;
+            right: 0;
+            height: 41.5vh;
+            top: 4vh;
+            background-color: #000000;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            transform: translateX(100%);
+            transition: transform 0.3s ease-in;
+		}
+
+		.nav__links li {
+            list-style: none;
+            opacity: 0;
+		}
+
+		.nav__links a {
+            letter-spacing: 2px;
+            font-size: 200%;
+            font-weight: bold;
+            color: #ffffff;
+		}
+
+		/* ------------ Burger Menu ------------------------ */
+		.burger {
+            cursor: default;
+            display: block;
+		}
+
+		.burger div {
+            width: 25px;
+            height: 3px;
+            background-color: #000000;
+            margin: 5px;
+		}
+		/* ------------------------------------------------- */
+
+		.nav__active {
+            transform: translateX(0%);
+		}
+
+		/* -------- Animations ----------------------------- */
+		@keyframes navLinkFade {
+    		from {
+                opacity: 0;
+                transform: translateX(50px);
+            }
+    		to {
+	    		opacity: 1;
+		    	transform: translateX(0px);
+		    }   
+		}
+
+		.toggle .line1 {
+            transform: rotate(-45deg) translate(-5px, 6px);
+		}
+
+		.toggle .line2 {
+            opacity: 0;
+		}
+
+		.toggle .line3 {
+            transform: rotate(45deg) translate(-5px, -6px);
+		}
+		/* ------------------------------------------------ */
+		/* ------------------------------------------------------------ */
+
+		.content {
+    		display: flex;
+	    	height: 100vh;
+		    justify-content: center;
+		    align-items: center;
+		}
+
+		.hero {
+            height: 90%;
+            width: 90%;
+            margin-top: 50px;
+		}
+
+		.hero p {
+            height: 100%;
+            width: 100%;
+            font-size: 260%;
+            font-weight: 300;
+		}
+
+		/* Projects Section */
+		.projects__section {
+            padding: 3%;
+            margin-bottom: 70px;
+		}
+
+		.projects__section .row h2 {
+            float: left;
+            font-size: 240%;
+            font-weight: 600;
+            color: #f1f1f1;
+            padding-bottom: 20px;
+		}
+
+		.projects__section .row .col {
+            margin-bottom: 50px;
+            border-radius: .3em;
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+		}
+
+		.projects__section .row .col a img {
+            padding: 20px;
+            height: 330px;
+		}
+
+		.projects__section .row .col p {
+            text-align: left;
+            font-size: 50%;
+            padding-bottom: 10px;
+            margin-left: 10px;
+            color: #f1f1f1;
+		}
+
+		.projects__section .row .col p.skill {
+            font-size: 80%;
+            font-weight: 700;
+            color: #000;
+            margin-bottom: 10px;
+		}
+		/* ---------------------------------- */
+
+		/* -------- Footer Section ------ */
+		.footer .row .col {
+            padding: 5%;
+            font-size: 50%;
+		}
+
+		.contacts {
+            text-decoration: underline;
+		}
+
+		.socials {
+            color: #999;
+		}
+
+		.socials a {
+            color: #999;
+		}
+		/* ------------------------------ */
+
+		/* ------------------------------------------------------------------------------- */
+
+        /* --------THE APPROACH PAGE ---------------------- */
+        .header__section {
+            height: 4vh;
+        }
+
+        .approach__section .row {
+            margin-bottom: 40px;
+            margin-top: 40px;
+        }
+        
+        .approach__section .row p {
+            font-size: 180%;
+        }
+        
+        .approach__section .row .white {
+            font-size: 250%;
+            font-weight: 600;
+            color: #ffffff;
+        }
+
+        .approach__section .row .col {
+            padding: 1%;
+        }
+
+        .approach__section .row .col p {
+            font-size: 80%;
+        }
+
+        .approach__section .row__fluid {
+            margin: auto;
+            margin-bottom: 180px;
+        }
+
+        .approach__section .row .col .section__one {
+            margin-bottom: 30px;
+        }
+
+        /* --------THE SERVICES PAGE ---------------------- */
+        .services__section {
+            margin-bottom: 80px;
+        }
+
+        .services__section .row {
+            margin-bottom: 5px;
+            margin-top: -20px;
+        }
+
+        .services__section .row p {
+            font-size: 190%;
+        }
+        
+        .services__section .row .white {
+            font-size: 250%;
+            font-weight: 600;
+            color: #ffffff;
+        }
+
+        .services__section .row .col {
+            padding: 1%;
+        }
+
+        .services__section .row .col h3 {
+            font-size: 170%;
+            font-weight: 600;
+            margin-bottom: 30px;
+            color: #ffffff;
+        }
+
+        .services__section .row .col p {
+            font-size: 70%;
+        }
+
+        /* ---------- THE WORK PAGE -------------------------------- */
+        .works__section .row h2 {
+        	font-size: 200%;
+	        font-weight: 600;
+            color: #f1f1f1;
+            margin-top: 20px;
+            margin-bottom: -40px;
+            text-align: center;
+        }
+
+        .works__section .wrapper {
+            padding: 2em;
+            display: grid;
+            grid-gap: 2em;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+        }
+
+        /* ---------- THE WORKDETAIL PAGE -------------------------- */
+        /* ------------------- Navigation ----------------- */
+        .work_detail_nav {
+            min-height: 6vh;
+            align-items: center;
+            position: fixed;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            z-index: 999;
+            background-color: #c5c5c5;
+        }
+
+        /* Logo */
+        #work_detail_logo {
+            font-size: 80%;
+            margin-right: 820px;
+        }
+
+        #work_detail_logo a {
+            text-decoration: none;
+            color: #000000;
+        }
+
+        /* --------------Projects Detail Section------------ */
+        .project_detail_section .wrapper {
+            margin-top: -60px;
+            padding: 8em;
+            display: grid;
+            grid-gap: 4em;
+            grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+        }
+
+        .project_detail_section .wrapper .project {
+            padding: 1em;
+            border-radius: .3em;
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        }
+
+        .project_detail_section .wrapper .project img {
+            width: 100%;
+        }
+
+        .project_detail_section .wrapper .project h2 {
+            font-size: 120%;
+            font-weight: 600;
+            color: #000000;
+            padding-bottom: 20px;
+            text-align: center;
+        }
+
+        .project_detail_section .wrapper .project p {
+            text-align: left;
+            font-size: 70%;
+            margin-left: 10px;
+            color: #f1f1f1;
+        }
+
+        .project_detail_section {
+            margin-bottom: 250px;
+        }
+        /* ----------------------------------------- */
+
+        /* -------------- CONTACT PAGE ------------- */
+        /* -----------------Contact Page----------------- */
+        .contact__section {
+            padding: 4%;
+        }
+
+        .contact__section .row {
+            margin-bottom: 80px;
+        }
+
+        .contact__section .row p {
+            font-size: 370%;
+        }
+
+        .contact__section .row .white {
+            color: #ffffff;
+        }
+
+        .contact__section .row .mail {
+            text-decoration: underline;
+        }
+}

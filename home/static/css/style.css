@@ -186,7 +186,7 @@ nav {
 /* -------- Footer Section ------ */
 .footer .row .col {
 	padding: 5%;
-	font-size: 70%;
+	font-size: 50%;
 }
 
 .contacts {
@@ -201,12 +201,3 @@ nav {
 	color: #999;
 }
 /* ------------------------------ */
-
-/* --------THE WORK PAGE ---------------------- */
-.header__section {
-	height: 7vh;
-}
-/* -------------------------------------------- */
-
-
-
