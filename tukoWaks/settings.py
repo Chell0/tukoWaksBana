@@ -12,6 +12,8 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 
 import os
 from pathlib import Path
+import django_heroku
+import dj_database_url
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -21,14 +23,22 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-m5mr=i+epidb*!a(+gy!k3es1+ec)70#0q0w$ehmu07-)ada$r'
+#SECRET_KEY = 'django-insecure-m5mr=i+epidb*!a(+gy!k3es1+ec)70#0q0w$ehmu07-)ada$r'
+
+#better to load key from environ
+SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'm5mr=i+epidb*!a(+gy!k3es1+ec)70#0q0w$ehmu07-)ada$r')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['testserver']
+#DEBUG = os.environ.get('DJANGO_DEBUG', '') != 'False'
 
+ALLOWED_HOSTS = []
 
+# heroku db config
+
+#db_from_env = dj_database_url.config(default='postgres://test@localhost/blog', conn_max_age=500)
+#DATABASES['default'].update(db_from_env)
 # Application definition
 
 INSTALLED_APPS = [
@@ -43,6 +53,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -127,11 +138,17 @@ MEDIA_URL = '/media/'
 # Path where media is stored
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
+
 STATICFILES_DIR = (
     os.path.join(BASE_DIR, 'statics'),
 )
 
+# simplified static file serving
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# heroku settiings
+django_heroku.settings(locals())

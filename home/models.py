@@ -11,6 +11,10 @@ class Project(models.Model):
     description = models.TextField(max_length=200)
     images = models.ImageField(upload_to="img")
 
+    class Meta:
+        verbose_name = 'project'
+        ordering = ['-project_id']
+
     def __str__(self):
         return self.title
    
