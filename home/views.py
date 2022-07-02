@@ -1,8 +1,8 @@
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404
 from .models import Project
 
 
-# Create your views here.
+# Views
 def home(request):
     """Get the home page"""
     return render(request, 'home.html')
@@ -14,14 +14,12 @@ def approach(request):
 def works(request):
     """Get all projects"""
     projects = Project.objects.all()
-    context = { 'projects': projects }
-    return render(request, 'works.html', context)
+    return render(request, 'works.html', { 'projects': projects })
 
-def work_detail(request, project_id):
+def work_detail(request, project_id: int) -> int:
     """Get a single project using the project id"""
-    project = Project.objects.get(pk=project_id)
-    context = { 'project': project }
-    return render(request, 'work_detail.html', context)
+    project = get_object_or_404(Project, pk=project_id)
+    return render(request, 'work_detail.html', {'project': project})
 
 def services(request):
     """Get the services page"""

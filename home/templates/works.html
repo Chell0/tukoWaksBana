@@ -25,18 +25,18 @@
 </div>
 
 <!-- Projects -->
-<section class="projects__section">
+<section class="works__section">
     <div class="row">
         <h2>Projects</h2>
     </div>
-    <div class="row">
+    <div class="wrapper">
         {% for project in projects %}
-        <div class="col " data-aos="fade-up" data-aos-duration="900">
+        <div class="projects" data-aos="fade-up" data-aos-duration="900">
             <a href="{% url 'home:work_detail' project.project_id %}">
                 <img src="{% static project.images %}">
             </a>
             <p class="skill">{{ project.title }}</p>
-            <p>{{ project.description }}</p>
+            <p>{{ project.description | slice:"200" }}...</p>
         </div>
         {% endfor %}
     </div>
@@ -70,16 +70,4 @@
         </div>
     </div>
 </section>
-
-<!-- Scripts -->
-<!-- AOS -->
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-    AOS.init({
-        offset: 400
-    });
-</script>
-
-<!-- JavaScript -->
-<script src="../static/js/app.js"></script>
 {% endblock %}
