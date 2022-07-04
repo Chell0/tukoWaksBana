@@ -29,16 +29,16 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'm5mr=i+epidb*!a(+gy!k3es1+ec)70#0q0w$ehmu07-)ada$r')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+#DEBUG = True
 
-#DEBUG = os.environ.get('DJANGO_DEBUG', '') != 'False'
+DEBUG = os.environ.get('DJANGO_DEBUG', '') != 'False'
 
 ALLOWED_HOSTS = []
 
 # heroku db config
 
-#db_from_env = dj_database_url.config(default='postgres://test@localhost/blog', conn_max_age=500)
-#DATABASES['default'].update(db_from_env)
+db_from_env = dj_database_url.config(default='postgres://test@localhost/blog', conn_max_age=500)
+DATABASES['default'].update(db_from_env)
 # Application definition
 
 INSTALLED_APPS = [
@@ -53,7 +53,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
-   # 'whitenoise.middleware.WhiteNoiseMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -151,4 +151,4 @@ STATICFILES_DIR = (
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # heroku settiings
-#django_heroku.settings(locals())
+django_heroku.settings(locals())
