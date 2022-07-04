@@ -33,7 +33,7 @@ SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'm5mr=i+epidb*!a(+gy!k3es1+ec)7
 
 DEBUG = os.environ.get('DJANGO_DEBUG', '') != 'False'
 
-ALLOWED_HOSTS = ['https://tukowaksbana.herokuapp.com']
+ALLOWED_HOSTS = ['0.0.0.0', 'https://tukowaksbana.herokuapp.com']
 
 # heroku db config
 
