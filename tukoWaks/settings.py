@@ -37,7 +37,7 @@ ALLOWED_HOSTS = ['tukowaksbana.herokuapp.com', '127.0.0.1']
 
 # heroku db config
 
-DATABASES={ 'default':  dj_database_url.config(default='postgres://test@localhost/blog', conn_max_age=500)}
+DATABASES={ 'default':  dj_database_url.config(conn_max_age=500)}
 #DATABASES['default'].update(db_from_env)
 # Application definition
 
