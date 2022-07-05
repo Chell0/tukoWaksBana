@@ -134,3 +134,7 @@ dmypy.json
 
 ../bin
 ../pyvenv.cfg
+
+venv
+*.pyc
+db.sqlite3
