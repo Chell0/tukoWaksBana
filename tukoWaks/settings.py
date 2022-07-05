@@ -35,10 +35,7 @@ DEBUG = os.environ.get('DJANGO_DEBUG', '') != 'False'
 
 ALLOWED_HOSTS = ['tukowaksbana.herokuapp.com', '127.0.0.1']
 
-# heroku db config
 
-DATABASES={ 'default':  dj_database_url.config(conn_max_age=500)}
-#DATABASES['default'].update(db_from_env)
 # Application definition
 
 INSTALLED_APPS = [
@@ -96,7 +93,9 @@ DATABASES = {
         'PORT': '5432',
     }
 }
-
+# heroku db
+db_from_env = dj_database_url.config(conn_max_age=600)
+DATABASES['default'].update(db_from_env)
 
 # Password validation
 # https://docs.djangoproject.com/en/4.0/ref/settings/#auth-password-validators
