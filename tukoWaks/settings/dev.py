@@ -149,4 +149,7 @@ STATICFILES_DIR = (
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 43f7252 (fix deployment issues)
