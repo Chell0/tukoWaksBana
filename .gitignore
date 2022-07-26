@@ -132,7 +132,7 @@ dmypy.json
 # DS_Store
 .DS_Store
 
-../bin
-../pyvenv.cfg
+/bin
+pyvenv.cfg
 __pycache__
 db.sqlite3
