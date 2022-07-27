@@ -21,8 +21,10 @@
         }
 
         body {
+            font-family: "Space Mono", monospace;
             padding: 0;
             margin: 0;
+            background-color: #858585;
         }
 
         #notfound {
@@ -40,7 +42,7 @@
         }
 
         .notfound {
-            max-width: 710px;
+            max-width: 900px;
             width: 100%;
             text-align: center;
             padding: 0px 15px;
@@ -48,37 +50,31 @@
         }
 
         .notfound .notfound-404 {
-            height: 200px;
             line-height: 200px;
         }
 
         .notfound .notfound-404 h1 {
-            font-family: 'Fredoka One', cursive;
-            font-size: 250px;
+            font-size: 350px;
             margin: 0;
-            color: #1e50dc;
+            color: #000000;
             text-transform: uppercase;
         }
 
         .notfound h2 {
-            font-family: 'Raleway', sans-serif;
-            font-size: 22px;
+            font-size: 28px;
             font-weight: 600;
-            color: #222;
-            margin-top: 40px;
+            color: #ffffff;
+            margin-top: 120px;
         }
 
         .notfound a {
             position: relative;
             display: inline-block;
             padding: 10px 25px;
-            background: #ff0562;
-            color: #fff;
             text-decoration: none;
-            margin-top: 25px;
-            border-radius: 25px;
-            border-bottom: 4px solid #d00d56;
+            margin-top: 28px;
             font-weight: 600;
+            color: #000000;
         }
 
         @media only screen and (max-width: 767px) {
@@ -102,7 +98,7 @@
             <div class="notfound-404">
                 <h1>404</h1>
             </div>
-            <h2>Oops, The Page you are looking for does not exit!</h2>
+            <h2><span>Ooops</span>, The Page you are looking for does not exit!</h2>
             <a href="{% url 'home:home' %}">Return To Homepage</a>
         </div>
     </div>
