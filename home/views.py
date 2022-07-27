@@ -11,9 +11,11 @@ def home(request):
     """Get the home page"""
     return render(request, 'home.html')
 
+
 def approach(request):
     """Get the approach page"""
     return render(request, 'approach.html')
+
 
 def works(request):
     """Get all projects"""
@@ -25,16 +27,22 @@ def work_detail(request, slug):
     project = get_object_or_404(Project, slug=slug)
     return render(request, 'work_detail.html', {'project': project})
 
+
 def services(request):
     """Get the services page"""
     return render(request, 'services.html')
+
 
 def contact(request):
     """Get the contact page"""
     return render(request, 'contact.html')
 
-# @require_GET
-# @cache_control(max_age=60 * 60 * 24, immutable=True, public=True)
-# def favicon(request: HttpRequest) -> HttpRequest:
-#     file = (settings.BASE_DIR / 'home' / 'static' / 'favicon.png').open('rb')
-#     return FileResponse(file)
+
+def page_not_found(request, exception):
+    """Get the 404 page"""
+    return render(request, '404.html', status=404)
+
+
+def server_error(request):
+    """Get the 500 page"""
+    return render(request, '500.html', status=500)
