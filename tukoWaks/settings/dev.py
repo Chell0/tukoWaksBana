@@ -33,7 +33,7 @@ DEBUG = True
 
 #DEBUG = os.environ.get('DJANGO_DEBUG', '') != 'False'
 
-ALLOWED_HOSTS = ['tukowaksbana.herokuapp.com']
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -51,6 +51,7 @@ INSTALLED_APPS = [
 MIDDLEWARE = [
     #'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.middleware.security.SecurityMiddleware',
+    #'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',

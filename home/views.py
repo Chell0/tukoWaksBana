@@ -1,5 +1,9 @@
 from django.shortcuts import render, get_object_or_404
 from .models import Project
+from django.conf import settings
+from django.http import FileResponse, HttpRequest, HttpResponse
+from django.views.decorators.cache import cache_control
+from django.views.decorators.http import require_GET
 
 
 # Views
@@ -18,10 +22,9 @@ def works(request):
     projects = Project.objects.all()
     return render(request, 'works.html', { 'projects': projects })
 
-
-def work_detail(request, project_id: int) -> int:
+def work_detail(request, slug):
     """Get a single project using the project id"""
-    project = get_object_or_404(Project, pk=project_id)
+    project = get_object_or_404(Project, slug=slug)
     return render(request, 'work_detail.html', {'project': project})
 
 

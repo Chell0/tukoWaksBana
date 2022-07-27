@@ -32,7 +32,7 @@
     <div class="wrapper">
         {% for project in projects %}
         <div class="projects" data-aos="fade-up" data-aos-duration="900">
-            <a href="{% url 'home:work_detail' project.project_id %}">
+            <a href="{% url 'home:work_detail' project.slug %}">
                 <img src="{% static project.images %}">
             </a>
             <p class="skill">{{ project.title }}</p>

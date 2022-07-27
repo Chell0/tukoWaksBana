@@ -136,8 +136,7 @@ dmypy.json
 pyvenv.cfg
 __pycache__
 db.sqlite3
-
+home/migrations/*
 home/.DS_Store
-home/migrations/.DS_Store
 home/static/.DS_Store
-media/.DS_Store
+home/static/img/.DS_Store
