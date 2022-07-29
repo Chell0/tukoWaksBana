@@ -1,10 +1,5 @@
 from django.shortcuts import render, get_object_or_404
 from .models import Project
-from django.conf import settings
-from django.http import FileResponse, HttpRequest, HttpResponse
-from django.views.decorators.cache import cache_control
-from django.views.decorators.http import require_GET
-
 
 # Views
 def home(request):
