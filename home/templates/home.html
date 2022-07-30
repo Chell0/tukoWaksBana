@@ -35,45 +35,20 @@
 </header>
 
 <!-- Projects -->
-<section class="projects__section">
+<section class="works__section">
     <div class="row">
         <h2>Selected projects</h2>
     </div>
-    <div class="row">
-        <div class="col span-1-of-2" data-aos="fade-up" data-aos-duration="900">
-            <a href="{% url 'home:works' %}">
-                <img src="../static/img/design.jpg" alt="Design photo">
+    <div class="wrapper">
+        {% for project in projects %}
+        <div class="projects" data-aos="fade-up" data-aos-duration="900">
+            <a href="{% url 'home:work_detail' project.slug %}">
+                <img src="{% static project.images %}">
             </a>
-            <p class="skill">Visual Design</p>
-            <p>Lorem ipsum dolor, sit amet consectetur. Lorem ipsum dolor, sit amet consectetur...
-            </p>
+            <p class="skill">{{ project.title }}</p>
+            <p>{{ project.description | slice:"200" }}...</p>
         </div>
-        <div class="col span-1-of-2" data-aos="fade-up" data-aos-duration="900">
-            <a href="{% url 'home:works' %}">
-                <img src="../static/img/web.jpg" alt="Web photo">
-            </a>
-            <p class="skill">Web Development</p>
-            <p>Lorem ipsum dolor, sit amet consectetur. Lorem ipsum dolor, sit amet consectetur...
-            </p>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col span-1-of-2" data-aos="fade-up" data-aos-duration="900">
-            <a href="{% url 'home:works' %}">
-                <img src="../static/img/web.jpg" alt="Design photo">
-            </a>
-            <p class="skill">Graphic Design</p>
-            <p>Lorem ipsum dolor, sit amet consectetur. Lorem ipsum dolor, sit amet consectetur...
-            </p>
-        </div>
-        <div class="col span-1-of-2" data-aos="fade-up" data-aos-duration="900">
-            <a href="{% url 'home:works' %}">
-                <img src="../static/img/design.jpg" alt="Web photo">
-            </a>
-            <p class="skill">Wire Framing</p>
-            <p>Lorem ipsum dolor, sit amet consectetur. Lorem ipsum dolor, sit amet consectetur...
-            </p>
-        </div>
+        {% endfor %}
     </div>
 </section>
 

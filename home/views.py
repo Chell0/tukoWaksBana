@@ -3,8 +3,9 @@ from .models import Project
 
 # Views
 def home(request):
-    """Get the home page"""
-    return render(request, 'home.html')
+    """Get selected projects on the home page"""
+    projects = Project.objects.all()[:4]
+    return render(request, 'home.html', {'projects': projects})
 
 
 def approach(request):
@@ -15,7 +16,8 @@ def approach(request):
 def works(request):
     """Get all projects"""
     projects = Project.objects.all()
-    return render(request, 'works.html', { 'projects': projects })
+    return render(request, 'works.html', {'projects': projects})
+
 
 def work_detail(request, slug):
     """Get a single project using the project id"""
@@ -35,7 +37,7 @@ def contact(request):
 
 def page_not_found(request, exception):
     """Get the 404 page"""
-    return render(request, '404.html', status=404)
+    return render(request, exception, '404.html', status=404)
 
 
 def server_error(request):
