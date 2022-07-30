@@ -8,8 +8,9 @@ from django.views.decorators.http import require_GET
 
 # Views
 def home(request):
-    """Get the home page"""
-    return render(request, 'home.html')
+    """Get selected projects on the home page"""
+    projects = Project.objects.all()[:4]
+    return render(request, 'home.html', {'projects': projects})
 
 
 def approach(request):
@@ -20,7 +21,8 @@ def approach(request):
 def works(request):
     """Get all projects"""
     projects = Project.objects.all()
-    return render(request, 'works.html', { 'projects': projects })
+    return render(request, 'works.html', {'projects': projects})
+
 
 def work_detail(request, slug):
     """Get a single project using the project id"""
@@ -38,7 +40,7 @@ def contact(request):
     return render(request, 'contact.html')
 
 
-def page_not_found(request, exception):
+def page_not_found(request):
     """Get the 404 page"""
     return render(request, '404.html', status=404)
 
