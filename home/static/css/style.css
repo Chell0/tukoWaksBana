@@ -5,7 +5,7 @@
 }
 
 body {
-	background-color: #858585;
+	background-color: #C5C5C5;
 	font-family: "Space Mono", monospace;
 	font-weight: 200;
 	font-size: 21px;
@@ -27,7 +27,7 @@ header {
 /* ------------------- Navigation -------------------------- */
 nav {
 	align-items: center;
-	background-color: #fff;
+	background-color: #C5C5C5;
 	display: flex;
 	justify-content: space-around;
 	min-height: 8vh;
@@ -44,14 +44,14 @@ nav {
 	cursor: hand;
 }
 
-#logo a {
+#logo a h3 {
 	text-decoration: none;
 	color: #000000;
 }
 
 .nav__links {
 	align-items: center;
-	background-color: #000000;
+	background-color: #858585;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
@@ -141,11 +141,11 @@ nav {
 }
 
 /* --------- Projects Section ----------- */
-.projects__section .row h2 {
-	float: left;
+.works__section .row h2 {
+	text-align: center;
 	font-size: 240%;
 	font-weight: 400;
-	color: #f1f1f1;
+	color: #ffffff;
 	padding-bottom: 20px;
 }
 
@@ -186,24 +186,20 @@ nav {
 /* -------- Footer Section ------ */
 .footer .row .col {
 	padding: 5%;
-	font-size: 70%;
 }
 
-.contacts {
+.footer .row .col p {
+    font-size: 55%;
+    color: #000;
+}
+
+.footer .row .col p.contacts {
 	text-decoration: underline;
-}
-
-.socials {
-	color: #999;
+	color: #fff;
 }
 
 .socials a {
-	color: #999;
+	text-decoration: none;
+	color: #fff;
 }
 /* ------------------------------ */
-
-/* --------THE WORK PAGE ---------------------- */
-.header__section {
-	height: 7vh;
-}
-/* -------------------------------------------- */

@@ -1,172 +1,25 @@
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-}
-
-body {
-	font-family: "Space Mono", monospace;
-	/* font-family: "Spectral", serif; */
-	font-weight: 200;
-	font-size: 21px;
-	text-rendering: optimizeLegibility;
-	overflow-x: hidden;
-	background-color: #c4c4c4;
-}
-
-/* Re-usable components */
-/* Row */
-.row {
-	margin: 0 auto;
-}
-
-/* Header */
-header {
-	height: 88vh;
-}
-
-/* ------------------- Navigation -------------------------- */
-nav {
-	background-color: #c4c4c4;
-	min-height: 8vh;
-	align-items: center;
-	position: fixed;
-	width: 100%;
-	display: flex;
-	justify-content: space-around;
-	z-index: 999;
-}
-
-/* Logo */
-#logo {
-	font-size: 80%;
-	font-weight: bold;
-	margin-right: 920px;
-	cursor: hand;
-}
-
-#logo a {
-	text-decoration: none;
-	color: #000000;
-}
-
-.nav__links {
-	position: absolute;
-	justify-content: space-around;
-	width: 50%;
-	right: 0;
-	height: 92vh;
-	top: 8vh;
-	background-color: #999999;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	transform: translateX(100%);
-	transition: transform 0.3s ease-in;
-}
-
-.nav__links li {
-	list-style: none;
-	opacity: 0;
-}
-
-.nav__links a {
-	letter-spacing: 2px;
-	font-size: 240%;
-	font-weight: bold;
-	color: #f1f1f1;
-}
-
-/* ------------ Burger Menu ------------------------ */
-.burger {
-	cursor: default;
-	display: block;
-}
-
-.burger div {
-	width: 25px;
-	height: 3px;
-	background-color: #000000;
-	margin: 5px;
-}
-/* ------------------------------------------------- */
-
-.nav__active {
-	transform: translateX(0%);
-}
-
-/* -------- Animations ----------------------------- */
-@keyframes navLinkFade {
-	from {
-		opacity: 0;
-		transform: translateX(50px);
-	}
-	to {
-		opacity: 1;
-		transform: translateX(0px);
-	}
-}
-
-.toggle .line1 {
-	transform: rotate(-45deg) translate(-5px, 6px);
-}
-
-.toggle .line2 {
-	opacity: 0;
-}
-
-.toggle .line3 {
-	transform: rotate(45deg) translate(-5px, -6px);
-}
-/* ------------------------------------------------ */
-/* ------------------------------------------------------------ */
-
 /* -----------------Contact Page----------------- */
 .contact__section {
 	padding: 4%;
 }
 
-.contact__section .row {
-	margin-bottom: 60px;
+.contact__section .row .white {
+	color: #ffffff;
+	font-size: 300%;
+	margin-bottom: 20px;
 }
 
 .contact__section .row p {
-	font-size: 280%;
-}
-
-.contact__section .row .white {
-	color: #ffffff;
+	font-size: 180%;
 }
 
 .contact__section .row .mail {
 	text-decoration: underline;
+	font-size: 150%;
+	margin-top: 20px;
 }
 
-/* -------- Footer Section ------ */
-.footer .row .col {
-	padding: 6%;
-	font-size: 80%;
+.contact__section .row .cell {
+	font-size: 150%;
 }
-
-.footer__section {
-	color: #000000;
-}
-
-.contacts {
-	text-decoration: underline;
-}
-
-.socials {
-	color: #8d8d8d;
-}
-
-.socials a {
-	color: #8d8d8d;
-}
-/* ------------------------------ */
-
-/* --------THE WORK PAGE ---------------------- */
-.header__section {
-	height: 7vh;
-}
-/* -------------------------------------------- */
+/* --------------------------------------------- */
