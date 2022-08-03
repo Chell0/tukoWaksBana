@@ -86,7 +86,7 @@ WSGI_APPLICATION = 'tukoWaks.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'blog',
+        'NAME': 'tukoworks',
         'USER': 'test',
         'PASSWORD': '',
         'HOST': 'localhost',

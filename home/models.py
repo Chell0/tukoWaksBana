@@ -15,7 +15,7 @@ class Project(models.Model):
     title = models.CharField(max_length=100, db_index=True)
     slug = models.SlugField(max_length=100, null=False, unique=True, db_index=True)
     description = models.TextField(max_length=200)
-    image = models.ImageField(upload_to="img")
+    image = models.ImageField(upload_to="img", null=True)
 
     class Meta:
         verbose_name = 'project'
