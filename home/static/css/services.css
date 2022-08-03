@@ -1,141 +1,14 @@
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-}
-
-body {
-	font-family: "Space Mono", monospace;
-	/* font-family: "Spectral", serif; */
-	font-weight: 200;
-	font-size: 21px;
-	text-rendering: optimizeLegibility;
-	overflow-x: hidden;
-	background-color: #858585;
-}
-
-/* Re-usable components */
-/* Row */
-.row {
-	margin: 0 auto;
-}
-
-/* Header */
-header {
-	height: 88vh;
-}
-
-/* ------------------- Navigation -------------------------- */
-nav {
-	background-color: #858585;
-	min-height: 8vh;
-	align-items: center;
-	position: fixed;
-	width: 100%;
-	display: flex;
-	justify-content: space-around;
-	z-index: 999;
-}
-
-/* Logo */
-#logo {
-	font-size: 80%;
-	font-weight: bold;
-	margin-right: 920px;
-	cursor: hand;
-}
-
-#logo a {
-	text-decoration: none;
-	color: #000000;
-}
-
-.nav__links {
-	position: absolute;
-	justify-content: space-around;
-	width: 50%;
-	right: 0;
-	height: 92vh;
-	top: 8vh;
-	background-color: #999999;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	transform: translateX(100%);
-	transition: transform 0.3s ease-in;
-}
-
-.nav__links li {
-	list-style: none;
-	opacity: 0;
-}
-
-.nav__links a {
-	letter-spacing: 2px;
-	font-size: 240%;
-	font-weight: bold;
-	color: #000000;
-}
-
-/* ------------ Burger Menu ------------------------ */
-.burger {
-	cursor: default;
-	display: block;
-}
-
-.burger div {
-	width: 25px;
-	height: 3px;
-	background-color: #000000;
-	margin: 5px;
-}
-/* ------------------------------------------------- */
-
-.nav__active {
-	transform: translateX(0%);
-}
-
-/* -------- Animations ----------------------------- */
-@keyframes navLinkFade {
-	from {
-		opacity: 0;
-		transform: translateX(50px);
-	}
-	to {
-		opacity: 1;
-		transform: translateX(0px);
-	}
-}
-
-.toggle .line1 {
-	transform: rotate(-45deg) translate(-5px, 6px);
-}
-
-.toggle .line2 {
-	opacity: 0;
-}
-
-.toggle .line3 {
-	transform: rotate(45deg) translate(-5px, -6px);
-}
-/* ------------------------------------------------ */
-/* ------------------------------------------------------------ */
-
-/* --------THE SERVICES PAGE ---------------------- */
-.header__section {
-	height: 8vh;
-}
-
+/* -------------- THE SERVICES PAGE ---------------- */
 .services__section {
 	padding: 4%;
 }
 
 .services__section .row {
-	margin-bottom: 60px;
+	margin-bottom: 10px;
 }
 
 .services__section .row p {
-	font-size: 280%;
+	font-size: 250%;
 }
 
 .services__section .row .white {
@@ -148,33 +21,18 @@ nav {
 
 .services__section .row h2 {
 	margin-bottom: 30px;
-	font-size: 280%;
+	font-size: 300%;
+	color: #ffffff;
+}
+
+.services__section .row .col h4 {
+	font-size: 200%;
 	font-weight: 200;
+	margin-bottom: 20px;
+	color: #ffffff;
 }
 
 .services__section .row .col p {
-	font-size: 80%;
+	font-size: 70%;
 }
-
-/* -------- Footer Section ------ */
-.footer .row .col {
-	padding: 6%;
-	font-size: 80%;
-}
-
-.footer__section {
-	color: #000000;
-}
-
-.contacts {
-	text-decoration: underline;
-}
-
-.socials {
-	color: #ffffff;
-}
-
-.socials a {
-	color: #ffffff;
-}
-/* -------------------------------------------- */
+/* ----------------------------------------------- */
