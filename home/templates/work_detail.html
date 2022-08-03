@@ -28,7 +28,7 @@
 <section class="project_detail_section">
     <div class="wrapper">
         <div class="project" data-aos="fade-up" data-aos-duration="900">
-            <img src="{% static project.images %}" alt="Design photo">
+            <img src="{{project.image.url }}" alt="Design photo">
         </div>
         <div class="project" data-aos="fade-up" data-aos-duration="900">
             <h2>{{ project.title }}</h2>
