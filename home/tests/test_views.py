@@ -8,7 +8,7 @@ from home.models import Project
 class ProjectListViewTest(TestCase):
     @classmethod
     def setUpTestData(cls) -> None:        
-       Project.objects.create(project_id=1, title='project test', slug='project-test', description='project one description')   
+       Project.objects.create(project_id=1, title='project test', slug='project-test', description='project one description', image='/media/img/1')   
 
     def test_view_url_is_at_correct_place(self):
         response = self.client.get('/works/')
