@@ -7,7 +7,7 @@ class ProjectModelTest(TestCase):
     @classmethod
     def setUpTestData(cls) -> None:
        # return super().setUpTestData()
-       Project.objects.create(project_id=1, title='project test', slug='project-test', description='project one description')
+       Project.objects.create(project_id=1, title='project test', slug='project-test', description='project one description', image='/media/img/1')
 
     
     def test_project_id(self):
@@ -29,6 +29,11 @@ class ProjectModelTest(TestCase):
         description = Project.objects.get(project_id=1)
         max_len = description._meta.get_field('description').max_length
         self.assertEqual(max_len, 200)
+
+    def test_image(self):
+        _image = Project.objects.get(project_id=1)
+        _image_url = _image._meta.get_field('image').verbose_name
+        self.assertIsNotNone(_image_url, 'image')
 
     def test_get_absolute_url(self):
         _id = Project.objects.get(slug='project-test')
