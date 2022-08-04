@@ -17,7 +17,7 @@ jobs:
         environment:
           POSTGRES_USER: test
           POSTGRES_PASSWORD:
-          POSTGRES_DB: blog
+          POSTGRES_DB: tukoworks
     # Add steps to the job
     # See: https://circleci.com/docs/2.0/configuration-reference/#steps
     steps:
