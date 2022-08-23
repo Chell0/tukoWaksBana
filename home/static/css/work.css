@@ -1,9 +1,8 @@
 /* --------------Projects Section------------ */
 .works__section .row h1 {
 	font-size: 300%;
-	/* font-weight: 400; */
+	font-weight: 700;
 	color: #ffffff;
-	/* padding-bottom: 20px; */
 	margin-top: 40px;
 	text-align: center;
 }

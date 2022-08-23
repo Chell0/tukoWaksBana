@@ -8,7 +8,7 @@
 }
 
 .services__section .row p {
-	font-size: 250%;
+	font-size: 240%;
 }
 
 .services__section .row .col {
@@ -16,8 +16,8 @@
 }
 
 .services__section .row h2 {
-	margin-bottom: 30px;
 	font-size: 300%;
+	font-weight: 700;
 	color: #ffffff;
 }
 

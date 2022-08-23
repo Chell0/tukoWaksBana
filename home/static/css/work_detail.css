@@ -1,15 +1,15 @@
 /* ------------------- Navigation -------------------------- */
 /* Logo */
-#logo {
+#detail__logo {
 	font-size: 80%;
 	font-weight: bold;
-	margin-right: 920px;
+	margin-right: 1050px;
 	cursor: hand;
 }
 
-#logo a {
+#detail__logo a {
 	text-decoration: none;
-	color: #f1f1f1;
+	color: #000000;
 }
 
 /* --------------Projects Detail Section------------ */

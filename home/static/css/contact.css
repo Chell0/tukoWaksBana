@@ -6,11 +6,12 @@
 .contact__section .row .white {
 	color: #ffffff;
 	font-size: 300%;
+	font-weight: 700;
 	margin-bottom: 20px;
 }
 
 .contact__section .row p {
-	font-size: 180%;
+	font-size: 170%;
 }
 
 .contact__section .row .mail {

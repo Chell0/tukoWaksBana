@@ -44,7 +44,7 @@ nav {
 	cursor: hand;
 }
 
-#logo a h3 {
+#logo a {
 	text-decoration: none;
 	color: #000000;
 }
@@ -137,11 +137,11 @@ nav {
 	height: 100%;
 	width: 100%;
 	font-size: 300%;
-	font-weight: 300;
+	font-weight: 700;
 }
 
 /* --------- Projects Section ----------- */
-.works__section .row h2 {
+.selected__projects__section .row h2 {
 	text-align: center;
 	font-size: 240%;
 	font-weight: 400;
@@ -149,24 +149,24 @@ nav {
 	padding-bottom: 20px;
 }
 
-.works__section .wrapper {
+.selected__projects__section .wrapper {
     padding: 3em;
     display: grid;
     grid-gap: 2em;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
 }
 
-.works__section .wrapper .projects {
+.selected__projects__section .wrapper .projects {
     padding: 2em;
     border-radius: .3em;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
-.works__section .wrapper .projects a img {
+.selected__projects__section .wrapper .projects a img {
 	width: 100%;
 }
 
-.works__section .wrapper .projects p {
+.selected__projects__section .wrapper .projects p {
 	text-align: left;
 	font-size: 60%;
 	padding-bottom: 10px;
@@ -174,7 +174,7 @@ nav {
 	color: #f1f1f1;
 }
 
-.works__section .wrapper .projects p.skill {
+.selected__projects__section .wrapper .projects p.skill {
     padding-top: 10px;
 	font-size: 80%;
 	font-weight: 700;
