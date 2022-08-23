@@ -1,0 +1,2667 @@
+/* HANDHELD DEVICES */
+/* smartphones, iPhone, portrait 320x568 phones */
+@media screen and (min-width:320px) and (max-width:568px) {
+    /* HomePage */
+    /* Header */
+    header {
+        height: 93vh;
+    }
+
+    /* ------------------- Navigation -------------------------- */
+    nav {
+        align-items: center;
+        background-color: #C5C5C5;
+        display: flex;
+        justify-content: space-around;
+        min-height: 14vh;
+        position: fixed;
+        width: 100%;
+        z-index: 999;
+    }
+
+    /* Logo */
+    #logo {
+        font-size: 50%;
+        font-weight: bold;
+        margin-right: 70px;
+        cursor: hand;
+    }
+
+    #logo a {
+        text-decoration: none;
+        color: #000000;
+    }
+
+    .nav__links {
+        align-items: center;
+        background-color: #858585;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 87vh;
+        position: absolute;
+        width: 100%;
+        right: 0;
+        top: 13vh;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in;
+    }
+
+    .nav__links li {
+        list-style: none;
+        opacity: 0;
+    }
+
+    .nav__links a {
+        letter-spacing: 1px;
+        font-size: 140%;
+        font-weight: bold;
+        color: #ffffff;
+    }
+
+    /* ------------ Burger Menu ------------------------ */
+    .burger {
+        cursor: default;
+        display: block;
+    }
+
+    .burger div {
+        width: 25px;
+        height: 3px;
+        background-color: #000000;
+        margin: 5px;
+    }
+    /* ------------------------------------------------- */
+
+    .nav__active {
+        transform: translateX(0%);
+    }
+
+    /* -------- Animations ----------------------------- */
+    @keyframes navLinkFade {
+        from {
+            opacity: 0;
+            transform: translateX(50px);
+        }
+        to {
+            opacity: 1;
+            transform: translateX(0px);
+        }
+    }
+
+    .toggle .line1 {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+
+    .toggle .line2 {
+        opacity: 0;
+    }
+
+    .toggle .line3 {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
+    /* ------------------------------------------------ */
+
+    .content {
+        display: flex;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hero {
+        height: 80%;
+        width: 90%;
+        margin-top: 90px;
+    }
+
+    .hero p {
+        height: 100%;
+        width: 100%;
+        font-size: 140%;
+        font-weight: 300;
+    }
+
+    /* --------- Projects Section ----------- */
+    .selected__projects__section .row h2 {
+        text-align: center;
+        font-size: 120%;
+        font-weight: 600;
+        color: #ffffff;
+    }
+   
+    .selected__projects__section .wrapper {
+        padding: 2em;
+        display: grid;
+        grid-gap: 2em;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+    .selected__projects__section .wrapper .projects {
+        padding: 1em;
+        border-radius: .3em;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    }
+
+    .selected__projects__section .wrapper .projects a img {
+        width: 100%;
+    }
+
+    .selected__projects__section .wrapper .projects p {
+        text-align: left;
+        font-size: 50%;
+        padding-bottom: 10px;
+        margin-left: 10px;
+        color: #f1f1f1;
+    }
+
+    .selected__projects__section .wrapper .projects p.skill {
+        padding-top: 20px;
+        text-align: center;
+        font-size: 73%;
+        font-weight: 700;
+        color: #000000;
+        margin-bottom: 5px;
+    }
+    /* ----------------------------------------- */
+
+    /* -------- Footer Section ------ */
+    .footer .row .col {
+        padding: 5%;
+        text-align: center;
+    }
+
+    .footer .row .col p {
+        font-size: 50%;
+        color: #000000;
+    }
+
+    .footer .row .col p.contacts {
+        text-decoration: underline;
+        color: #ffffff;
+    }
+
+    .socials a {
+        text-decoration: none;
+        color: #ffffff;
+    }
+    /* ------------------------------ */
+
+    /* ApproachPage */
+    .header__section {
+        height: 12vh;
+    }
+
+    .approach__section {
+        padding: 7%;
+    }
+
+    .approach__section .row {
+        margin-bottom: 10px;
+    }
+
+    .approach__section .row h2 {
+        font-size: 170%;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+
+    .approach__section .row p {
+        font-size: 100%;
+    }
+
+    .approach__section .row .white {
+        color: #ffffff;
+    }
+
+    .approach__section .row .col {
+        padding: 5%;
+    }
+
+    .approach__section .row .col p {
+        font-size: 50%;
+    }
+
+    .approach__section .row .col .section__one {
+        margin-bottom: 20px;
+    }
+    /* ------------------------------------------------ */
+
+    /* ContactsPage */
+    .contact__section {
+        padding: 5%;
+    }
+
+    .contact__section .row .white {
+        color: #ffffff;
+        font-size: 130%;
+        margin-bottom: 20px;
+    }
+
+    .contact__section .row p {
+        font-size: 120%;
+    }
+
+    .contact__section .row .mail {
+        text-decoration: underline;
+        font-size: 100%;
+        margin-top: 20px;
+    }
+
+    .contact__section .row .cell {
+        font-size: 100%;
+    }
+    /* --------------------------------------------- */
+
+    /* ServicesPage */
+    .services__section {
+        padding: 5%;
+    }
+
+    .services__section .row {
+        margin-bottom: 5px;
+    }
+
+    .services__section .row p {
+        font-size: 100%;
+    }
+
+    .services__section .row .col {
+        padding: 1%;
+    }
+
+    .services__section .row h2 {
+        margin-bottom: 30px;
+        font-size: 140%;
+        color: #ffffff;
+    }
+
+    .services__section .row .col h4 {
+        font-size: 110%;
+        font-weight: 600;
+        margin-bottom: 10px;
+        color: #ffffff;
+    }
+
+    .services__section .row .col p {
+        font-size: 60%;
+        margin-bottom: 10px;
+    }
+    /* ----------------------------------------------- */
+
+    /* --------------Projects Section------------ */
+    .works__section .row h1 {
+        font-size: 130%;
+        color: #ffffff;
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .works__section .wrapper {
+        padding: 2em;
+        display: grid;
+        grid-gap: 2em;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
+    .works__section .wrapper .projects {
+        padding: 1em;
+        border-radius: .3em;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    }
+
+    .works__section .wrapper .projects a img {
+        width: 100%;
+    }
+
+    .works__section .wrapper .projects p {
+        text-align: left;
+        font-size: 40%;
+        padding-bottom: 10px;
+        margin-left: 10px;
+        color: #f1f1f1;
+    }
+
+    .works__section .wrapper .projects p.skill {
+        padding-top: 20px;
+        text-align: center;
+        font-size: 75%;
+        font-weight: 700;
+        color: #000000;
+        margin-bottom: 0px;
+    }
+    /* ---------------------------------------------- */
+
+    /* Work_detailsPage */
+    /* ------------------- Navigation -------------------------- */
+    /* Logo */
+    #detail__logo {
+        font-size: 65%;
+        font-weight: 700;
+        margin-right: 195px;
+        cursor: hand;
+    }
+
+    #detail__logo a {
+        text-decoration: none;
+        color: #000000;
+    }
+
+    /* --------------Projects Detail Section------------ */
+    .project_detail_section .wrapper {
+        padding: 1em;
+        display: grid;
+        grid-gap: 1em;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
+    .project_detail_section .wrapper .project {
+        padding: 1em;
+        border-radius: .3em;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    }
+
+    .project_detail_section .wrapper .project img {
+        width: 100%;
+    }
+
+    .project_detail_section .wrapper .project h2 {
+        font-size: 80%;
+        font-weight: 600;
+        color: #000000;
+        padding-bottom: 10px;
+        text-align: center;
+    }
+
+    .project_detail_section .wrapper .project p {
+        text-align: left;
+        font-size: 50%;
+        padding-bottom: 10px;
+        margin-left: 10px;
+        color: #f1f1f1;
+    }
+    /* ------------------------------------------------- */
+}
+
+/* Samsung Galaxy S5 360x640 */
+@media screen and (min-width:360px) and (max-width:640px) {
+    /* HomePage */
+    /* Header */
+    header {
+        height: 92vh;
+    }
+
+    /* ------------------- Navigation -------------------------- */
+    nav {
+        align-items: center;
+        background-color: #C5C5C5;
+        display: flex;
+        justify-content: space-around;
+        min-height: 13vh;
+        position: fixed;
+        width: 100%;
+        z-index: 999;
+    }
+
+    /* Logo */
+    #logo {
+        font-size: 55%;
+        font-weight: bold;
+        margin-right: 110px;
+        cursor: hand;
+    }
+
+    #logo a {
+        text-decoration: none;
+        color: #000000;
+    }
+
+    .nav__links {
+        align-items: center;
+        background-color: #858585;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 84.5vh;
+        position: absolute;
+        width: 100%;
+        right: 0;
+        top: 13vh;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in;
+    }
+
+    .nav__links li {
+        list-style: none;
+        opacity: 0;
+    }
+
+    .nav__links a {
+        letter-spacing: 1px;
+        font-size: 150%;
+        font-weight: 600;
+        color: #ffffff;
+    }
+
+    /* ------------ Burger Menu ------------------------ */
+    .burger {
+        cursor: default;
+        display: block;
+    }
+
+    .burger div {
+        width: 25px;
+        height: 3px;
+        background-color: #000000;
+        margin: 5px;
+    }
+    /* ------------------------------------------------- */
+
+    .nav__active {
+        transform: translateX(0%);
+    }
+
+    /* -------- Animations ----------------------------- */
+    @keyframes navLinkFade {
+        from {
+            opacity: 0;
+            transform: translateX(50px);
+        }
+        to {
+            opacity: 1;
+            transform: translateX(0px);
+        }
+    }
+
+    .toggle .line1 {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+
+    .toggle .line2 {
+        opacity: 0;
+    }
+
+    .toggle .line3 {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
+    /* ------------------------------------------------ */
+    /* ------------------------------------------------------------ */
+
+    .content {
+        display: flex;
+        height: 120vh;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hero {
+        height: 90%;
+        width: 90%;
+        margin-top: 100px;
+    }
+
+    .hero p {
+        height: 100%;
+        width: 100%;
+        font-size: 165%;
+        font-weight: 300;
+    }
+
+    /* --------------Projects Section------------ */
+    .selected__projects__section .row h2 {
+        text-align: center;
+        font-size: 130%;
+        font-weight: 600;
+        color: #ffffff;
+        padding-bottom: 5px;
+    }
+
+    .selected__projects__section .wrapper {
+        padding: 2em;
+        display: grid;
+        grid-gap: 2em;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+    .selected__projects__section .wrapper .projects {
+        padding: 1em;
+        border-radius: .3em;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    }
+
+    .selected__projects__section .wrapper .projects a img {
+        width: 100%;
+    }
+
+    .selected__projects__section .wrapper .projects p {
+        text-align: left;
+        font-size: 50%;
+        padding-bottom: 5px;
+        margin-left: 10px;
+        color: #f1f1f1;
+    }
+
+    .selected__projects__section .wrapper .projects p.skill {
+        padding-top: 10px;
+        text-align: center;
+        font-size: 80%;
+        font-weight: 700;
+        color: #000000;
+        margin-bottom: 10px;
+    }
+    /* ----------------------------------------- */
+
+    /* -------- Footer Section ------ */
+    .footer .row .col {
+        padding: 10%;
+    }
+
+    .footer .row .col p {
+        font-size: 55%;
+        color: #000000;
+    }
+
+    .footer .row .col p.contacts {
+        text-decoration: underline;
+        color: #ffffff;
+    }
+
+    .socials a {
+        text-decoration: none;
+        color: #ffffff;
+    }
+    /* ------------------------------ */
+
+    /* ApproachPage */
+    .header__section {
+        height: 9vh;
+    }
+
+    .approach__section {
+        padding: 7%;
+    }
+
+    .approach__section .row {
+        margin-bottom: 10px;
+    }
+
+    .approach__section .row h2 {
+        font-size: 170%;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+
+    .approach__section .row p {
+        font-size: 110%;
+    }
+
+    .approach__section .row .white {
+        color: #ffffff;
+    }
+
+    .approach__section .row .col {
+        padding: 3%;
+    }
+
+    .approach__section .row .col p {
+        font-size: 60%;
+        margin-bottom: 20px;
+    }
+
+    .approach__section .row .col .section__one {
+        margin-bottom: 20px;
+    }
+    /* ------------------------------------------------ */
+
+    /* ContactsPage */
+    .contact__section {
+        padding: 8%;
+    }
+
+    .contact__section .row .white {
+        color: #ffffff;
+        font-size: 135%;
+        font-weight: 600;
+        margin-bottom: 20px;
+    }
+
+    .contact__section .row p {
+        font-size: 140%;
+    }
+
+    .contact__section .row .mail {
+        text-decoration: underline;
+        font-size: 110%;
+        margin-top: 20px;
+    }
+
+    .contact__section .row .cell {
+        font-size: 110%;
+    }
+    /* --------------------------------------------- */
+
+    /* ServicesPage */
+    .services__section {
+        padding: 8%;
+    }
+
+    .services__section .row {
+        margin-bottom: 5px;
+    }
+
+    .services__section .row p {
+        font-size: 115%;
+    }
+
+    .services__section .row div {
+        display: grid;
+        grid-gap: 1em;
+        grid-template-columns: 300px;
+    }
+
+    .services__section .row h2 {
+        margin-bottom: 10px;
+        font-size: 160%;
+        color: #ffffff;
+    }
+
+    .services__section .row .col h4 {
+        font-size: 120%;
+        font-weight: 600;
+        margin-bottom: .1px;
+        color: #ffffff;
+    }
+
+    .services__section .row .col p {
+        font-size: 50%;
+    }
+    /* ----------------------------------------------- */
+
+    /* --------------Projects Section------------ */
+    .works__section .row h1 {
+        font-size: 130%;
+        font-weight: 600;
+        color: #ffffff;
+        margin-top: 30px;
+        text-align: center;
+    }
+
+    .works__section .wrapper {
+        padding: 2em;
+        display: grid;
+        grid-gap: 2em;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+    .works__section .wrapper .projects {
+        padding: 1em;
+        border-radius: .3em;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    }
+
+    .works__section .wrapper .projects a img {
+        width: 100%;
+    }
+
+    .works__section .wrapper .projects p {
+        text-align: left;
+        font-size: 45%;
+        padding-bottom: 10px;
+        margin-left: 10px;
+        color: #f1f1f1;
+    }
+
+    .works__section .wrapper .projects p.skill {
+        padding-top: 20px;
+        text-align: center;
+        font-size: 80%;
+        font-weight: 700;
+        color: #000000;
+    }
+    /* ---------------------------------------------- */
+
+    /* Work_detailsPage */
+    /* ------------------- Navigation -------------------------- */
+    /* Logo */
+    #detail__logo {
+        font-size: 70%;
+        font-weight: 700;
+        margin-right: 250px;
+        cursor: hand;
+    }
+
+    #detail__logo a {
+        text-decoration: none;
+        color: #000000;
+    }
+
+    /* --------------Projects Detail Section------------ */
+    .project_detail_section .wrapper {
+        padding: 2em;
+        display: grid;
+        grid-gap: 2em;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
+    .project_detail_section .wrapper .project {
+        padding: 1em;
+        border-radius: .3em;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    }
+
+    .project_detail_section .wrapper .project img {
+        width: 100%;
+    }
+
+    .project_detail_section .wrapper .project h2 {
+        font-size: 70%;
+        font-weight: 600;
+        color: #000000;
+        padding-bottom: 10px;
+        text-align: center;
+    }
+
+    .project_detail_section .wrapper .project p {
+        text-align: left;
+        font-size: 50%;
+        padding-bottom: 10px;
+        margin-left: 10px;
+        color: #f1f1f1;
+    }
+    /* ------------------------------------------------- */
+}
+
+/* iPhone 11 Pro, 375x812 */
+@media screen and (min-width:375px) and (max-width:812px) {
+    /* HomePage */
+    /* Header */
+    header {
+        height: 70vh;
+    }
+
+    /* ------------------- Navigation -------------------------- */
+    nav {
+        align-items: center;
+        background-color: #C5C5C5;
+        display: flex;
+        justify-content: space-around;
+        min-height: 12vh;
+        position: fixed;
+        width: 100%;
+        z-index: 999;
+    }
+
+    /* Logo */
+    #logo {
+        font-size: 55%;
+        font-weight: bold;
+        margin-right: 150px;
+        cursor: hand;
+    }
+
+    #logo a {
+        text-decoration: none;
+        color: #000000;
+    }
+
+    .nav__links {
+        align-items: center;
+        background-color: #858585;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 64vh;
+        position: absolute;
+        width: 100%;
+        right: 0;
+        top: 12vh;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in;
+    }
+
+    .nav__links li {
+        list-style: none;
+        opacity: 0;
+    }
+
+    .nav__links a {
+        letter-spacing: 1px;
+        font-size: 150%;
+        font-weight: 600;
+        color: #ffffff;
+    }
+
+    /* ------------------- Burger Menu ------------------ */
+    .burger {
+        cursor: default;
+        display: block;
+    }
+
+    .burger div {
+        width: 25px;
+        height: 3px;
+        background-color: #000000;
+        margin: 5px;
+    }
+    /* ------------------------------------------------- */
+
+    .nav__active {
+        transform: translateX(0%);
+    }
+
+    /* ------------------ Animations -------------------- */
+    @keyframes navLinkFade {
+        from {
+            opacity: 0;
+            transform: translateX(50px);
+        }
+        to {
+            opacity: 1;
+            transform: translateX(0px);
+        }
+    }
+
+    .toggle .line1 {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+
+    .toggle .line2 {
+        opacity: 0;
+    }
+
+    .toggle .line3 {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
+    /* ------------------------------------------------ */
+
+    .content {
+        display: flex;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hero {
+        height: 90%;
+        width: 90%;
+        margin-top: 100px;
+    }
+
+    .hero p {
+        height: 100%;
+        width: 100%;
+        font-size: 160%;
+        font-weight: 300;
+    }
+
+    /* --------------- Projects Section ------------- */
+    .selected__projects__section .row h2 {
+        text-align: center;
+        font-size: 130%;
+        font-weight: 600;
+        color: #ffffff;
+        padding-bottom: 5px;
+    }
+
+    .selected__projects__section .wrapper {
+        padding: 2em;
+        display: grid;
+        grid-gap: 2em;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+    .selected__projects__section .wrapper .projects {
+        padding: 1em;
+        border-radius: .3em;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    }
+
+    .selected__projects__section .wrapper .projects a img {
+        width: 100%;
+    }
+
+    .selected__projects__section .wrapper .projects p {
+        text-align: left;
+        font-size: 55%;
+        padding-bottom: 5px;
+        margin-left: 10px;
+        color: #f1f1f1;
+    }
+
+    .selected__projects__section .wrapper .projects p.skill {
+        padding-top: 10px;
+        text-align: center;
+        font-size: 90%;
+        font-weight: 700;
+        color: #000000;
+        margin-bottom: 10px;
+    }
+    /* ------------------------------------------ */
+
+    /* -------------- Footer Section ------------ */
+    .footer .row .col {
+        padding: 10%;
+    }
+
+    .footer .row .col p {
+        font-size: 55%;
+        color: #000000;
+    }
+
+    .footer .row .col p.contacts {
+        text-decoration: underline;
+        color: #ffffff;
+    }
+
+    .socials a {
+        text-decoration: none;
+        color: #ffffff;
+    }
+    /* ------------------------------------------- */
+
+    /* --------------- ApproachPage -------------- */
+    .approach__section {
+        padding: 4%;
+    }
+
+    .approach__section .row {
+        margin-bottom: 10px;
+    }
+
+    .approach__section .row h2 {
+        font-size: 150%;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+
+    .approach__section .row p {
+        font-size: 120%;
+    }
+
+    .approach__section .row .white {
+        color: #ffffff;
+    }
+
+    .approach__section .row .col {
+        padding: 1%;
+    }
+
+    .approach__section .row .col p {
+        font-size: 50%;
+        margin-bottom: 20px;
+    }
+    /* ------------------------------------------------ */
+
+    /* ----------------- ContactsPage ----------------- */
+    .contact__section {
+        padding: 6%;
+    }
+
+    .contact__section .row .white {
+        color: #ffffff;
+        font-size: 240%;
+        font-weight: 600;
+        margin-bottom: 20px;
+    }
+
+    .contact__section .row p {
+        font-size: 150%;
+    }
+
+    .contact__section .row .mail {
+        text-decoration: underline;
+        font-size: 120%;
+        margin-top: 20px;
+    }
+
+    .contact__section .row .cell {
+        font-size: 120%;
+    }
+    /* --------------------------------------------- */
+
+    /* ---------------- ServicesPage --------------- */
+    .services__section {
+        padding: 6%;
+    }
+
+    .services__section .row {
+        margin-bottom: 5px;
+    }
+
+    .services__section .row p {
+        font-size: 120%;
+    }
+
+    .services__section .row div {
+        display: grid;
+        grid-gap: 1em;
+        grid-template-columns: 300px;
+    }
+
+    .services__section .row h2 {
+        margin-bottom: 10px;
+        font-size: 170%;
+        color: #ffffff;
+    }
+
+    .services__section .row .col h4 {
+        font-size: 130%;
+        font-weight: 600;
+        margin-bottom: .1px;
+        color: #ffffff;
+    }
+
+    .services__section .row .col p {
+        font-size: 50%;
+    }
+    /* ----------------------------------------------- */
+
+    /* ------------- Projects Section ---------------- */
+    .works__section .row h1 {
+        font-size: 130%;
+        font-weight: 600;
+        color: #ffffff;
+        margin-top: 30px;
+        text-align: center;
+    }
+
+    .works__section .wrapper {
+        padding: 2em;
+        display: grid;
+        grid-gap: 2em;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+    .works__section .wrapper .projects {
+        padding: 1em;
+        border-radius: .3em;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    }
+
+    .works__section .wrapper .projects a img {
+        width: 100%;
+    }
+
+    .works__section .wrapper .projects p {
+        text-align: left;
+        font-size: 45%;
+        padding-bottom: 10px;
+        margin-left: 10px;
+        color: #f1f1f1;
+    }
+
+    .works__section .wrapper .projects p.skill {
+        padding-top: 20px;
+        text-align: center;
+        font-size: 80%;
+        font-weight: 700;
+        color: #000000;
+    }
+    /* ---------------------------------------------- */
+
+    /* -------------- Work_detailsPage -------------- */
+    /* Navigation */
+    /* Logo */
+    #detail__logo {
+        font-size: 70%;
+        font-weight: 700;
+        margin-right: 250px;
+        cursor: hand;
+    }
+
+    #detail__logo a {
+        text-decoration: none;
+        color: #000000;
+    }
+
+    /* Projects Detail Section */
+    .project_detail_section .wrapper {
+        padding: 2em;
+        display: grid;
+        grid-gap: 2em;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+
+    .project_detail_section .wrapper .project {
+        padding: 1em;
+        border-radius: .3em;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    }
+
+    .project_detail_section .wrapper .project img {
+        width: 100%;
+    }
+
+    .project_detail_section .wrapper .project h2 {
+        font-size: 80%;
+        font-weight: 600;
+        color: #000000;
+        padding-bottom: 10px;
+        text-align: center;
+    }
+
+    .project_detail_section .wrapper .project p {
+        text-align: left;
+        font-size: 50%;
+        padding-bottom: 10px;
+        margin-left: 10px;
+        color: #f1f1f1;
+    }
+    /* ------------------------------------------------- */
+}
+
+/* iPhone 12/13 Pro, 390x844 */
+@media screen and (min-width:390px) and (max-width:844px) {
+    /* HomePage */
+    /* Header */
+    header {
+        height: 69vh;
+    }
+
+    /* ------------------- Navigation -------------------------- */
+    nav {
+        align-items: center;
+        background-color: #C5C5C5;
+        display: flex;
+        justify-content: space-around;
+        min-height: 10vh;
+        position: fixed;
+        width: 100%;
+        z-index: 999;
+    }
+
+    /* Logo */
+    #logo {
+        font-size: 55%;
+        font-weight: bold;
+        margin-right: 150px;
+        cursor: hand;
+    }
+
+    #logo a {
+        text-decoration: none;
+        color: #000000;
+    }
+
+    .nav__links {
+        align-items: center;
+        background-color: #858585;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 63.1vh;
+        position: absolute;
+        width: 100%;
+        right: 0;
+        top: 10vh;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in;
+    }
+
+    .nav__links li {
+        list-style: none;
+        opacity: 0;
+    }
+
+    .nav__links a {
+        letter-spacing: 1px;
+        font-size: 150%;
+        font-weight: 600;
+        color: #ffffff;
+    }
+
+    /* ------------------- Burger Menu ------------------ */
+    .burger {
+        cursor: default;
+        display: block;
+    }
+
+    .burger div {
+        width: 25px;
+        height: 3px;
+        background-color: #000000;
+        margin: 5px;
+    }
+    /* ------------------------------------------------- */
+
+    .nav__active {
+        transform: translateX(0%);
+    }
+
+    /* ------------------ Animations -------------------- */
+    @keyframes navLinkFade {
+        from {
+            opacity: 0;
+            transform: translateX(50px);
+        }
+        to {
+            opacity: 1;
+            transform: translateX(0px);
+        }
+    }
+
+    .toggle .line1 {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+
+    .toggle .line2 {
+        opacity: 0;
+    }
+
+    .toggle .line3 {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
+    /* ------------------------------------------------ */
+
+    .content {
+        display: flex;
+        height: 130vh;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hero {
+        height: 90%;
+        width: 90%;
+        margin-top: 100px;
+    }
+
+    .hero p {
+        height: 100%;
+        width: 100%;
+        font-size: 165%;
+        font-weight: 300;
+    }
+
+    /* --------------- Projects Section ------------- */
+    .selected__projects__section .row h2 {
+        text-align: center;
+        font-size: 130%;
+        font-weight: 600;
+        color: #ffffff;
+        padding-bottom: 5px;
+    }
+
+    .selected__projects__section .wrapper {
+        padding: 2em;
+        display: grid;
+        grid-gap: 2em;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+    .selected__projects__section .wrapper .projects {
+        padding: 1em;
+        border-radius: .3em;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    }
+
+    .selected__projects__section .wrapper .projects a img {
+        width: 100%;
+    }
+
+    .selected__projects__section .wrapper .projects p {
+        text-align: left;
+        font-size: 55%;
+        padding-bottom: 5px;
+        margin-left: 10px;
+        color: #f1f1f1;
+    }
+
+    .selected__projects__section .wrapper .projects p.skill {
+        padding-top: 10px;
+        text-align: center;
+        font-size: 90%;
+        font-weight: 700;
+        color: #000000;
+        margin-bottom: 10px;
+    }
+    /* ------------------------------------------ */
+
+    /* -------------- Footer Section ------------ */
+    .footer .row .col {
+        padding: 10%;
+    }
+
+    .footer .row .col p {
+        font-size: 55%;
+        color: #000000;
+    }
+
+    .footer .row .col p.contacts {
+        text-decoration: underline;
+        color: #ffffff;
+    }
+
+    .socials a {
+        text-decoration: none;
+        color: #ffffff;
+    }
+    /* ------------------------------------------- */
+
+    /* --------------- ApproachPage -------------- */
+    .approach__section {
+        padding: 6%;
+    }
+
+    .approach__section .row {
+        margin-bottom: 10px;
+    }
+
+    .approach__section .row h2 {
+        font-size: 150%;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+
+    .approach__section .row p {
+        font-size: 120%;
+    }
+
+    .approach__section .row .white {
+        color: #ffffff;
+    }
+
+    .approach__section .row .col {
+        padding: 1%;
+    }
+
+    .approach__section .row .col p {
+        font-size: 50%;
+        margin-bottom: 20px;
+    }
+    /* ------------------------------------------------ */
+
+    /* ----------------- ContactsPage ----------------- */
+    .contact__section {
+        padding: 6%;
+    }
+
+    .contact__section .row .white {
+        color: #ffffff;
+        font-size: 240%;
+        font-weight: 600;
+        margin-bottom: 20px;
+    }
+
+    .contact__section .row p {
+        font-size: 150%;
+    }
+
+    .contact__section .row .mail {
+        text-decoration: underline;
+        font-size: 120%;
+        margin-top: 20px;
+    }
+
+    .contact__section .row .cell {
+        font-size: 120%;
+    }
+    /* --------------------------------------------- */
+
+    /* ---------------- ServicesPage --------------- */
+    .services__section {
+        padding: 6%;
+    }
+
+    .services__section .row {
+        margin-bottom: 5px;
+    }
+
+    .services__section .row p {
+        font-size: 120%;
+    }
+
+    .services__section .row div {
+        display: grid;
+        grid-gap: 1em;
+        grid-template-columns: 300px;
+    }
+
+    .services__section .row h2 {
+        margin-bottom: 10px;
+        font-size: 170%;
+        color: #ffffff;
+    }
+
+    .services__section .row .col h4 {
+        font-size: 130%;
+        font-weight: 600;
+        margin-bottom: .1px;
+        color: #ffffff;
+    }
+
+    .services__section .row .col p {
+        font-size: 50%;
+    }
+    /* ----------------------------------------------- */
+
+    /* ------------- Projects Section ---------------- */
+    .works__section .row h1 {
+        font-size: 130%;
+        font-weight: 600;
+        color: #ffffff;
+        margin-top: 30px;
+        text-align: center;
+    }
+
+    .works__section .wrapper {
+        padding: 2em;
+        display: grid;
+        grid-gap: 2em;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+    .works__section .wrapper .projects {
+        padding: 1em;
+        border-radius: .3em;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    }
+
+    .works__section .wrapper .projects a img {
+        width: 100%;
+    }
+
+    .works__section .wrapper .projects p {
+        text-align: left;
+        font-size: 45%;
+        padding-bottom: 10px;
+        margin-left: 10px;
+        color: #f1f1f1;
+    }
+
+    .works__section .wrapper .projects p.skill {
+        padding-top: 20px;
+        text-align: center;
+        font-size: 80%;
+        font-weight: 700;
+        color: #000000;
+    }
+    /* ---------------------------------------------- */
+
+    /* -------------- Work_detailsPage -------------- */
+    /* Navigation */
+    /* Logo */
+    #detail__logo {
+        font-size: 70%;
+        font-weight: 700;
+        margin-right: 250px;
+        cursor: hand;
+    }
+
+    #detail__logo a {
+        text-decoration: none;
+        color: #000000;
+    }
+
+    /* Projects Detail Section */
+    .project_detail_section .wrapper {
+        padding: 2em;
+        display: grid;
+        grid-gap: 2em;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+
+    .project_detail_section .wrapper .project {
+        padding: 1em;
+        border-radius: .3em;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    }
+
+    .project_detail_section .wrapper .project img {
+        width: 100%;
+    }
+
+    .project_detail_section .wrapper .project h2 {
+        font-size: 80%;
+        font-weight: 600;
+        color: #000000;
+        padding-bottom: 10px;
+        text-align: center;
+    }
+
+    .project_detail_section .wrapper .project p {
+        text-align: left;
+        font-size: 50%;
+        padding-bottom: 10px;
+        margin-left: 10px;
+        color: #f1f1f1;
+    }
+    /* ------------------------------------------------- */
+}
+
+/* portrait tablets, portrait iPhone 11 Pro Max, 414x896 */
+@media screen and (min-width:414px) and (max-width:896px) {
+    /* HomePage */
+    /* Header */
+    header {
+        height: 65vh;
+    }
+
+    /* ------------------- Navigation -------------------------- */
+    nav {
+        align-items: center;
+        background-color: #C5C5C5;
+        display: flex;
+        justify-content: space-around;
+        min-height: 8vh;
+        position: fixed;
+        width: 100%;
+        z-index: 999;
+    }
+
+    /* Logo */
+    #logo {
+        font-size: 55%;
+        font-weight: bold;
+        margin-right: 150px;
+        cursor: hand;
+    }
+
+    #logo a {
+        text-decoration: none;
+        color: #000000;
+    }
+
+    .nav__links {
+        align-items: center;
+        background-color: #858585;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 61vh;
+        position: absolute;
+        width: 100%;
+        right: 0;
+        top: 8vh;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in;
+    }
+
+    .nav__links li {
+        list-style: none;
+        opacity: 0;
+    }
+
+    .nav__links a {
+        letter-spacing: 1px;
+        font-size: 150%;
+        font-weight: 600;
+        color: #ffffff;
+    }
+
+    /* ------------------- Burger Menu ------------------ */
+    .burger {
+        cursor: default;
+        display: block;
+    }
+
+    .burger div {
+        width: 25px;
+        height: 3px;
+        background-color: #000000;
+        margin: 5px;
+    }
+    /* ------------------------------------------------- */
+
+    .nav__active {
+        transform: translateX(0%);
+    }
+
+    /* ------------------ Animations -------------------- */
+    @keyframes navLinkFade {
+        from {
+            opacity: 0;
+            transform: translateX(50px);
+        }
+        to {
+            opacity: 1;
+            transform: translateX(0px);
+        }
+    }
+
+    .toggle .line1 {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+
+    .toggle .line2 {
+        opacity: 0;
+    }
+
+    .toggle .line3 {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
+    /* ------------------------------------------------ */
+
+    .content {
+        display: flex;
+        height: 130vh;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hero {
+        height: 90%;
+        width: 90%;
+        margin-top: 100px;
+    }
+
+    .hero p {
+        height: 100%;
+        width: 100%;
+        font-size: 160%;
+        font-weight: 300;
+    }
+
+    /* --------------- Projects Section ------------- */
+    .selected__projects__section .row h2 {
+        text-align: center;
+        font-size: 130%;
+        font-weight: 600;
+        color: #ffffff;
+        padding-bottom: 5px;
+    }
+
+    .selected__projects__section .wrapper {
+        padding: 2em;
+        display: grid;
+        grid-gap: 2em;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+    .selected__projects__section .wrapper .projects {
+        padding: 1em;
+        border-radius: .3em;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    }
+
+    .selected__projects__section .wrapper .projects a img {
+        width: 100%;
+    }
+
+    .selected__projects__section .wrapper .projects p {
+        text-align: left;
+        font-size: 55%;
+        padding-bottom: 5px;
+        margin-left: 10px;
+        color: #f1f1f1;
+    }
+
+    .selected__projects__section .wrapper .projects p.skill {
+        padding-top: 10px;
+        text-align: center;
+        font-size: 90%;
+        font-weight: 700;
+        color: #000000;
+        margin-bottom: 10px;
+    }
+    /* ------------------------------------------ */
+
+    /* -------------- Footer Section ------------ */
+    .footer .row .col {
+        padding: 10%;
+    }
+
+    .footer .row .col p {
+        font-size: 55%;
+        color: #000000;
+    }
+
+    .footer .row .col p.contacts {
+        text-decoration: underline;
+        color: #ffffff;
+    }
+
+    .socials a {
+        text-decoration: none;
+        color: #ffffff;
+    }
+    /* ------------------------------------------- */
+
+    /* --------------- ApproachPage -------------- */
+    .approach__section {
+        padding: 4%;
+    }
+
+    .approach__section .row {
+        margin-bottom: 10px;
+    }
+
+    .approach__section .row h2 {
+        font-size: 150%;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+
+    .approach__section .row p {
+        font-size: 125%;
+    }
+
+    .approach__section .row .white {
+        color: #ffffff;
+    }
+
+    .approach__section .row .col {
+        padding: 1%;
+    }
+
+    .approach__section .row .col p {
+        font-size: 60%;
+        margin-bottom: 20px;
+    }
+    /* ------------------------------------------------ */
+
+    /* ----------------- ContactsPage ----------------- */
+    .contact__section {
+        padding: 6%;
+    }
+
+    .contact__section .row .white {
+        color: #ffffff;
+        font-size: 240%;
+        font-weight: 600;
+        margin-bottom: 20px;
+    }
+
+    .contact__section .row p {
+        font-size: 150%;
+    }
+
+    .contact__section .row .mail {
+        text-decoration: underline;
+        font-size: 120%;
+        margin-top: 20px;
+    }
+
+    .contact__section .row .cell {
+        font-size: 120%;
+    }
+    /* --------------------------------------------- */
+
+    /* ---------------- ServicesPage --------------- */
+    .services__section {
+        padding: 6%;
+    }
+
+    .services__section .row {
+        margin-bottom: 5px;
+    }
+
+    .services__section .row p {
+        font-size: 120%;
+    }
+
+    .services__section .row div {
+        display: grid;
+        grid-gap: 1em;
+        grid-template-columns: 300px;
+    }
+
+    .services__section .row h2 {
+        margin-bottom: 10px;
+        font-size: 170%;
+        color: #ffffff;
+    }
+
+    .services__section .row .col h4 {
+        font-size: 130%;
+        font-weight: 600;
+        margin-bottom: .1px;
+        color: #ffffff;
+    }
+
+    .services__section .row .col p {
+        font-size: 50%;
+    }
+    /* ----------------------------------------------- */
+
+    /* ------------- Projects Section ---------------- */
+    .works__section .row h1 {
+        font-size: 130%;
+        font-weight: 600;
+        color: #ffffff;
+        margin-top: 30px;
+        text-align: center;
+    }
+
+    .works__section .wrapper {
+        padding: 2em;
+        display: grid;
+        grid-gap: 2em;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+    .works__section .wrapper .projects {
+        padding: 1em;
+        border-radius: .3em;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    }
+
+    .works__section .wrapper .projects a img {
+        width: 100%;
+    }
+
+    .works__section .wrapper .projects p {
+        text-align: left;
+        font-size: 45%;
+        padding-bottom: 10px;
+        margin-left: 10px;
+        color: #f1f1f1;
+    }
+
+    .works__section .wrapper .projects p.skill {
+        padding-top: 20px;
+        text-align: center;
+        font-size: 80%;
+        font-weight: 700;
+        color: #000000;
+    }
+    /* ---------------------------------------------- */
+
+    /* -------------- Work_detailsPage -------------- */
+    /* Navigation */
+    /* Logo */
+    #detail__logo {
+        font-size: 70%;
+        font-weight: 700;
+        margin-right: 250px;
+        cursor: hand;
+    }
+
+    #detail__logo a {
+        text-decoration: none;
+        color: #000000;
+    }
+
+    /* Projects Detail Section */
+    .project_detail_section .wrapper {
+        padding: 2em;
+        display: grid;
+        grid-gap: 2em;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+
+    .project_detail_section .wrapper .project {
+        padding: 1em;
+        border-radius: .3em;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    }
+
+    .project_detail_section .wrapper .project img {
+        width: 100%;
+    }
+
+    .project_detail_section .wrapper .project h2 {
+        font-size: 80%;
+        font-weight: 600;
+        color: #000000;
+        padding-bottom: 10px;
+        text-align: center;
+    }
+
+    .project_detail_section .wrapper .project p {
+        text-align: left;
+        font-size: 50%;
+        padding-bottom: 10px;
+        margin-left: 10px;
+        color: #f1f1f1;
+    }
+    /* ------------------------------------------------- */
+}
+
+/* portrait tablets, portrait iPad Mini, 768x1024 */
+@media screen and (min-width:768px) and (max-width:1024px) {
+    /* HomePage */
+    /* Header */
+    header {
+        height: 55vh;
+    }
+
+    /* ------------------- Navigation -------------------------- */
+    nav {
+        align-items: center;
+        background-color: #C5C5C5;
+        display: flex;
+        justify-content: space-around;
+        min-height: 6vh;
+        position: fixed;
+        width: 100%;
+        z-index: 999;
+    }
+
+    /* Logo */
+    #logo {
+        font-size: 65%;
+        font-weight: bold;
+        margin-right: 450px;
+        cursor: hand;
+    }
+
+    #logo a {
+        text-decoration: none;
+        color: #000000;
+    }
+
+    .nav__links {
+        align-items: center;
+        background-color: #858585;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 54.5vh;
+        position: absolute;
+        width: 100%;
+        right: 0;
+        top: 6vh;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in;
+    }
+
+    .nav__links li {
+        list-style: none;
+        opacity: 0;
+    }
+
+    .nav__links a {
+        letter-spacing: 1px;
+        font-size: 180%;
+        font-weight: 600;
+        color: #ffffff;
+    }
+
+    /* ------------------- Burger Menu ------------------ */
+    .burger {
+        cursor: default;
+        display: block;
+    }
+
+    .burger div {
+        width: 25px;
+        height: 3px;
+        background-color: #000000;
+        margin: 5px;
+    }
+    /* ------------------------------------------------- */
+
+    .nav__active {
+        transform: translateX(0%);
+    }
+
+    /* ------------------ Animations -------------------- */
+    @keyframes navLinkFade {
+        from {
+            opacity: 0;
+            transform: translateX(50px);
+        }
+        to {
+            opacity: 1;
+            transform: translateX(0px);
+        }
+    }
+
+    .toggle .line1 {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+
+    .toggle .line2 {
+        opacity: 0;
+    }
+
+    .toggle .line3 {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
+    /* ------------------------------------------------ */
+
+    .content {
+        display: flex;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hero {
+        height: 90%;
+        width: 90%;
+        margin-top: 100px;
+    }
+
+    .hero p {
+        height: 100%;
+        width: 100%;
+        font-size: 215%;
+        font-weight: 300;
+    }
+
+    /* --------------- Projects Section ------------- */
+    .selected__projects__section .row h2 {
+        text-align: center;
+        font-size: 190%;
+        font-weight: 600;
+        color: #ffffff;
+        padding-bottom: 5px;
+    }
+
+    .selected__projects__section .wrapper {
+        padding: 2em;
+        display: grid;
+        grid-gap: 2em;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+    .selected__projects__section .wrapper .projects {
+        padding: 1em;
+        border-radius: .3em;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    }
+
+    .selected__projects__section .wrapper .projects a img {
+        width: 100%;
+    }
+
+    .selected__projects__section .wrapper .projects p {
+        text-align: left;
+        font-size: 55%;
+        padding-bottom: 5px;
+        margin-left: 10px;
+        color: #f1f1f1;
+    }
+
+    .selected__projects__section .wrapper .projects p.skill {
+        padding-top: 10px;
+        text-align: center;
+        font-size: 90%;
+        font-weight: 700;
+        color: #000000;
+        margin-bottom: 10px;
+    }
+    /* ------------------------------------------ */
+
+    /* -------------- Footer Section ------------ */
+    .footer .row .col {
+        padding: 10%;
+    }
+
+    .footer .row .col p {
+        font-size: 55%;
+        color: #000000;
+    }
+
+    .footer .row .col p.contacts {
+        text-decoration: underline;
+        color: #ffffff;
+    }
+
+    .socials a {
+        text-decoration: none;
+        color: #ffffff;
+    }
+    /* ------------------------------------------- */
+
+    /* --------------- ApproachPage -------------- */
+    .approach__section {
+        padding: 7%;
+    }
+
+    .approach__section .row {
+        margin-bottom: 10px;
+    }
+
+    .approach__section .row h2 {
+        font-size: 170%;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+
+    .approach__section .row p {
+        font-size: 170%;
+    }
+
+    .approach__section .row .white {
+        color: #ffffff;
+    }
+
+    .approach__section .row .col {
+        padding: 1%;
+    }
+
+    .approach__section .row .col p {
+        font-size: 70%;
+        margin-bottom: 20px;
+    }
+    /* ------------------------------------------------ */
+
+    /* ----------------- ContactsPage ----------------- */
+    .contact__section {
+        padding: 12%;
+    }
+
+    .contact__section .row .white {
+        color: #ffffff;
+        font-size: 265%;
+        font-weight: 600;
+        margin-bottom: 20px;
+    }
+
+    .contact__section .row p {
+        font-size: 250%;
+    }
+
+    .contact__section .row .mail {
+        text-decoration: underline;
+        font-size: 220%;
+        margin-top: 20px;
+    }
+
+    .contact__section .row .cell {
+        font-size: 220%;
+    }
+    /* --------------------------------------------- */
+
+    /* ---------------- ServicesPage --------------- */
+    .services__section {
+        padding: 8%;
+    }
+
+    .services__section .row {
+        margin-bottom: 5px;
+    }
+
+    .services__section .row p {
+        font-size: 165%;
+    }
+
+    .services__section .row div {
+        display: grid;
+        grid-gap: 1em;
+        grid-template-columns: 300px;
+    }
+
+    .services__section .row h2 {
+        margin-bottom: 10px;
+        font-size: 170%;
+        color: #ffffff;
+    }
+
+    .services__section .row .col h4 {
+        font-size: 130%;
+        font-weight: 600;
+        margin-bottom: .1px;
+        color: #ffffff;
+    }
+
+    .services__section .row .col p {
+        font-size: 50%;
+    }
+    /* ----------------------------------------------- */
+
+    /* ------------- Projects Section ---------------- */
+    .works__section .row h1 {
+        font-size: 170%;
+        font-weight: 600;
+        color: #ffffff;
+        margin-top: 50px;
+        text-align: center;
+    }
+
+    .works__section .wrapper {
+        padding: 2em;
+        display: grid;
+        grid-gap: 2em;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+    .works__section .wrapper .projects {
+        padding: 1em;
+        border-radius: .3em;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    }
+
+    .works__section .wrapper .projects a img {
+        width: 100%;
+    }
+
+    .works__section .wrapper .projects p {
+        text-align: left;
+        font-size: 55%;
+        padding-bottom: 10px;
+        margin-left: 10px;
+        color: #f1f1f1;
+    }
+
+    .works__section .wrapper .projects p.skill {
+        padding-top: 20px;
+        text-align: center;
+        font-size: 90%;
+        font-weight: 700;
+        color: #000000;
+    }
+    /* ---------------------------------------------- */
+
+    /* -------------- Work_detailsPage -------------- */
+    /* Navigation */
+    /* Logo */
+    #detail__logo {
+        font-size: 70%;
+        font-weight: 700;
+        margin-right: 650px;
+        cursor: hand;
+    }
+
+    #detail__logo a {
+        text-decoration: none;
+        color: #000000;
+    }
+
+    /* Projects Detail Section */
+    .project_detail_section .wrapper {
+        padding: 2em;
+        display: grid;
+        grid-gap: 2em;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+
+    .project_detail_section .wrapper .project {
+        padding: 1em;
+        border-radius: .3em;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    }
+
+    .project_detail_section .wrapper .project img {
+        width: 100%;
+    }
+
+    .project_detail_section .wrapper .project h2 {
+        font-size: 90%;
+        font-weight: 600;
+        color: #000000;
+        padding-bottom: 10px;
+        text-align: center;
+    }
+
+    .project_detail_section .wrapper .project p {
+        text-align: left;
+        font-size: 50%;
+        padding-bottom: 10px;
+        margin-left: 10px;
+        color: #f1f1f1;
+    }
+    /* ------------------------------------------------- */
+}
+
+/* portrait tablets, portrait iPad, 810x1080 */
+@media screen and (min-width:810px) and (max-width:1080px) {
+    /* HomePage */
+    /* Header */
+    header {
+        height: 52vh;
+    }
+
+    /* ------------------- Navigation -------------------------- */
+    nav {
+        align-items: center;
+        background-color: #C5C5C5;
+        display: flex;
+        justify-content: space-around;
+        min-height: 6vh;
+        position: fixed;
+        width: 100%;
+        z-index: 999;
+    }
+
+    /* Logo */
+    #logo {
+        font-size: 65%;
+        font-weight: bold;
+        margin-right: 450px;
+        cursor: hand;
+    }
+
+    #logo a {
+        text-decoration: none;
+        color: #000000;
+    }
+
+    .nav__links {
+        align-items: center;
+        background-color: #858585;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 51.1vh;
+        position: absolute;
+        width: 100%;
+        right: 0;
+        top: 6vh;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in;
+    }
+
+    .nav__links li {
+        list-style: none;
+        opacity: 0;
+    }
+
+    .nav__links a {
+        letter-spacing: 1px;
+        font-size: 180%;
+        font-weight: 600;
+        color: #ffffff;
+    }
+
+    /* ------------------- Burger Menu ------------------ */
+    .burger {
+        cursor: default;
+        display: block;
+    }
+
+    .burger div {
+        width: 25px;
+        height: 3px;
+        background-color: #000000;
+        margin: 5px;
+    }
+    /* ------------------------------------------------- */
+
+    .nav__active {
+        transform: translateX(0%);
+    }
+
+    /* ------------------ Animations -------------------- */
+    @keyframes navLinkFade {
+        from {
+            opacity: 0;
+            transform: translateX(50px);
+        }
+        to {
+            opacity: 1;
+            transform: translateX(0px);
+        }
+    }
+
+    .toggle .line1 {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+
+    .toggle .line2 {
+        opacity: 0;
+    }
+
+    .toggle .line3 {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
+    /* ------------------------------------------------ */
+
+    .content {
+        display: flex;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hero {
+        height: 90%;
+        width: 90%;
+        margin-top: 100px;
+    }
+
+    .hero p {
+        height: 100%;
+        width: 100%;
+        font-size: 215%;
+        font-weight: 300;
+    }
+
+    /* --------------- Projects Section ------------- */
+    .selected__projects__section .row h2 {
+        text-align: center;
+        font-size: 190%;
+        font-weight: 600;
+        color: #ffffff;
+        padding-bottom: 5px;
+    }
+
+    .selected__projects__section .wrapper {
+        padding: 2em;
+        display: grid;
+        grid-gap: 2em;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+    .selected__projects__section .wrapper .projects {
+        padding: 1em;
+        border-radius: .3em;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    }
+
+    .selected__projects__section .wrapper .projects a img {
+        width: 100%;
+    }
+
+    .selected__projects__section .wrapper .projects p {
+        text-align: left;
+        font-size: 55%;
+        padding-bottom: 5px;
+        margin-left: 10px;
+        color: #f1f1f1;
+    }
+
+    .selected__projects__section .wrapper .projects p.skill {
+        padding-top: 10px;
+        text-align: center;
+        font-size: 90%;
+        font-weight: 700;
+        color: #000000;
+        margin-bottom: 10px;
+    }
+    /* ------------------------------------------ */
+
+    /* -------------- Footer Section ------------ */
+    .footer .row .col {
+        padding: 10%;
+    }
+
+    .footer .row .col p {
+        font-size: 55%;
+        color: #000000;
+    }
+
+    .footer .row .col p.contacts {
+        text-decoration: underline;
+        color: #ffffff;
+    }
+
+    .socials a {
+        text-decoration: none;
+        color: #ffffff;
+    }
+    /* ------------------------------------------- */
+
+    /* --------------- ApproachPage -------------- */
+    .approach__section {
+        padding: 7%;
+    }
+
+    .approach__section .row {
+        margin-bottom: 10px;
+    }
+
+    .approach__section .row h2 {
+        font-size: 170%;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+
+    .approach__section .row p {
+        font-size: 170%;
+    }
+
+    .approach__section .row .white {
+        color: #ffffff;
+    }
+
+    .approach__section .row .col {
+        padding: 1%;
+    }
+
+    .approach__section .row .col p {
+        font-size: 70%;
+        margin-bottom: 20px;
+    }
+    /* ------------------------------------------------ */
+
+    /* ----------------- ContactsPage ----------------- */
+    .contact__section {
+        padding: 12%;
+    }
+
+    .contact__section .row .white {
+        color: #ffffff;
+        font-size: 250%;
+        font-weight: 600;
+        margin-bottom: 20px;
+    }
+
+    .contact__section .row p {
+        font-size: 190%;
+    }
+
+    .contact__section .row .mail {
+        text-decoration: underline;
+        font-size: 220%;
+        margin-top: 20px;
+    }
+
+    .contact__section .row .cell {
+        font-size: 220%;
+    }
+    /* --------------------------------------------- */
+
+    /* ---------------- ServicesPage --------------- */
+    .services__section {
+        padding: 8%;
+    }
+
+    .services__section .row {
+        margin-bottom: 5px;
+    }
+
+    .services__section .row p {
+        font-size: 168%;
+    }
+
+    .services__section .row div {
+        display: grid;
+        grid-gap: 1em;
+        grid-template-columns: 300px;
+    }
+
+    .services__section .row h2 {
+        margin-bottom: 10px;
+        font-size: 170%;
+        color: #ffffff;
+    }
+
+    .services__section .row .col h4 {
+        font-size: 140%;
+        font-weight: 600;
+        margin-bottom: .1px;
+        color: #ffffff;
+    }
+
+    .services__section .row .col p {
+        font-size: 60%;
+    }
+    /* ----------------------------------------------- */
+
+    /* ------------- Projects Section ---------------- */
+    .works__section .row h1 {
+        font-size: 170%;
+        font-weight: 600;
+        color: #ffffff;
+        margin-top: 50px;
+        text-align: center;
+    }
+
+    .works__section .wrapper {
+        padding: 2em;
+        display: grid;
+        grid-gap: 2em;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+    .works__section .wrapper .projects {
+        padding: 1em;
+        border-radius: .3em;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    }
+
+    .works__section .wrapper .projects a img {
+        width: 100%;
+    }
+
+    .works__section .wrapper .projects p {
+        text-align: left;
+        font-size: 55%;
+        padding-bottom: 10px;
+        margin-left: 10px;
+        color: #f1f1f1;
+    }
+
+    .works__section .wrapper .projects p.skill {
+        padding-top: 20px;
+        text-align: center;
+        font-size: 90%;
+        font-weight: 700;
+        color: #000000;
+    }
+    /* ---------------------------------------------- */
+
+    /* -------------- Work_detailsPage -------------- */
+    /* Navigation */
+    /* Logo */
+    #detail__logo {
+        font-size: 70%;
+        font-weight: 700;
+        margin-right: 650px;
+        cursor: hand;
+    }
+
+    #detail__logo a {
+        text-decoration: none;
+        color: #000000;
+    }
+
+    /* Projects Detail Section */
+    .project_detail_section .wrapper {
+        padding: 2em;
+        display: grid;
+        grid-gap: 2em;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+
+    .project_detail_section .wrapper .project {
+        padding: 1em;
+        border-radius: .3em;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    }
+
+    .project_detail_section .wrapper .project img {
+        width: 100%;
+    }
+
+    .project_detail_section .wrapper .project h2 {
+        font-size: 90%;
+        font-weight: 600;
+        color: #000000;
+        padding-bottom: 10px;
+        text-align: center;
+    }
+
+    .project_detail_section .wrapper .project p {
+        text-align: left;
+        font-size: 50%;
+        padding-bottom: 10px;
+        margin-left: 10px;
+        color: #f1f1f1;
+    }
+    /* ------------------------------------------------- */
+}
