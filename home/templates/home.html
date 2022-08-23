@@ -35,7 +35,7 @@
 </header>
 
 <!-- Projects -->
-<section class="works__section">
+<section class="selected__projects__section">
     <div class="row">
         <h2>Selected projects</h2>
     </div>
@@ -44,7 +44,7 @@
         <div class="projects" data-aos="fade-up" data-aos-duration="900">
             <a href="{% url 'home:work_detail' project.slug %}">
                 {% if project.image %}
-                <!-- <img src="{{ project.image.url }}"> -->
+                <img src="{{ project.image.url }}">
                 {% endif %}
             </a>
             <p class="skill">{{ project.title }}</p>
