@@ -44,7 +44,7 @@
         <div class="projects" data-aos="fade-up" data-aos-duration="900">
             <a href="{% url 'home:work_detail' project.slug %}">
                 {% if project.image %}
-<!--                <img src="{{ project.image.url }}">-->
+                <img src="{{ project.image.url }}">
                 {% endif %}
             </a>
             <p class="skill">{{ project.title }}</p>
@@ -62,7 +62,6 @@
         <div class="col span-1-of-3">
             <p>tukoWorks</p>
             <p>Nairobi+Hamburg</p>
-            <p>Kenya+Germany</p>
         </div>
 
         <!-- Contacts -->
@@ -76,9 +75,6 @@
         <div class="col span-1-of-3">
             <p>Follow us</p>
             <p class="socials"><a href="https://twitter.com" target="_blank">Twitter</a></p>
-            <p class="socials"><a href="https://linkedin.com" target="_blank">LinkedIn</a>
-            </p>
-            <p class="socials"><a href="https://github.com" target="_blank">GitHub</a></p>
         </div>
     </div>
 </section>

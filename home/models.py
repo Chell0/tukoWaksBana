@@ -4,7 +4,7 @@ from django.urls import reverse
 
 # Project Model
 class Project(models.Model):
-    '''Model representing a project'''
+    """Model representing a project"""
     project_id = models.IntegerField(primary_key=True)
     title = models.CharField(max_length=100, db_index=True)
     slug = models.SlugField(max_length=100, null=False, unique=True, db_index=True)

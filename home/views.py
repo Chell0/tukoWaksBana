@@ -1,6 +1,7 @@
 from django.shortcuts import render, get_object_or_404
 from .models import Project
 
+
 # Views
 def home(request):
     """Get selected projects on the home page"""
