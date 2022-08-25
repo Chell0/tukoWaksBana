@@ -1,13 +1,21 @@
-from audioop import reverse
 from django.test import TestCase
+
+
 from home.models import Project
 
-      
+
 class ProjectModelTest(TestCase):
     @classmethod
-    def setUpTestData(cls) -> None:
-       # return super().setUpTestData()
-       Project.objects.create(project_id=1, title='project test', slug='project-test', description='project one description')
+    # def setUpTestData(cls) -> None:
+    # return super().setUpTestData()
+    def setUpTestData(cls):
+        cls.project = Project.objects.create(
+            project_id=1,
+            title='project test',
+            slug='project-test',
+            description='project one description',
+            image='img/project-7.jpg'
+        )
 
     
     def test_project_id(self):
