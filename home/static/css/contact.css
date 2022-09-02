@@ -11,16 +11,19 @@
 }
 
 .contact__section .row p {
-	font-size: 170%;
+	font-size: 270%;
+	font-weight: 600;
 }
 
 .contact__section .row .mail {
 	text-decoration: underline;
 	font-size: 150%;
+	font-weight: 200;
 	margin-top: 20px;
 }
 
 .contact__section .row .cell {
 	font-size: 150%;
+	font-weight: 200;
 }
 /* --------------------------------------------- */

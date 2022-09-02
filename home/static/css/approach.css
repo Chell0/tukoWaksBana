@@ -17,7 +17,8 @@
 }
 
 .approach__section .row p {
-	font-size: 245%;
+	font-size: 280%;
+	font-weight: 700;
 }
 
 .approach__section .row .white {
@@ -29,7 +30,8 @@
 }
 
 .approach__section .row .col p {
-	font-size: 90%;
+	font-size: 80%;
+	font-weight: 200;
 }
 
 .approach__section .row .col .section__one {
