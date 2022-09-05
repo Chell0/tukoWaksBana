@@ -6,14 +6,7 @@
 
 body {
 	background-color: #C5C5C5;
-	/* font-family: "Space Mono", monospace; */
-	/* font-family: 'Poppins', sans-serif; */
-	/* font-family: 'Inter', sans-serif; */
-	font-family: 'Anek Telugu', sans-serif;
-	/* font-family: 'Rubik', sans-serif; */
-	/* font-family: 'Quicksand', sans-serif; */
-	/* font-family: 'Manrope', sans-serif; */
-	/* font-family: 'Questrial', sans-serif; */
+	font-family: 'Manrope', sans-serif;
 	font-size: 21px;
 	overflow-x: hidden;
 	text-rendering: optimizeLegibility;
