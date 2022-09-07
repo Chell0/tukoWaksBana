@@ -17,7 +17,6 @@ class ProjectModelTest(TestCase):
             image='img/project-7.jpg'
         )
 
-    
     def test_project_id(self):
         id = Project.objects.get(project_id=1)
         id_label = id._meta.get_field('project_id').verbose_name
