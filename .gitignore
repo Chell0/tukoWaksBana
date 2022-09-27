@@ -135,8 +135,10 @@ dmypy.json
 /bin
 pyvenv.cfg
 __pycache__
-db.sqlite3
 home/migrations/*
 home/.DS_Store
 home/static/.DS_Store
 home/static/img/.DS_Store
+
+# Pycharm configurations settings
+.idea/

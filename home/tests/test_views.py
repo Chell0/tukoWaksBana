@@ -7,12 +7,13 @@ from home.models import Project
 
 class ProjectListViewTest(TestCase):
     @classmethod
-    def setUpTestData(cls) -> None:        
-       Project.objects.create(project_id=1, title='project test', slug='project-test', description='project one description')   
+    def setUpTestData(cls) -> None:
+        Project.objects.create(project_id=1, title='project test', slug='project-test',
+                               description='project one description')
 
     def test_view_url_is_at_correct_place(self):
         response = self.client.get('/works/')
-        self.assertEqual(response.status_code, 200) 
+        self.assertEqual(response.status_code, 200)
 
     def test_view_url_reachable_by_name(self):
         response = self.client.get(reverse('home:works'))

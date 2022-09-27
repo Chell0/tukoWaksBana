@@ -5,22 +5,11 @@
 
 <div class="header__section">
     <nav>
-        <div id="logo">
+        <div id="detail__logo">
             <a href="{% url 'home:works' %}">
                 <h3>Back</h3>
             </a>
         </div>
-        <!-- <ul class="nav__links">
-            <li><a href="{% url 'home:works' %}">Work</a></li>
-            <li><a href="{% url 'home:approach' %}">Approach</a></li>
-            <li><a href="{% url 'home:services' %}">Services</a></li>
-            <li><a href="{% url 'home:contact' %}">Contact</a></li>
-        </ul>
-        <div class="burger">
-            <div class="line1"></div>
-            <div class="line2"></div>
-            <div class="line3"></div>
-        </div> -->
     </nav>
 </div>
 
@@ -28,7 +17,9 @@
 <section class="project_detail_section">
     <div class="wrapper">
         <div class="project" data-aos="fade-up" data-aos-duration="900">
-            <img src="{% static project.images %}" alt="Design photo">
+            {% if project.image %}
+            <img src="{{ project.image.url }}">
+            {% endif %}
         </div>
         <div class="project" data-aos="fade-up" data-aos-duration="900">
             <h2>{{ project.title }}</h2>
@@ -44,8 +35,7 @@
         <!-- Address -->
         <div class="col span-1-of-3">
             <p class="footer__section">tukoWorks</p>
-            <p class="footer__section">Nairobi+Hamburg</p>
-            <p class="footer__section">Kenya+Germany</p>
+            <p class="footer__section">Nairobi+Hamburg</>
         </div>
 
         <!-- Contacts -->
@@ -59,9 +49,6 @@
         <div class="col span-1-of-3">
             <p class="footer__section">Follow us</p>
             <p class="socials"><a href="https://twitter.com" target="_blank">Twitter</a></p>
-            <p class="socials"><a href="https://linkedin.com" target="_blank">LinkedIn</a>
-            </p>
-            <p class="socials"><a href="https://github.com" target="_blank">GitHub</a></p>
         </div>
     </div>
 </section>
