@@ -1,0 +1,100 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+<div class="header__section">
+    <nav>
+        <div id="logo">
+            <a href="{% url 'home:home' %}">
+                <h3>tukoWorks</h3>
+            </a>
+        </div>
+        <ul class="nav__links">
+            <li><a href="{% url 'home:home' %}">Home</a></li>
+            <li><a href="{% url 'home:works' %}">Work</a></li>
+            <li><a href="{% url 'home:services' %}">Services</a></li>
+            <li><a href="{% url 'home:contact' %}">Contact</a></li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+</div>
+
+<section class="approach__section">
+    <div class="row">
+        <h2 class="white">Approach</h2>
+    </div>
+    <div class="row">
+        <p>
+            We work strategically with our clients to create sophisticated and strong
+            solutions. Being a
+            multidisciplinary agency, we bring drops of clarity to a complex and
+            increasingly digital world by
+            working, evolving and nurturing the intersecting fields of design and
+            technology.
+        </p>
+    </div>
+</section>
+<section class="approach__section">
+    <div class="row row__fluid">
+        <div class="col span-1-of-2">
+            <p class="section__one">
+                A visual identity is the essential backbone of every brand. Having a strong
+                visual identity means having the power to communicate and propel a brand’s
+                unique culture and aspirations. And to define its present and future in a
+                clear visual language.
+            </p>
+            <p>
+                Our services around visual identities include strategy, analysis, research,
+                concept design, identity
+                design, prototyping and implementation of the final identity across all
+                platforms and media.
+            </p>
+        </div>
+        <div class="col span-1-of-2">
+            <p class="section__one">
+                Development is the magic craft of using advanced technology to design new
+                elegant tools for
+                communication or service purposes. It’s where systems talk with systems and
+                users with users. It’s
+                engineering innovative solutions to challenges that cannot be addressed with
+                standard measures.
+            </p>
+            <p>
+                Our experience within development is extensive and our services specialised
+                to each task. We work
+                with prototyping, automated animations and web development.
+            </p>
+        </div>
+    </div>
+</section>
+
+
+<!-- Footer -->
+<section class="footer">
+    <div class="row">
+
+        <!-- Address -->
+        <div class="col span-1-of-3">
+            <p class="footer__section">tukoWorks</p>
+            <p class="footer__section">Nairobi+Hamburg</p>
+        </div>
+
+        <!-- Contacts -->
+        <div class="col span-1-of-3">
+            <p class="footer__section">Contact us</p>
+            <p class="footer__section">+254711594901</p>
+            <p class="contacts socials">hello@tukoWorks.com</p>
+        </div>
+
+        <!-- Socials -->
+        <div class="col span-1-of-3">
+            <p class="footer__section">Follow us</p>
+            <p class="socials"><a href="https://twitter.com" target="_blank">Twitter</a></p>
+        </div>
+    </div>
+</section>
+{% endblock %}

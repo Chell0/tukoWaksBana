@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description"
+            content="TukoWorks is a web development agency that produces high quality web solutions for it's clients." />
+        <meta content="ie=edge" http-equiv="X-UA-Compatible" />
+        <title>TukoWorks</title>
+
+        {% load static %}
+        <!-- Normalize CSS -->
+        <link rel="stylesheet" href="{% static 'css/vendors/normalize.css' %}">
+
+        <!-- Grid CSS -->
+        <link rel="stylesheet" href="{% static 'css/vendors/grid.css' %}">
+
+        <!-- Fonts -->
+        <!-- Manrope -->
+        <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+
+        <!-- AOS -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+        <!-- MainCSS -->
+        <link rel="stylesheet" href="{% static 'css/style.css' %}">
+        <!-- WorkCSS -->
+        <link rel="stylesheet" href="{% static 'css/work.css' %}">
+        <!-- WorkDetailCSS -->
+        <link rel="stylesheet" href="{% static 'css/work_detail.css' %}">
+        <!-- ServicesCSS -->
+        <link rel="stylesheet" href="{% static 'css/services.css' %}">
+        <!-- ApproachCSS -->
+        <link rel="stylesheet" href="{% static 'css/approach.css' %}">
+        <!-- ContactCSS -->
+        <link rel="stylesheet" href="{% static 'css/contact.css' %}">
+        <!-- MediaQueriesCSS -->
+        <link rel="stylesheet" href="{% static 'css/queries.css' %}">
+        <!-- Site Favicon -->
+        <link rel=" apple-touch-icon" sizes="180x180"
+            href="{% static 'img/favicon_io/apple-touch-icon.png' %}">
+        <link rel="icon" type="image/png" sizes="32x32"
+            href="{% static 'img/favicon_io/favicon-32x32.png' %}">
+        <link rel="icon" type="image/png" sizes="16x16"
+            href="{% static 'img/favicon_io/favicon-16x16.png' %}">
+        <link rel="manifest" href="{% static 'img/favicon_io/site.webmanifest' %}">
+    </head>
+
+    <body>
+        {% block content %}
+        replace me
+        {% endblock %}
+
+        <!-- Scripts -->
+        <!-- Main JS -->
+        <script src="../static/js/app.js"></script>
+
+        <!-- AOS -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init({
+                offset: 400
+            });
+        </script>
+    </body>
+
+</html>
