@@ -1,104 +1,119 @@
-{% extends "base.html" %}
-{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description"
+            content="TukoWorks is a web development agency that produces high quality web solutions for it's clients." />
+        <meta content="ie=edge" http-equiv="X-UA-Compatible" />
+        <title>TukoWorks</title>
+                <!-- VendorCSS -->
+        <!-- Normalize CSS -->
+        <link rel="stylesheet" href="./static/css/vendors/normalize.css">
+        <!-- Grid CSS -->
+        <link rel="stylesheet" href="./static/css/vendors/grid.css">
+        <!-- AOS CSS -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-{% block content %}
-<div class="header__section">
-    <nav>
-        <div id="logo">
-            <a href="{% url 'home:home' %}">
-                <h3>tukoWorks</h3>
-            </a>
-        </div>
-        <ul class="nav__links">
-            <li><a href="{% url 'home:home' %}">Home</a></li>
-            <li><a href="{% url 'home:works' %}">Work</a></li>
-            <li><a href="{% url 'home:approach' %}">Approach</a></li>
-            <li><a href="{% url 'home:contact' %}">Contact</a></li>
-        </ul>
-        <div class="burger">
-            <div class="line1"></div>
-            <div class="line2"></div>
-            <div class="line3"></div>
-        </div>
-    </nav>
-</div>
+        <!-- MainCSS -->
+        <link rel="stylesheet" href="./static/css/style.css">
+        <!-- ServicesCSS -->
+        <link rel="stylesheet" href="./static/css/services.css">
+    </head>
 
-<section class="services__section">
-    <div class="row">
-        <h2 class="white">Services</h2>
-    </div>
-    <div class="row">
-        <p>
-            Being a multifaceted agency, we master the intersecting fields
-            of design and technology and
-            provide a broad picture of services within these areas.
-            <br>
-            <br>
-            Our core services evolve around visual identity design, graphic design as well
-            as digital design and
-            development.
-        </p>
-    </div>
-</section>
-<section class="services__section">
-    <div class="row">
-        <div class="col span-1-of-2">
-            <h4>Visual Identity</h4>
-            <p>
-                A visual identity is the essential backbone of every brand. Having a strong
-                visual identity means having the power to communicate and propel a brand’s
-                unique culture and aspirations. And to define its present and future in a
-                clear visual language.
-            </p>
-            <p>
-                Our services around visual identities include strategy, analysis, research,
-                concept design, identity
-                design, prototyping and implementation of the final identity across all
-                platforms and media.
-            </p>
-        </div>
-        <div class="col span-1-of-2">
-            <h4>Development</h4>
-            <p>
-                Development is the magic craft of using advanced technology to design new
-                elegant tools for
-                communication or service purposes. It’s where systems talk with systems and
-                users with users. It’s
-                engineering innovative solutions to challenges that cannot be addressed with
-                standard measures.
-            </p>
-            <p>
-                Our experience within development is extensive and our services specialised
-                to each task. We work
-                with prototyping, automated animations and web development.
-            </p>
-        </div>
-    </div>
-</section>
-
-
-<!-- Footer -->
-<section class="footer">
-    <div class="row">
-
-        <!-- Address -->
-        <div class="col span-1-of-3">
-            <p class="footer__section">tukoWorks</p>
-            <p class="footer__section">Nairobi+Hamburg</p>
+    <body>
+        <div class="header__section">
+            <nav>
+                <div id="logo"><a href="index.html"><h3>tukoWorks</h3></a></div>
+                <ul class="nav__links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="works.html">Work</a></li>
+                    <li><a href="approach.html">Approach</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="burger">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+            </nav>
         </div>
 
-        <!-- Contacts -->
-        <div class="col span-1-of-3">
-            <p class="footer__section">Contact us</p>
-            <p class="footer__section">+254711594901</p>
-            <p class="contacts socials">hello@tukoWorks.com</p>
-        </div>
+        <section class="services__section">
+            <div class="row"><h2 class="white">Services</h2></div>
+            <div class="row">
+                <p>
+                    Being a multifaceted agency, we master the intersecting fields of design and technology and provide a broad picture of services within these areas.
+                    <br>
+                    <br>
+                    Our core services evolve around visual identity design, graphic design as well as digital design and        development.
+                </p>
+            </div>
+        </section>
+        <section class="services__section">
+            <div class="row">
+                <div class="col span-1-of-2">
+                    <h4>Visual Identity</h4>
+                    <p>
+                        A visual identity is the essential backbone of every brand. Having a strong visual identity means having the power to communicate and propel a brand’s unique culture and aspirations. And to define its present and future in a clear visual language.
+                    </p>
+                    <p>
+                        Our services around visual identities include strategy, analysis, research, concept design, identity
+                        design, prototyping and implementation of the final identity across all platforms and media.
+                    </p>
+                </div>
+                <div class="col span-1-of-2">
+                    <h4>Development</h4>
+                    <p>
+                        Development is the magic craft of using advanced technology to design new elegant tools for
+                        communication or service purposes. It’s where systems talk with systems and users with users. It’s
+                        engineering innovative solutions to challenges that cannot be addressed with standard measures.
+                    </p>
+                    <p>
+                        Our experience within development is extensive and our services specialised to each task. We work with prototyping, automated animations and web development.
+                    </p>
+                </div>
+            </div>
+        </section>
 
-        <!-- Socials -->
-        <div class="col span-1-of-3">
-            <p class="footer__section">Follow us</p>
-            <p class="socials"><a href="https://twitter.com" target="_blank">Twitter</a></p>
-        </div>
-    </div>
-</section>
-{% endblock%}
+        <!-- Footer -->
+        <section class="footer">
+            <div class="row">
+                
+                <!-- Address -->
+                <div class="col span-1-of-3">
+                    <p class="footer__section">tukoWorks</p>
+                    <p class="footer__section">Nairobi+Hamburg</p>
+                </div>
+                
+                <!-- Contacts -->
+                <div class="col span-1-of-3">
+                    <p class="footer__section">Contact us</p>
+                    <p class="footer__section">+254711594901</p>
+                    <p class="contacts socials">hello@tukoWorks.com</p>
+                </div>
+                
+                <!-- Socials -->
+                <div class="col span-1-of-3">
+                    <p class="footer__section">Follow us</p>
+                    <p class="socials">
+                        <a href="https://twitter.com" target="_blank">Twitter</a>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Scripts -->
+        <!-- Main JS -->
+        <script src="./static/js/app.js"></script>
+
+        <!-- AOS JS -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init({
+                offset: 400
+            });
+        </script>
+
+    </body>
+</html>
