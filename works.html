@@ -1,71 +1,129 @@
-{% extends "base.html" %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description"
+            content="TukoWorks is a web development agency that produces high quality web solutions for it's clients." />
+        <meta content="ie=edge" http-equiv="X-UA-Compatible" />
+        <title>TukoWorks | Works</title>
 
-{% load static %}
-{% block content %}
+        <!-- VendorCSS -->
+        <!-- Normalize CSS -->
+        <link rel="stylesheet" href="./static/css/vendors/normalize.css">
+        <!-- Grid CSS -->
+        <link rel="stylesheet" href="./static/css/vendors/grid.css">
+        <!-- AOS CSS -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-<div class="header__section">
-    <nav>
-        <div id="logo">
-            <a href="{% url 'home:home' %}">
-                <h3>tukoWorks</h3>
-            </a>
-        </div>
-        <ul class="nav__links">
-            <li><a href="{% url 'home:home' %}">Home</a></li>
-            <li><a href="{% url 'home:approach' %}">Approach</a></li>
-            <li><a href="{% url 'home:services' %}">Services</a></li>
-            <li><a href="{% url 'home:contact' %}">Contact</a></li>
-        </ul>
-        <div class="burger">
-            <div class="line1"></div>
-            <div class="line2"></div>
-            <div class="line3"></div>
-        </div>
-    </nav>
-</div>
+        <!-- MainCSS -->
+        <link rel="stylesheet" href="./static/css/style.css">
+        <!-- WorksCSS -->
+        <link rel="stylesheet" href="./static/css/work.css">
+        <!-- MediaQueriesCSS -->
+        <link rel="stylesheet" href="./static/css/queries.css">
+    </head>
 
-<!-- Projects -->
-<section class="works__section">
-    <div class="row">
-        <h1>Projects</h1>
-    </div>
-    <div class="wrapper">
-        {% for project in projects %}
-        <div class="projects" data-aos="fade-up" data-aos-duration="900">
-            <a href="{% url 'home:work_detail' project.slug %}">
-                {% if project.image %}
-                <img src="{{ project.image.url }}">
-                {% endif %}
-            </a>
-            <p class="skill">{{ project.title }}</p>
-            <p>{{ project.description | slice:"200" }}...</p>
-        </div>
-        {% endfor %}
-    </div>
-</section>
-
-<!-- Footer -->
-<section class="footer">
-    <div class="row">
-
-        <!-- Address -->
-        <div class="col span-1-of-3">
-            <p class="footer__section">tukoWorks</p>
-            <p class="footer__section">Nairobi+Hamburg</p>
+    <body>
+        <div class="header__section">
+            <nav>
+                <div id="logo"><a href="index.html"><h3>tukoWorks</h3></a></div>
+                <ul class="nav__links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="approach.html">Approach</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="burger">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+            </nav>
         </div>
 
-        <!-- Contacts -->
-        <div class="col span-1-of-3">
-            <p class="footer__section">Contact us</p>
-            <p class="contacts socials">+254711594901</p>
-            <p class="contacts socials">hello@tukoWorks.com</p>
-        </div>
+        <!-- Projects -->
+        <section class="works__section">
+            <div class="row">
+                <h1>Projects</h1>
+            </div>
+            <div class="wrapper">
+                <div class="projects" data-aos="fade-up" data-aos-duration="900">
+                    <a href="work_detail.html"><img src="./static/img/project-images/blog-development.jpg"></a>
+                    <p class="skill">Personal Blogs Development</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua....</p>
+                </div>
 
-        <!-- Socials -->
-        <div class="col span-1-of-3">
-            <p class="footer__section">Follow us</p>
-            <p class="socials"><a href="https://twitter.com" target="_blank">Twitter</a></p>
-        </div>
-    </div>
-</section>
-{% endblock %}
+                <div class="projects" data-aos="fade-up" data-aos-duration="900">
+                    <a href="work_detail.html"><img src="./static/img/project-images/ecommer-website.jpg"></a>
+                    <p class="skill">Ecommerce Websites</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua....</p>
+                </div>
+
+                <div class="projects" data-aos="fade-up" data-aos-duration="900">
+                    <a href="work_detail.html"><img src="./static/img/project-images/footwear.jpg"></a>
+                    <p class="skill">Product Portfolio Websites</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua....</p>
+                </div>
+
+                <div class="projects" data-aos="fade-up" data-aos-duration="900">
+                    <a href="work_detail.html"><img src="./static/img/project-images/music.jpg"></a>
+                    <p class="skill">Artist Personal Portfolio</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua....</p>
+                </div>
+
+                <div class="projects" data-aos="fade-up" data-aos-duration="900">
+                    <a href="work_detail.html"><img src="./static/img/project-images/web.jpg"></a>
+                    <p class="skill">Web Development</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua....</p>
+                </div>
+
+                <div class="projects" data-aos="fade-up" data-aos-duration="900">
+                    <a href="work_detail.html"><img src="./static/img/project-images/wire-framing.jpg"></a>
+                    <p class="skill">Wire Framing</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua....</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <section class="footer">
+            <div class="row">
+
+                <!-- Address -->
+                <div class="col span-1-of-3">
+                    <p class="footer__section">tukoWorks</p>
+                    <p class="footer__section">Nairobi+Hamburg</p>
+                </div>
+
+                <!-- Contacts -->
+                <div class="col span-1-of-3">
+                    <p class="footer__section">Contact us</p>
+                    <p class="contacts socials">+254711594901</p>
+                    <p class="contacts socials">hello@tukoWorks.com</p>
+                </div>
+
+                <!-- Socials -->
+                <div class="col span-1-of-3">
+                    <p class="footer__section">Follow us</p>
+                    <p class="socials">
+                        <a href="https://twitter.com" target="_blank">Twitter</a>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Scripts -->
+        <!-- Main JS -->
+        <script src="./static/js/app.js"></script>
+
+        <!-- AOS JS -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init({
+                offset: 400
+            });
+        </script>
+    </body>
+
+</html>

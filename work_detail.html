@@ -1,55 +1,90 @@
-{% extends "base.html" %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description"
+            content="TukoWorks is a web development agency that produces high quality web solutions for it's clients." />
+        <meta content="ie=edge" http-equiv="X-UA-Compatible" />
+        <title>TukoWorks | Work-Details</title>
 
-{% load static %}
-{% block content %}
+        <!-- VendorCSS -->
+        <!-- Normalize CSS -->
+        <link rel="stylesheet" href="./static/css/vendors/normalize.css">
+        <!-- Grid CSS -->
+        <link rel="stylesheet" href="./static/css/vendors/grid.css">
+        <!-- AOS CSS -->
+        <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
 
-<div class="header__section">
-    <nav>
-        <div id="detail__logo">
-            <a href="{% url 'home:works' %}">
-                <h3>Back</h3>
-            </a>
-        </div>
-    </nav>
-</div>
+        <!-- MainCSS -->
+        <link rel="stylesheet" href="./static/css/style.css">
+        <!-- Work_DetailCSS -->
+        <link rel="stylesheet" href="./static/css/work_detail.css">
+        <!-- MediaQueriesCSS -->
+        <link rel="stylesheet" href="./static/css/queries.css">
+    </head>
 
-<!-- Project -->
-<section class="project_detail_section">
-    <div class="wrapper">
-        <div class="project" data-aos="fade-up" data-aos-duration="900">
-            {% if project.image %}
-            <img src="{{ project.image.url }}">
-            {% endif %}
-        </div>
-        <div class="project" data-aos="fade-up" data-aos-duration="900">
-            <h2>{{ project.title }}</h2>
-            <p>{{ project.description }}</p>
-        </div>
-    </div>
-</section>
-
-<!-- Footer -->
-<section class="footer">
-    <div class="row">
-
-        <!-- Address -->
-        <div class="col span-1-of-3">
-            <p class="footer__section">tukoWorks</p>
-            <p class="footer__section">Nairobi+Hamburg</>
+    <body>
+        <div class="header__section">
+            <nav>
+                <div id="detail__logo">
+                    <a href="index.html"><h3>Back</h3></a></div>
+            </nav>
         </div>
 
-        <!-- Contacts -->
-        <div class="col span-1-of-3">
-            <p class="footer__section">Contact us</p>
-            <p class="contacts socials">+254711594901</p>
-            <p class="contacts socials">hello@tukoWorks.com</p>
-        </div>
+        <!-- Project -->
+        <section class="project_detail_section">
+            <div class="wrapper">
+                <div class="project" data-aos="fade-up" data-aos-duration="900">
+                    {% if project.image %}
+                    <img src="{{ project.image.url }}">
+                    {% endif %}
+                </div>
+                <div class="project" data-aos="fade-up" data-aos-duration="900">
+                    <h2>{{ project.title }}</h2>
+                    <p>{{ project.description }}</p>
+                </div>
+            </div>
+        </section>
 
-        <!-- Socials -->
-        <div class="col span-1-of-3">
-            <p class="footer__section">Follow us</p>
-            <p class="socials"><a href="https://twitter.com" target="_blank">Twitter</a></p>
-        </div>
-    </div>
-</section>
-{% endblock %}
+        <!-- Footer -->
+        <section class="footer">
+            <div class="row">
+
+                <!-- Address -->
+                <div class="col span-1-of-3">
+                    <p class="footer__section">tukoWorks</p>
+                    <p class="footer__section">Nairobi+Hamburg</>
+                </div>
+
+                <!-- Contacts -->
+                <div class="col span-1-of-3">
+                    <p class="footer__section">Contact us</p>
+                    <p class="contacts socials">+254711594901</p>
+                    <p class="contacts socials">hello@tukoWorks.com</p>
+                </div>
+
+                <!-- Socials -->
+                <div class="col span-1-of-3">
+                    <p class="footer__section">Follow us</p>
+                    <p class="socials">
+                        <a href="https://twitter.com" target="_blank">Twitter</a>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Scripts -->
+        <!-- Main JS -->
+        <script src="./static/js/app.js"></script>
+
+        <!-- AOS JS -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init({
+                offset: 400
+            });
+        </script>
+    </body>
+
+</html>
