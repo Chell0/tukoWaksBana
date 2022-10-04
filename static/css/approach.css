@@ -1,6 +1,17 @@
 /* --------The Approach Page ---------------------- */
+/* --------Navigation ----------------------------- */
 .header__section {
 	height: 2vh;
+}
+
+#logo a {
+	text-decoration: none;
+}
+
+#logo a h3 {
+	font-size: 130%;
+	font-weight: 400;
+	color: #ffffff;
 }
 
 .approach__section {
@@ -8,20 +19,19 @@
 }
 
 .approach__section .row {
-	margin-bottom: 10px;
+	margin-bottom: 30px;
 }
 
 .approach__section .row h2 {
-	font-size: 300%;
+	font-size: 400%;
 	font-weight: 700;
+	color: #ffffff;
+	margin-top: 70px;
 }
 
 .approach__section .row p {
-	font-size: 280%;
-	font-weight: 700;
-}
-
-.approach__section .row .white {
+	font-size: 350%;
+	font-weight: 400;
 	color: #ffffff;
 }
 
@@ -30,11 +40,12 @@
 }
 
 .approach__section .row .col p {
-	font-size: 80%;
+	font-size: 100%;
 	font-weight: 200;
+	color: #000000;
 }
 
 .approach__section .row .col .section__one {
-	margin-bottom: 20px;
+	margin-bottom: 40px;
 }
 /* ------------------------------------------------ */
