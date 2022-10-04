@@ -1,43 +1,29 @@
 /* -----------------Contact Page----------------- */
-.header__section {
-	height: 6vh;
-}
-
-#logo a  {
-	text-decoration: none;
-}
-
-#logo a h3 {
-	font-size: 130%;
-	font-weight: 400;
-	color: #ffffff;
-}
-
 .contact__section {
 	padding: 4%;
 }
 
 .contact__section .row .white {
 	color: #ffffff;
-	font-size: 400%;
+	font-size: 300%;
 	font-weight: 700;
 	margin-bottom: 20px;
 }
 
 .contact__section .row p {
-	font-size: 350%;
-	font-weight: 400;
+	font-size: 270%;
+	font-weight: 600;
 }
 
 .contact__section .row .mail {
 	text-decoration: underline;
-	font-size: 200%;
-	font-weight: 600;
+	font-size: 150%;
+	font-weight: 200;
 	margin-top: 20px;
 }
 
 .contact__section .row .cell {
-	font-size: 200%;
-	font-weight: 600;
+	font-size: 150%;
+	font-weight: 200;
 }
 /* --------------------------------------------- */
