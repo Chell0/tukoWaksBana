@@ -1,4 +1,14 @@
 /* -----------------Contact Page----------------- */
+.header__section {
+	height: 6vh;
+}
+
+.header__section nav #logo a {
+	font-size: 100%;
+	font-weight: normal;
+	color: #ffffff;
+}
+
 .contact__section {
 	padding: 4%;
 }
@@ -12,18 +22,18 @@
 
 .contact__section .row p {
 	font-size: 270%;
-	font-weight: 600;
+	font-weight: 200;
 }
 
 .contact__section .row .mail {
 	text-decoration: underline;
-	font-size: 150%;
-	font-weight: 200;
+	font-size: 200%;
+	font-weight: 600;
 	margin-top: 20px;
 }
 
 .contact__section .row .cell {
-	font-size: 150%;
-	font-weight: 200;
+	font-size: 200%;
+	font-weight: 600;
 }
 /* --------------------------------------------- */
