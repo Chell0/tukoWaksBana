@@ -3,9 +3,13 @@
 	height: 6vh;
 }
 
-.header__section nav #logo a {
-	font-size: 100%;
-	font-weight: normal;
+#logo a  {
+	text-decoration: none;
+}
+
+#logo a h3 {
+	font-size: 130%;
+	font-weight: 400;
 	color: #ffffff;
 }
 
@@ -15,14 +19,14 @@
 
 .contact__section .row .white {
 	color: #ffffff;
-	font-size: 300%;
+	font-size: 400%;
 	font-weight: 700;
 	margin-bottom: 20px;
 }
 
 .contact__section .row p {
-	font-size: 270%;
-	font-weight: 200;
+	font-size: 350%;
+	font-weight: 400;
 }
 
 .contact__section .row .mail {

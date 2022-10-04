@@ -5,11 +5,12 @@
 }
 
 body {
-	background-color: #B5B5B5;
+	background-color: #555555;
 	font-family: 'Manrope', sans-serif;
 	font-size: 21px;
 	overflow-x: hidden;
 	text-rendering: optimizeLegibility;
+	max-width: 1120px;
 }
 
 /* Re-usable components */
@@ -26,7 +27,7 @@ header {
 /* ------------------- Navigation -------------------------- */
 nav {
 	align-items: center;
-	background-color: #B5B5B5;
+	background-color: #555555;
 	display: flex;
 	justify-content: space-around;
 	min-height: 8vh;
@@ -37,15 +38,18 @@ nav {
 
 /* Logo */
 #logo {
-	margin-right: 920px;
+	margin-right: 700px;
 	cursor: hand;
 }
 
 #logo a {
-	font-size: 100%;
-	font-weight: normal;
-	color: #ffffff;
 	text-decoration: none;
+}
+
+#logo a h3 {
+	font-size: 130%;
+	font-weight: 700;
+	color: #ffffff;
 }
 
 .nav__links {
@@ -82,7 +86,7 @@ nav {
 }
 
 .burger div {
-	width: 25px;
+	width: 35px;
 	height: 3px;
 	background-color: #ffffff;
 	margin: 5px;
@@ -121,7 +125,7 @@ nav {
 
 .content {
 	display: flex;
-	height: 85vh;
+	height: 90vh;
 	justify-content: center;
 	align-items: center;
 }
@@ -129,13 +133,13 @@ nav {
 .hero {
 	height: 90%;
 	width: 90%;
-	margin-top: 90px;
+	margin-top: 190px;
 }
 
 .hero p {
 	height: 100%;
 	width: 100%;
-	font-size: 370%;
+	font-size: 450%;
 	font-weight: 700;
 	color: #ffffff;
 }
@@ -143,9 +147,9 @@ nav {
 /* --------- Projects Section ----------- */
 .selected__projects__section .row h2 {
 	text-align: center;
-	font-size: 240%;
-	font-weight: 600;
-	color: #000000;
+	font-size: 300%;
+	font-weight: 500;
+	color: #ffffff;
 	padding-bottom: 20px;
 }
 
@@ -159,7 +163,7 @@ nav {
 .selected__projects__section .wrapper .projects {
     padding: 2em;
     border-radius: .3em;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border: 1px solid #444444;
 }
 
 .selected__projects__section .wrapper .projects a img {
@@ -168,16 +172,16 @@ nav {
 
 .selected__projects__section .wrapper .projects p {
 	text-align: left;
-	font-size: 80%;
-	font-weight: 400;
+	font-size: 75%;
+	font-weight: 500;
 	padding-bottom: 10px;
 	margin-left: 10px;
-	color: #fff;
+	color: #ffffff;
 }
 
 .selected__projects__section .wrapper .projects p.skill {
     padding-top: 10px;
-	font-size: 95%;
+	font-size: 105%;
 	font-weight: 700;
 	color: #000000;
 	margin-bottom: 10px;
