@@ -1,9 +1,10 @@
 /* --------------Projects Section------------ */
 .works__section .row h1 {
-	font-size: 300%;
+	font-size: 250%;
 	font-weight: 700;
 	color: #ffffff;
-	margin-top: 40px;
+	margin-top: 100px;
+	margin-bottom: -20px;
 	text-align: center;
 }
 

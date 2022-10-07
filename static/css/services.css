@@ -1,4 +1,8 @@
 /* -------------- THE SERVICES PAGE ---------------- */
+.header__section {
+	height: 6vh;
+}
+
 .services__section {
 	padding: 4%;
 }
@@ -8,7 +12,7 @@
 }
 
 .services__section .row p {
-	font-size: 280%;
+	font-size: 250%;
 	font-weight: 700;
 }
 
@@ -23,14 +27,14 @@
 }
 
 .services__section .row .col h4 {
-	font-size: 200%;
-	font-weight: 400;
-	margin-bottom: 20px;
+	font-size: 150%;
+	font-weight: 700;
+	margin-bottom: 10px;
 	color: #ffffff;
 }
 
 .services__section .row .col p {
-	font-size: 70%;
+	font-size: 60%;
 	font-weight: 200;
 }
 /* ----------------------------------------------- */

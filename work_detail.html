@@ -28,7 +28,7 @@
         <div class="header__section">
             <nav>
                 <div id="detail__logo">
-                    <a href="http://kazifiti.com/index"><h3>Back</h3></a></div>
+                    <a href="./index.html"><h3>Back</h3></a></div>
             </nav>
         </div>
 
@@ -36,13 +36,11 @@
         <section class="project_detail_section">
             <div class="wrapper">
                 <div class="project" data-aos="fade-up" data-aos-duration="900">
-                    {% if project.image %}
-                    <img src="{{ project.image.url }}">
-                    {% endif %}
+                    <img src="#">
                 </div>
                 <div class="project" data-aos="fade-up" data-aos-duration="900">
-                    <h2>{{ project.title }}</h2>
-                    <p>{{ project.description }}</p>
+                    <h2>project.title</h2>
+                    <p>project.description</p>
                 </div>
             </div>
         </section>

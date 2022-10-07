@@ -1,0 +1,59 @@
+#server_error {
+    position: relative;
+    height: 75vh;
+}
+
+#server_error .server_error {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+#server_error .server_error {
+    max-width: 900px;
+    width: 100%;
+    text-align: center;
+    padding: 0px 15px;
+    line-height: 1.4;
+}
+
+#server_error .server_error .server_error-500 {
+    height: 150px;
+    line-height: 150px;
+}
+
+#server_error .server_error .server_error-500 h1 {
+    font-size: 300px;
+    font-weight: 700;
+    color: #000000;
+}
+
+#server_error .server_error h2 {
+    font-size: 80%;
+    font-weight: 700;
+    color: #000000;
+    margin-top: 120px;
+}
+
+#server_error .server_error a {
+    position: relative;
+    display: inline-block;
+    padding: 10px 25px;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+@media only screen and (max-width: 767px) {
+    #server_error .server_error .server_error-500 {
+        height: 122px;
+        line-height: 122px;
+    }
+
+    #server_error .server_error .server_error-500 h1 {
+        font-size: 122px;
+    }
+}

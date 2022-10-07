@@ -6,88 +6,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-
     <title>Page Not Found</title>
 
-    <!-- Google font -->
-    <!-- Anek Telugu -->
-    <link href="https://fonts.googleapis.com/css2?family=Anek+Telugu:wght@100;200;300;400;500;600&display=swap" rel="stylesheet">
+    <!-- VendorCSS -->
+    <!-- Normalize CSS -->
+    <link rel="stylesheet" href="./static/css/vendors/normalize.css">
+    <!-- Grid CSS -->
+    <link rel="stylesheet" href="./static/css/vendors/grid.css">
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-    <!-- Custom stylesheet -->
-    <style type="text/css">
-        * {
-            -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-        }
+    <!-- MainCSS -->
+    <link rel="stylesheet" href="./static/css/style.css">
+    <link rel="stylesheet" href="./static/css/404.css">
+    <!-- MediaQueriesCSS -->
+    <link rel="stylesheet" href="./static/css/queries.css">
 
-        body {
-            font-family: 'Anek Telugu', sans-serif;
-            padding: 0;
-            margin: 0;
-            background-color: #858585;
-        }
-
-        #notfound {
-            position: relative;
-            height: 100vh;
-        }
-
-        #notfound .notfound {
-            position: absolute;
-            left: 50%;
-            top: 50%;
-            -webkit-transform: translate(-50%, -50%);
-            -ms-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-        }
-
-        #notfound .notfound {
-            max-width: 900px;
-            width: 100%;
-            text-align: center;
-            padding: 0px 15px;
-            line-height: 1.4;
-        }
-
-        #notfound .notfound .notfound-404 {
-            line-height: 200px;
-        }
-
-        #notfound .notfound .notfound-404 h1 {
-            font-size: 350px;
-            margin: 0;
-            color: #000000;
-            text-transform: uppercase;
-        }
-
-        #notfound .notfound h2 {
-            font-size: 28px;
-            font-weight: 600;
-            color: #ffffff;
-            margin-top: 120px;
-        }
-
-        #notfound .notfound a {
-            position: relative;
-            display: inline-block;
-            padding: 10px 25px;
-            text-decoration: none;
-            margin-top: 28px;
-            font-weight: 600;
-            color: #000000;
-        }
-
-        @media only screen and (max-width: 767px) {
-            #notfound .notfound .notfound-404 {
-                height: 122px;
-                line-height: 122px;
-            }
-
-            #notfound .notfound .notfound-404 h1 {
-                font-size: 122px;
-            }
-        }
-    </style>
+    <!-- Site Favicon -->
+    <link rel=" apple-touch-icon" sizes="180x180"
+        href="./static/img/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32"
+        href="./static/img/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16"
+        href="./static/img/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="./static/img/favicon_io/site.webmanifest">
 
 </head>
 
@@ -102,6 +44,27 @@
             <a href="index.html">Return To Homepage</a>
         </div>
     </div>
+
+    <!-- Footer -->
+    <section class="footer">
+        <div class="row">
+            <!-- Address -->
+            <div class="col span-1-of-3">
+                <p>tukoWorks</p>
+                <p>Nairobi+Hamburg</p>
+            </div>
+            <!-- Contacts -->
+            <div class="col span-1-of-3">
+                <p>Contact us</p>
+                <p class="contacts socials">hello@kazifiti.com</p>
+            </div>
+            <!-- Socials -->
+            <div class="col span-1-of-3">
+                <p>Follow us</p>
+                <p class="socials"><a href="https://twitter.com" target="_blank">Twitter</a></p>
+            </div>
+        </div>
+    </section>
 
 </body>
 
