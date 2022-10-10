@@ -1,9 +1,13 @@
 /* -----------------Contact Page----------------- */
-.contact__section {
-	padding: 4%;
+.header__section {
+	height: 6vh;
 }
 
-.contact__section .row .white {
+.contact__section {
+	padding: 6%;
+}
+
+.contact__section .row h2 {
 	color: #ffffff;
 	font-size: 300%;
 	font-weight: 700;
@@ -11,19 +15,24 @@
 }
 
 .contact__section .row p {
-	font-size: 270%;
+	font-size: 200%;
 	font-weight: 600;
 }
 
 .contact__section .row .mail {
 	text-decoration: underline;
-	font-size: 150%;
-	font-weight: 200;
+	font-size: 200%;
+	font-weight: 700;
 	margin-top: 20px;
+	margin-bottom: 20px;
+	color: #ffffff;
 }
 
 .contact__section .row .cell {
-	font-size: 150%;
-	font-weight: 200;
+	text-decoration: underline;
+	font-size: 200%;
+	font-weight: 700;
+	margin-bottom: 20px;
+	color: #ffffff;
 }
 /* --------------------------------------------- */
