@@ -36,15 +36,18 @@ nav {
 }
 
 /* Logo */
+#logo {
+	cursor: hand;
+	margin-right: 880px;
+}
+
 #logo a {
 	text-decoration: none;
 }
 
 #logo a h3 {
 	font-size: 80%;
-	font-weight: 500;
-	margin-right: 920px;
-	cursor: hand;
+	font-weight: 400;
 	color: #000000;
 }
 
@@ -54,7 +57,7 @@ nav {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
-	height: 88vh;
+	height: 89vh;
 	position: absolute;
 	width: 50%;
 	right: 0;
@@ -178,7 +181,7 @@ nav {
     padding-top: 10px;
 	font-size: 80%;
 	font-weight: 700;
-	color: #000;
+	color: #000000;
 	margin-bottom: 10px;
 }
 /* ---------------------------------- */
@@ -190,16 +193,16 @@ nav {
 
 .footer .row .col p {
     font-size: 55%;
-    color: #000;
+    color: #000000;
 }
 
 .footer .row .col p.contacts {
 	text-decoration: underline;
-	color: #fff;
+	color: #ffffff;
 }
 
 .socials a {
 	text-decoration: none;
-	color: #fff;
+	color: #ffffff;
 }
 /* ------------------------------ */

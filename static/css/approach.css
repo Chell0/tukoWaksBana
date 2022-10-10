@@ -4,7 +4,7 @@
 }
 
 .approach__section {
-	padding: 4%;
+	padding: 6%;
 }
 
 .approach__section .row {
@@ -15,10 +15,11 @@
 	font-size: 300%;
 	font-weight: 700;
 	color: #ffffff;
+	padding-bottom: 20px;
 }
 
 .approach__section .row p {
-	font-size: 250%;
+	font-size: 220%;
 	font-weight: 700;
 }
 
