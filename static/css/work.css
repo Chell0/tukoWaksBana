@@ -1,6 +1,6 @@
 /* --------------Projects Section------------ */
 .works__section .row h1 {
-	font-size: 250%;
+	font-size: 240%;
 	font-weight: 700;
 	color: #ffffff;
 	margin-top: 100px;
@@ -9,14 +9,14 @@
 }
 
 .works__section .wrapper {
-    padding: 3em;
+    padding: 4em;
     display: grid;
-    grid-gap: 2em;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-gap: 4em;
+    grid-template-columns: repeat(auto-fit, minmax(330px, 2fr));
 }
 
 .works__section .wrapper .projects {
-    padding: 2em;
+    padding: 1em;
     border-radius: .3em;
 	box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
@@ -27,7 +27,7 @@
 
 .works__section .wrapper .projects p {
 	text-align: left;
-	font-size: 60%;
+	font-size: 50%;
 	font-weight: 200;
 	padding-bottom: 10px;
 	margin-left: 10px;
@@ -37,8 +37,7 @@
 .works__section .wrapper .projects p.skill {
 	padding-top: 10px;
 	font-size: 80%;
-	font-weight: 700;
+	font-weight: 500;
 	color: #000000;
-	margin-bottom: 10px;
 }
 /* ---------------------------------------------- */
