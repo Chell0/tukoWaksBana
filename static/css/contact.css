@@ -19,19 +19,12 @@
 	font-weight: 600;
 }
 
-.contact__section .row .mail {
-	text-decoration: underline;
-	font-size: 200%;
-	font-weight: 700;
-	margin-top: 20px;
-	margin-bottom: 20px;
-	color: #ffffff;
-}
-
+.contact__section .row .mail,
 .contact__section .row .cell {
 	text-decoration: underline;
 	font-size: 200%;
 	font-weight: 700;
+	margin-top: 20px;
 	margin-bottom: 20px;
 	color: #ffffff;
 }

@@ -29,7 +29,7 @@
     }
 
     #logo a h3 {
-        font-size: 75%;
+        font-size: 150%;
         font-weight: 400;
         color: #000000;
     }
@@ -40,7 +40,7 @@
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-        height: 82vh;
+        height: 81vh;
         position: absolute;
         width: 50%;
         right: 0;
@@ -120,23 +120,23 @@
     .hero p {
         height: 100%;
         width: 100%;
-        font-size: 290%;
+        font-size: 320%;
         font-weight: 700;
     }
 
     /* --------- Projects Section ----------- */
     .selected__projects__section .row h2 {
         text-align: center;
-        font-size: 180%;
-        font-weight: 600;
+        font-size: 240%;
+        font-weight: 400;
         color: #ffffff;
     }
    
     .selected__projects__section .wrapper {
         padding: 4em;
         display: grid;
-        grid-gap: 3em;
-        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        grid-gap: 4em;
+        grid-template-columns: repeat(auto-fit, minmax(330px, 2fr));
     }
 
     .selected__projects__section .wrapper .projects {
@@ -151,19 +151,17 @@
 
     .selected__projects__section .wrapper .projects p {
         text-align: left;
-        font-size: 60%;
+        font-size: 50%;
         padding-bottom: 10px;
         margin-left: 10px;
         color: #ffffff;
     }
 
     .selected__projects__section .wrapper .projects p.skill {
-        padding-top: 20px;
-        text-align: left;
-        font-size: 77%;
-        font-weight: 700;
+        padding-top: 10px;
+        font-size: 80%;
+        font-weight: 500;
         color: #000000;
-        margin-bottom: 5px;
     }
     /* ----------------------------------------- */
     /* ----------------------------------------- */
@@ -189,8 +187,8 @@
     }
 
     .approach__section .row p {
-        font-size: 220%;
-        font-weight: 600;
+        font-size: 250%;
+        font-weight: 700;
     }
 
 
@@ -200,7 +198,8 @@
 
     .approach__section .row .col p {
         font-size: 70%;
-        font-weight: 200;
+        font-weight: 100;
+        margin-bottom: 20px;
     }
     /* ------------------------------------------------ */
 
@@ -256,13 +255,13 @@
     }
 
     .contact__section .row .address {
-        margin-bottom: -30px;
+        margin-bottom: -80px;
     }
     /* ------------------------------------------- */
 }
 
-/* portrait tablets, portrait iPad Mini, 768-1023px */
-@media only screen and (max-width: 1023px) {
+/* portrait tablets, portrait iPad Mini */
+@media only screen and (max-width: 1024px) {
     /* Header */
     header {
         height: 94vh;
@@ -270,7 +269,7 @@
 
     /* Navigation */
     nav {
-        min-height: 12vh;
+        min-height: 13vh;
     }
 
     /* Logo */
@@ -279,13 +278,13 @@
     }
 
     #logo a h3 {
-        font-size: 70%;
+        font-size: 150%;
         font-weight: 400;
     }
 
     .nav__links {
-        height: 88vh;
-        top: 12vh;
+        height: 87vh;
+        top: 13vh;
     }
 
     .nav__links li {
@@ -295,7 +294,7 @@
 
     .nav__links a {
         letter-spacing: 1px;
-        font-size: 230%;
+        font-size: 180%;
         font-weight: 600;
         color: #ffffff;
     }
@@ -311,7 +310,7 @@
     }
 
     .hero p {
-        font-size: 260%;
+        font-size: 290%;
     }
 
     /* Projects Section */
@@ -343,6 +342,11 @@
     .contact__section .row p {
         font-size: 165%;
     }
+
+    .contact__section .row .mail,
+    .contact__section .row .cell {
+        color: #ffffff !important;
+    }
     /* ------------------------------------------------ */
 
     /* ServicesPage */
@@ -352,11 +356,11 @@
 
     .services__section .row h2 {
         margin-top: 20px;
-        font-size: 270%;
+        font-size: 250%;
     }
 
     .services__section .row p {
-        font-size: 190%;
+        font-size: 200%;
         margin-bottom: 0;
     }
     
@@ -374,83 +378,35 @@
     .works__section .wrapper .projects p {
         font-size: 55%;
     }
-
-    /* Work_detailsPage */
-    /* Logo */
-    #detail__logo {
-        font-size: 70%;
-        font-weight: 700;
-        margin-right: 250px;
-        cursor: hand;
-    }
-
-    #detail__logo a {
-        text-decoration: none;
-        color: #000000;
-    }
-
-    /* Projects Detail Section */
-    .project_detail_section .wrapper {
-        padding: 2em;
-        display: grid;
-        grid-gap: 2em;
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    }
-
-    .project_detail_section .wrapper .project {
-        padding: 1em;
-        border-radius: .3em;
-        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-    }
-
-    .project_detail_section .wrapper .project img {
-        width: 100%;
-    }
-
-    .project_detail_section .wrapper .project h2 {
-        font-size: 70%;
-        font-weight: 600;
-        color: #000000;
-        padding-bottom: 10px;
-        text-align: center;
-    }
-
-    .project_detail_section .wrapper .project p {
-        text-align: left;
-        font-size: 50%;
-        padding-bottom: 10px;
-        margin-left: 10px;
-        color: #f1f1f1;
-    }
-    /* ------------------------------------------------- */
 }
 
 /* iPad 810x1080 */
 @media only screen and (max-width: 810px) {
     /* Header */
     header {
-        height: 57vh;
+        height: 95vh;
     }
 
     /* Navigation */
     nav {
-        min-height: 10vh;
+        min-height: 12vh;
     }
 
     /* Logo */
     #logo {
-        margin-right: 390px;
+        margin-right: 440px;
     }
 
     #logo a h3 {
-        font-size: 90%;
+        font-size: 130%;
         font-weight: 400;
+        color: #000000;
     }
 
     .nav__links {
-        height: 50vh;
+        height: 87vh;
         width: 50%;
-        top: 10vh;
+        top: 12vh;
     }
 
     .nav__links a {
@@ -466,7 +422,7 @@
     }
 
     .hero p {
-        font-size: 220%;
+        font-size: 265%;
     }
 
     /* Projects Section */
@@ -521,12 +477,12 @@
 
     /* ServicesPage */
     .services__section .row h2 {
-        font-size: 180%;
+        font-size: 200%;
         margin-top: 40px;
     }
 
     .services__section .row p {
-        font-size: 120%;
+        font-size: 140%;
     }
 
     .services__section .row .col h4 {
@@ -537,6 +493,20 @@
     .works__section .row h1 {
         font-size: 180%;
         font-weight: 700;
+        margin-bottom: 40px;
+    }
+
+    .works__section .wrapper {
+        padding: 1em;
+        display: grid;
+        grid-gap: 1em;
+        grid-template-columns: repeat(auto-fit, minmax(330px, 2fr));
+    }
+
+    .works__section .wrapper .projects {
+        padding: 1em;
+        border-radius: .3em;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     }
 
     .works__section .wrapper .projects p {
@@ -545,18 +515,17 @@
     
     .works__section .wrapper .projects p.skill {
         padding-top: 10px;
-        font-size: 60%;
-        font-weight: 700;
+        font-size: 80%;
+        font-weight: 500;
         color: #000000;
-        margin-bottom: 10px;
     }
 }
 
-/* 767px */
-@media only screen and (max-width: 767px) {
+/* 768px */
+@media only screen and (max-width: 768px) {
     /* Header */
     header {
-        height: 80vh;
+        height: 95vh;
     }
 
     /* Navigation */
@@ -570,16 +539,16 @@
     }
 
     .nav__links {
-        height: 85vh;
+        height: 84vh;
         top: 15vh;
     }
 
     .nav__links a {
-        font-size: 200%;
+        font-size: 170%;
     }
 
     .content {
-        height: 80vh;
+        height: 95vh;
     }
 
     .hero {
@@ -587,7 +556,7 @@
     }
 
     .hero p {
-        font-size: 200%;
+        font-size: 250%;
     }
 
     /* Projects Section */
@@ -598,8 +567,8 @@
 
     .selected__projects__section .wrapper {
         padding: 2em;
-        grid-gap: 2em;
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-gap: 1em;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     }
 
     .selected__projects__section .wrapper .projects {
@@ -609,7 +578,14 @@
     }
 
     .selected__projects__section .wrapper .projects p {
-        font-size: 50%;
+        font-size: 40%;
+    }
+
+    .selected__projects__section .wrapper .projects p.skill {
+        padding-top: 10px;
+        font-size: 70%;
+        font-weight: 500;
+        color: #000000;
     }
 
     /* Footer Section */
@@ -629,7 +605,7 @@
     }
 
     .approach__section .row p {
-        font-size: 160%;
+        font-size: 180%;
     }
 
     .approach__section .row .col p {
@@ -650,8 +626,12 @@
     .contact__section .row p {
         font-size: 160%;
     }
-    /* ------------------------------------------------ */
 
+    .contact__section .row .mail,
+    .contact__section .row .cell {
+	    text-decoration: underline;
+    }
+    
     /* ServicesPage */
     .services__section {
         padding: 8%;
@@ -668,75 +648,38 @@
     /* ------------------------------------------------- */
 
     /* ProjectsPage */
+    .works__section .row h1 {
+        font-size: 240%;
+        margin-bottom: 0;
+        text-align: center;
+    }
+
     .works__section .wrapper {
-        padding: 2em;
-        grid-gap: 2em;
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        padding: 4em;
+        grid-gap: 3em;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     }
 
     .works__section .wrapper .projects {
-        padding: 1em;
-    }
-
-    .works__section .wrapper .projects p {
-        font-size: 50%;
-    }
-
-    /* Work_detailsPage */
-    /* Logo */
-    #detail__logo {
-        font-size: 70%;
-        font-weight: 700;
-        margin-right: 250px;
-        cursor: hand;
-    }
-
-    #detail__logo a {
-        text-decoration: none;
-        color: #000000;
-    }
-
-    /* Projects Detail Section */
-    .project_detail_section .wrapper {
-        padding: 2em;
-        display: grid;
-        grid-gap: 2em;
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    }
-
-    .project_detail_section .wrapper .project {
         padding: 1em;
         border-radius: .3em;
         box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     }
 
-    .project_detail_section .wrapper .project img {
-        width: 100%;
+    .works__section .wrapper .projects p {
+        font-size: 45%;
     }
 
-    .project_detail_section .wrapper .project h2 {
+    .works__section .wrapper .projects p.skill {
         font-size: 70%;
-        font-weight: 600;
-        color: #000000;
-        padding-bottom: 10px;
-        text-align: center;
     }
-
-    .project_detail_section .wrapper .project p {
-        text-align: left;
-        font-size: 50%;
-        padding-bottom: 10px;
-        margin-left: 10px;
-        color: #f1f1f1;
-    }
-    /* ------------------------------------------------- */
 }
 
-/* 479px */
-@media only screen and (max-width: 479px) {
+/* 480px */
+@media only screen and (max-width: 480px) {
     /* Header */
     header {
-        height: 80vh;
+        height: 95vh;
     }
 
     /* Navigation */
@@ -749,8 +692,12 @@
         margin-right: 220px;
     }
 
+    #logo a h3 {
+        font-size: 120%;
+    }
+
     .nav__links {
-        height: 85vh;
+        height: 84vh;
         width: 100%;
         top: 15vh;
     }
@@ -760,7 +707,7 @@
     }
 
     .content {
-        height: 80vh;
+        height: 95vh;
     }
 
     .hero {
@@ -768,14 +715,13 @@
     }
 
     .hero p {
-        font-size: 165%;
+        font-size: 200%;
     }
 
     /* Projects Section */
     .selected__projects__section .row h2 {
-        font-size: 170%;
+        font-size: 150%;
     }
-    /* ------------------------------------------------- */
 
     /* ApproachPage */
     .approach__section {
@@ -783,13 +729,12 @@
     }
 
     .approach__section .row h2 {
-        font-size: 240%;
+        font-size: 200%;
     }
 
     .approach__section .row p {
-        font-size: 140%;
+        font-size: 150%;
     }
-    /* ------------------------------------------------- */
 
     /* ContactsPage */
     .contact__section {
@@ -804,7 +749,11 @@
     .contact__section .row p {
         font-size: 140%;
     }
-    /* ------------------------------------------------ */
+
+    .contact__section .row .mail,
+    .contact__section .row .cell {
+	    text-decoration: underline;
+    }
 
     /* ServicesPage */
     .services__section {
@@ -827,10 +776,16 @@
     /* ------------------------------------------------- */
 
     /* ProjectsPage */
+    .works__section .row h1 {
+        font-size: 200%;
+        margin-bottom: 0;
+        text-align: center;
+    }
+
     .works__section .wrapper {
         padding: 2em;
         grid-gap: 2em;
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
     }
 
     .works__section .wrapper .projects {
@@ -840,67 +795,18 @@
     .works__section .wrapper .projects p {
         font-size: 50%;
     }
-
-    /* Work_detailsPage */
-    /* Logo */
-    #detail__logo {
-        font-size: 70%;
-        font-weight: 700;
-        margin-right: 250px;
-        cursor: hand;
-    }
-
-    #detail__logo a {
-        text-decoration: none;
-        color: #000000;
-    }
-
-    /* Projects Detail Section */
-    .project_detail_section .wrapper {
-        padding: 2em;
-        display: grid;
-        grid-gap: 2em;
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    }
-
-    .project_detail_section .wrapper .project {
-        padding: 1em;
-        border-radius: .3em;
-        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-    }
-
-    .project_detail_section .wrapper .project img {
-        width: 100%;
-    }
-
-    .project_detail_section .wrapper .project h2 {
-        font-size: 70%;
-        font-weight: 600;
-        color: #000000;
-        padding-bottom: 10px;
-        text-align: center;
-    }
-
-    .project_detail_section .wrapper .project p {
-        text-align: left;
-        font-size: 50%;
-        padding-bottom: 10px;
-        margin-left: 10px;
-        color: #f1f1f1;
-    }
-    /* ------------------------------------------------- */
 }
 
-/* iPhone12/13ProMax 428x926 */
+/* iPhone12/13ProMax 428 */
 @media only screen and (max-width: 428px) {
     /* Header */
     header {
-        height: 67vh;
+        height: 90vh;
     }
 
     /* Navigation */
     nav {
-        min-height: 10vh;
+        min-height: 12vh;
     }
 
     /* Logo */
@@ -909,21 +815,21 @@
     }
 
     #logo a h3 {
-        font-size: 75%;
+        font-size: 95%;
     }
 
     .nav__links {
-        height: 60vh;
+        height: 85vh;
         width: 100%;
-        top: 10vh;
+        top: 12vh;
     }
 
     .nav__links a {
-        font-size: 150%;
+        font-size: 120%;
     }
 
     .content {
-        height: 67vh;
+        height: 90vh;
     }
 
     .hero {
@@ -931,13 +837,13 @@
     }
 
     .hero p {
-        font-size: 150%;
+        font-size: 180%;
         font-weight: 700;
     }
 
     /* Projects Section */
     .selected__projects__section .row h2 {
-        font-size: 150%;
+        font-size: 140%;
     }
 
     /* ApproachPage */
@@ -968,12 +874,10 @@
         font-size: 170%;
     }
 
-    .contact__section .row .mail {
-        font-size: 140%;
-    }
-    
+    .contact__section .row .mail,
     .contact__section .row .cell {
         font-size: 140%;
+        color: #ffffff
     }
 
     /* ServicesPage */
@@ -1013,7 +917,7 @@
 @media only screen and (max-width: 414px) {
     /* Header */
     header {
-        height: 61vh;
+        height: 90vh;
     }
 
     /* Navigation */
@@ -1027,11 +931,11 @@
     }
 
     #logo a h3 {
-        font-size: 75%;
+        font-size: 95%;
     }
 
     .nav__links {
-        height: 62vh;
+        height: 80vh;
         width: 100%;
         top: 10vh;
     }
@@ -1041,7 +945,7 @@
     }
 
     .content {
-        height: 61vh;
+        height: 90vh;
     }
 
     .hero {
@@ -1049,7 +953,7 @@
     }
 
     .hero p {
-        font-size: 140%;
+        font-size: 180%;
         font-weight: 700;
     }
 
@@ -1086,12 +990,10 @@
         font-size: 140%;
     }
 
-    .contact__section .row .mail {
-        font-size: 140%;
-    }
-    
+    .contact__section .row .mail,
     .contact__section .row .cell {
         font-size: 140%;
+        color: #ffffff;
     }
 
     /* ServicesPage */
@@ -1131,7 +1033,7 @@
 @media only screen and (max-width: 412px) {
     /* Header */
     header {
-        height: 70vh;
+        height: 90vh;
     }
 
     /* Navigation */
@@ -1145,7 +1047,7 @@
     }
 
     .nav__links {
-        height: 59vh;
+        height: 80vh;
         width: 100%;
         top: 12vh;
     }
@@ -1163,7 +1065,7 @@
     }
 
     .hero p {
-        font-size: 150%;
+        font-size: 170%;
         font-weight: 700;
     }
 
@@ -1200,12 +1102,11 @@
         font-size: 170%;
     }
 
-    .contact__section .row .mail {
-        font-size: 140%;
-    }
-    
+    .contact__section .row .mail,
     .contact__section .row .cell {
         font-size: 140%;
+        color: #ffffff;
+        text-decoration: underline;
     }
 
     /* ServicesPage */
@@ -1245,7 +1146,7 @@
 @media only screen and (max-width: 411px) {
     /* Header */
     header {
-        height: 75vh;
+        height: 95vh;
     }
 
     /* Navigation */
@@ -1259,7 +1160,7 @@
     }
 
     .nav__links {
-        height: 66vh;
+        height: 80vh;
         width: 100%;
         top: 12vh;
     }
@@ -1269,7 +1170,7 @@
     }
 
     .content {
-        height: 70vh;
+        height: 95vh;
     }
 
     .hero {
@@ -1277,7 +1178,7 @@
     }
 
     .hero p {
-        font-size: 140%;
+        font-size: 180%;
         margin-top: 0;
     }
 
@@ -1306,13 +1207,14 @@
         font-size: 120%;
     }
 
-    .contact__section .row .mail {
+    .contact__section .row .mail,
+    .contact__section .row .cell {
         font-size: 120%;
+        color: #ffffff
     }
     
     .contact__section .row .cell {
-        font-size: 120%;
-        text-decoration: none;
+        text-decoration: underline;
     }
 
     /* ServicesPage */
@@ -1352,7 +1254,7 @@
 @media only screen and (max-width: 393px) {
     /* Header */
     header {
-        height: 70vh;
+        height: 90vh;
     }
 
     /* Navigation */
@@ -1366,7 +1268,7 @@
     }
 
     .nav__links {
-        height: 64vh;
+        height: 80vh;
         width: 100%;
         top: 12vh;
     }
@@ -1384,7 +1286,7 @@
     }
 
     .hero p {
-        font-size: 140%;
+        font-size: 170%;
         margin-top: 0;
     }
 
@@ -1413,13 +1315,14 @@
         font-size: 120%;
     }
 
-    .contact__section .row .mail {
+    .contact__section .row .mail,
+    .contact__section .row .cell {
         font-size: 120%;
+        color: #ffffff;
     }
     
     .contact__section .row .cell {
-        font-size: 120%;
-        text-decoration: none;
+        text-decoration: underline;
     }
 
     /* ServicesPage */
@@ -1459,7 +1362,7 @@
 @media only screen and (max-width: 390px) {
     /* Header */
     header {
-        height: 70vh;
+        height: 90vh;
     }
 
     /* Navigation */
@@ -1473,7 +1376,7 @@
     }
 
     .nav__links {
-        height: 64vh;
+        height: 75vh;
         width: 100%;
         top: 12vh;
     }
@@ -1491,7 +1394,7 @@
     }
 
     .hero p {
-        font-size: 140%;
+        font-size: 170%;
         margin-top: 0;
     }
 
@@ -1520,13 +1423,14 @@
         font-size: 120%;
     }
 
-    .contact__section .row .mail {
+    .contact__section .row .mail,
+    .contact__section .row .cell {
         font-size: 120%;
+        color: #ffffff;
     }
     
     .contact__section .row .cell {
-        font-size: 120%;
-        text-decoration: none;
+        text-decoration: underline;
     }
 
     /* ServicesPage */
@@ -1566,7 +1470,7 @@
 @media only screen and (max-width: 384px) {
     /* Header */
     header {
-        height: 65vh;
+        height: 90vh;
     }
 
     /* Navigation */
@@ -1580,7 +1484,7 @@
     }
 
     .nav__links {
-        height: 64vh;
+        height: 80vh;
         width: 100%;
         top: 12vh;
     }
@@ -1590,7 +1494,7 @@
     }
 
     .content {
-        height: 70vh;
+        height: 90vh;
     }
 
     .hero {
@@ -1598,7 +1502,7 @@
     }
 
     .hero p {
-        font-size: 130%;
+        font-size: 170%;
         margin-top: 0;
     }
 
@@ -1627,15 +1531,15 @@
         font-size: 120%;
     }
 
-    .contact__section .row .mail {
+    .contact__section .row .mail,
+    .contact__section .row .cell {
         font-size: 120%;
+        color: #ffffff;
     }
     
     .contact__section .row .cell {
-        font-size: 120%;
-        text-decoration: none;
+        text-decoration: underline;
     }
-    /* ------------------------------------------------ */
 
     /* ServicesPage */
     .services__section .row h2 {
@@ -1650,7 +1554,6 @@
     .services__section .row .col h4 {
         font-size: 130%;
     }
-    /* ------------------------------------------------- */
 
     /* ProjectsPage */
     .works__section .row h1 {
@@ -1669,28 +1572,13 @@
         color: #000000;
         margin-bottom: 10px;
     }
-
-    /* Work_detailsPage */
-    /* Logo */
-    #detail__logo {
-        font-size: 70%;
-        font-weight: 700;
-        margin-right: 250px;
-        cursor: hand;
-    }
-
-    #detail__logo a {
-        text-decoration: none;
-        color: #000000;
-    }
-    /* ------------------------------------------------- */
 }
 
 /* iPhone11Pro 375x812 */
 @media only screen and (max-width: 375px) {
     /* Header */
     header {
-        height: 80vh;
+        height: 90vh;
     }
 
     /* Navigation */
@@ -1704,22 +1592,22 @@
     }
 
     #logo a h3 {
-        font-size: 70%;
+        font-size: 90%;
         font-weight: 400;
     }
 
     .nav__links {
-        height: 67vh;
+        height: 85vh;
         width: 100%;
         top: 12vh;
     }
 
     .nav__links a {
-        font-size: 140%;
+        font-size: 120%;
     }
 
     .content {
-        height: 80vh;
+        height: 90vh;
     }
 
     .hero {
@@ -1728,7 +1616,7 @@
     }
 
     .hero p {
-        font-size: 150%;
+        font-size: 170%;
         margin-top: 0;
     }
 
@@ -1757,13 +1645,14 @@
         font-size: 130%;
     }
 
-    .contact__section .row .mail {
+    .contact__section .row .mail,
+    .contact__section .row .cell{
         font-size: 120%;
+        color: #ffffff
     }
     
     .contact__section .row .cell {
-        font-size: 120%;
-        text-decoration: none;
+        text-decoration: underline;
     }
 
     /* ServicesPage */
@@ -1803,7 +1692,7 @@
 @media only screen and (max-width: 360px) {
     /* Header */
     header {
-        height: 80vh;
+        height: 90vh;
     }
 
     /* Navigation */
@@ -1816,8 +1705,12 @@
         margin-right: 90px;
     }
 
+    #logo a h3 {
+        font-size: 90%;
+    }
+
     .nav__links {
-        height: 87vh;
+        height: 82vh;
         width: 100%;
         top: 13vh;
     }
@@ -1827,7 +1720,7 @@
     }
 
     .content {
-        height: 70vh;
+        height: 90vh;
     }
 
     .hero {
@@ -1835,7 +1728,7 @@
     }
 
     .hero p {
-        font-size: 120%;
+        font-size: 160%;
         margin-top: 0;
     }
 
@@ -1843,7 +1736,6 @@
     .selected__projects__section .row h2 {
         font-size: 120%;
     }
-    /* ------------------------------------------------- */
 
     /* ApproachPage */
     .approach__section .row h2 {
@@ -1854,7 +1746,6 @@
     .approach__section .row p {
         font-size: 100%;
     }
-    /* ------------------------------------------------- */
 
     /* ContactsPage */
     .contact__section .row h2 {
@@ -1866,15 +1757,15 @@
         font-size: 130%;
     }
 
-    .contact__section .row .mail {
+    .contact__section .row .mail,
+    .contact__section .row .cell {
         font-size: 120%;
+        color: #ffffff;
     }
     
     .contact__section .row .cell {
-        font-size: 120%;
-        text-decoration: none;
+        text-decoration: underline;
     }
-    /* ------------------------------------------------ */
 
     /* ServicesPage */
     .services__section .row h2 {
@@ -1889,7 +1780,6 @@
     .services__section .row .col h4 {
         font-size: 110%;
     }
-    /* ------------------------------------------------- */
 
     /* ProjectsPage */
     .works__section .row h1 {
@@ -1908,28 +1798,13 @@
         color: #000000;
         margin-bottom: 10px;
     }
-
-    /* Work_detailsPage */
-    /* Logo */
-    #detail__logo {
-        font-size: 70%;
-        font-weight: 700;
-        margin-right: 250px;
-        cursor: hand;
-    }
-
-    #detail__logo a {
-        text-decoration: none;
-        color: #000000;
-    }
-    /* ------------------------------------------------- */
 }
 
 /* 359px */
 @media only screen and (max-width: 359px) {
     /* Header */
     header {
-        height: 80vh;
+        height: 90vh;
     }
 
     /* Navigation */
@@ -1942,18 +1817,22 @@
         margin-right: 140px;
     }
 
+    #logo a h3 {
+        font-size: 90%;
+    }
+
     .nav__links {
-        height: 85vh;
+        height: 80vh;
         width: 100%;
         top: 15vh;
     }
 
     .nav__links a {
-        font-size: 160%;
+        font-size: 120%;
     }
 
     .content {
-        height: 80vh;
+        height: 90vh;
     }
 
     .hero {
@@ -1961,14 +1840,13 @@
     }
 
     .hero p {
-        font-size: 140%;
+        font-size: 170%;
     }
 
     /* Projects Section */
     .selected__projects__section .row h2 {
         font-size: 140%;
     }
-    /* ------------------------------------------------- */
 
     /* ApproachPage */
     .approach__section .row h2 {
@@ -1979,7 +1857,6 @@
     .approach__section .row p {
         font-size: 120%;
     }
-    /* ------------------------------------------------- */
 
     /* ContactsPage */
     .contact__section .row h2 {
@@ -1991,15 +1868,15 @@
         font-size: 120%;
     }
 
-    .contact__section .row .mail {
+    .contact__section .row .mail,
+    .contact__section .row .cell {
         font-size: 120%;
+        color: #ffffff;
     }
     
     .contact__section .row .cell {
-        font-size: 120%;
-        text-decoration: none;
+        text-decoration: underline;
     }
-    /* ------------------------------------------------ */
 
     /* ServicesPage */
     .services__section .row h2 {
@@ -2014,7 +1891,6 @@
     .services__section .row .col h4 {
         font-size: 130%;
     }
-    /* ------------------------------------------------- */
 
     /* ProjectsPage */
     .works__section .row h1 {
@@ -2033,62 +1909,13 @@
         color: #000000;
         margin-bottom: 10px;
     }
-
-    /* Work_detailsPage */
-    /* Logo */
-    #detail__logo {
-        font-size: 70%;
-        font-weight: 700;
-        margin-right: 250px;
-        cursor: hand;
-    }
-
-    #detail__logo a {
-        text-decoration: none;
-        color: #000000;
-    }
-
-    /* Projects Detail Section */
-    .project_detail_section .wrapper {
-        padding: 2em;
-        display: grid;
-        grid-gap: 2em;
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    }
-
-    .project_detail_section .wrapper .project {
-        padding: 1em;
-        border-radius: .3em;
-        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-    }
-
-    .project_detail_section .wrapper .project img {
-        width: 100%;
-    }
-
-    .project_detail_section .wrapper .project h2 {
-        font-size: 70%;
-        font-weight: 600;
-        color: #000000;
-        padding-bottom: 10px;
-        text-align: center;
-    }
-
-    .project_detail_section .wrapper .project p {
-        text-align: left;
-        font-size: 50%;
-        padding-bottom: 10px;
-        margin-left: 10px;
-        color: #f1f1f1;
-    }
-    /* ------------------------------------------------- */
 }
 
 /* iPhone5/SE 320x568 */
 @media only screen and (max-width: 320px) {
     /* Header */
     header {
-        height: 90vh;
+        height: 75vh;
     }
 
     /* Navigation */
@@ -2102,17 +1929,17 @@
     }
 
     .nav__links {
-        height: 87.5vh;
+        height: 70vh;
         width: 100%;
         top: 12vh;
     }
 
     .nav__links a {
-        font-size: 120%;
+        font-size: 100%;
     }
 
     .content {
-        height: 90vh;
+        height: 75vh;
     }
 
     .hero {
@@ -2121,7 +1948,7 @@
     }
 
     .hero p {
-        font-size: 120%;
+        font-size: 140%;
     }
 
     /* Projects Section */
@@ -2150,13 +1977,14 @@
         font-size: 100%;
     }
 
-    .contact__section .row .mail {
+    .contact__section .row .mail,
+    .contact__section .row .cell {
         font-size: 120%;
+        color: #ffffff;
     }
     
     .contact__section .row .cell {
-        font-size: 120%;
-        text-decoration: none;
+        text-decoration: underline;
     }
 
     /* ServicesPage */
