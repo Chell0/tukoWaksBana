@@ -142,3 +142,6 @@ home/static/img/.DS_Store
 
 # Pycharm configurations settings
 .idea/
+
+# VSCode configurations
+.vscode/
