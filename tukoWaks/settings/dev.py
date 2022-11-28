@@ -25,14 +25,15 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # SECRET_KEY = 'django-insecure-m5mr=i+epidb*!a(+gy!k3es1+ec)70#0q0w$ehmu07-)ada$r'
 
 # better to load key from environ
-SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'm5mr=i+epidb*!a(+gy!k3es1+ec)70#0q0w$ehmu07-)ada$r')
+SECRET_KEY = os.environ.get(
+    'DJANGO_SECRET_KEY', 'm5mr=i+epidb*!a(+gy!k3es1+ec)70#0q0w$ehmu07-)ada$r')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
 # DEBUG = os.environ.get('DJANGO_DEBUG', '') != 'False'
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["*"]
 
 # Application definition
 

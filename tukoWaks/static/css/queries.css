@@ -1,0 +1,2903 @@
+/* Big Screens 1024-1200px */
+@media only screen and (max-width: 1200px) {
+    /* HomePage */
+    /* Header */
+    header {
+        height: 100vh;
+    }
+
+    /* ------------------- Navigation -------------------------- */
+    nav {
+        align-items: center;
+        background-color: #C5C5C5;
+        display: flex;
+        justify-content: space-around;
+        min-height: 16vh;
+        position: fixed;
+        width: 100%;
+        z-index: 999;
+    }
+
+    /* Logo */
+    #logo {
+        cursor: hand;
+        margin-right: 750px;
+    }
+
+    #logo a {
+        text-decoration: none;
+    }
+
+    #logo a h3 {
+        font-size: 150%;
+        font-weight: 400;
+        color: #000000;
+    }
+
+    .nav__links {
+        align-items: center;
+        background-color: #858585;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 83.6vh;
+        position: absolute;
+        width: 50%;
+        right: 0;
+        top: 18vh;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in;
+    }
+
+    .nav__links li {
+        list-style: none;
+        opacity: 0;
+    }
+
+    .nav__links a {
+        letter-spacing: 1px;
+        font-size: 220%;
+        font-weight: 700;
+        color: #ffffff;
+    }
+
+    /* ------------ Burger Menu ------------------------ */
+    .burger {
+        cursor: default;
+        display: block;
+    }
+
+    .burger div {
+        width: 25px;
+        height: 3px;
+        background-color: #000000;
+        margin: 5px;
+    }
+    /* ------------------------------------------------- */
+
+    .nav__active {
+        transform: translateX(0%);
+    }
+
+    /* -------- Animations ----------------------------- */
+    @keyframes navLinkFade {
+        from {
+            opacity: 0;
+            transform: translateX(50px);
+        }
+        to {
+            opacity: 1;
+            transform: translateX(0px);
+        }
+    }
+
+    .toggle .line1 {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+
+    .toggle .line2 {
+        opacity: 0;
+    }
+
+    .toggle .line3 {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
+    /* ------------------------------------------------ */
+
+    .content {
+        display: flex;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hero {
+        height: 85%;
+        width: 85%;
+        margin-top: 180px;
+    }
+
+    .hero p {
+        height: 100%;
+        width: 100%;
+        font-size: 320%;
+        font-weight: 700;
+    }
+
+    /* --------- Projects Section ----------- */
+    .selected__projects__section .row h2 {
+        text-align: center;
+        font-size: 240%;
+        font-weight: 400;
+        color: #ffffff;
+    }
+
+    .selected__projects__section .wrapper {
+        padding: 4em;
+        display: grid;
+        grid-gap: 4em;
+        grid-template-columns: repeat(auto-fit, minmax(330px, 2fr));
+    }
+
+    .selected__projects__section .wrapper .projects {
+        padding: 1em;
+        border-radius: .3em;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    }
+
+    .selected__projects__section .wrapper .projects a img {
+        width: 100%;
+    }
+
+    .selected__projects__section .wrapper .projects p {
+        text-align: left;
+        font-size: 50%;
+        padding-bottom: 10px;
+        margin-left: 10px;
+        color: #ffffff;
+    }
+
+    .selected__projects__section .wrapper .projects p.skill {
+        padding-top: 10px;
+        font-size: 80%;
+        font-weight: 500;
+        color: #000000;
+    }
+    /* ----------------------------------------- */
+
+    /* ---------------- ApproachPage ----------- */
+    .header__section {
+        height: 4vh;
+    }
+
+    .approach__section {
+        padding: 6%;
+    }
+
+    .approach__section .row {
+        margin-bottom: 10px;
+    }
+
+    .approach__section .row h2 {
+        font-size: 300%;
+        font-weight: 700;
+        color: #ffffff;
+        margin-top: 50px;
+    }
+
+    .approach__section .row p {
+        font-size: 250%;
+        font-weight: 700;
+    }
+
+
+    .approach__section .row .col {
+        padding: 1%;
+    }
+
+    .approach__section .row .col p {
+        font-size: 70%;
+        font-weight: 100;
+        margin-bottom: 20px;
+    }
+    /* ------------------------------------------------ */
+
+    /* ------------------ ServicesPage ---------------- */
+    .header__section {
+        height: 6vh;
+    }
+
+    .services__section {
+        padding: 6%;
+    }
+
+    .services__section .row {
+        margin-bottom: 10px;
+    }
+
+    .services__section .row h2 {
+        font-size: 300%;
+        font-weight: 700;
+        color: #ffffff;
+        margin-top: 50px;
+    }
+
+    .services__section .row p {
+        font-size: 220%;
+        font-weight: 600;
+    }
+
+    .services__section .row .col {
+        padding: 1%;
+    }
+
+    .services__section .row .col h4 {
+        font-size: 150%;
+        font-weight: 700;
+        margin-bottom: 10px;
+        color: #ffffff;
+    }
+
+    .services__section .row .col p {
+        font-size: 60%;
+        font-weight: 200;
+    }
+    /* ----------------------------------------------- */
+
+    /* ----------------- ContactsPage ---------------- */
+    .contact__section .row h2 {
+        color: #ffffff;
+        font-size: 300%;
+        font-weight: 700;
+        margin-top: 70px;
+        margin-bottom: 20px;
+    }
+
+    .contact__section .row .address {
+        margin-bottom: -80px;
+    }
+}
+
+/* portrait tablets, portrait iPad Mini */
+@media only screen and (max-width: 1024px) {
+    /* Header */
+    header {
+        height: 94vh;
+    }
+
+    /* Navigation */
+    nav {
+        min-height: 13vh;
+    }
+
+    /* Logo */
+    #logo {
+        margin-right: 600px;
+    }
+
+    #logo a h3 {
+        font-size: 150%;
+        font-weight: 400;
+    }
+
+    .nav__links {
+        height: 87vh;
+        top: 13vh;
+    }
+
+    .nav__links li {
+        list-style: none;
+        opacity: 0;
+    }
+
+    .nav__links a {
+        letter-spacing: 1px;
+        font-size: 180%;
+        font-weight: 600;
+        color: #ffffff;
+    }
+
+    .content {
+        height: 80vh;
+    }
+
+    .hero {
+        height: 80%;
+        width: 85%;
+        margin-top: 160px;
+    }
+
+    .hero p {
+        font-size: 290%;
+    }
+
+    /* Projects Section */
+    .selected__projects__section .row h2 {
+        font-size: 200%;
+    }
+
+    /* Footer Section */
+    .footer .row .col {
+        padding-left: 100px;
+    }
+    /* ------------------------------------------------- */
+
+    /* ApproachPage */
+    .approach__section .row h2 {
+        font-size: 270%;
+    }
+
+    .approach__section .row p {
+        font-size: 190%;
+    }
+    /* ------------------------------------------------- */
+
+    /* ContactsPage */
+    .contact__section {
+        padding: 6%;
+    }
+
+    .contact__section .row p {
+        font-size: 165%;
+    }
+
+    .contact__section .row .mail,
+    .contact__section .row .cell {
+        color: #ffffff !important;
+    }
+    /* ------------------------------------------------ */
+
+    /* ServicesPage */
+    .services__section {
+        padding: 6%;
+    }
+
+    .services__section .row h2 {
+        margin-top: 20px;
+        font-size: 250%;
+    }
+
+    .services__section .row p {
+        font-size: 200%;
+        margin-bottom: 0;
+    }
+
+    .services__section .row .col p {
+        font-size: 70%;
+        font-weight: 200;
+    }
+    /* ------------------------------------------------- */
+
+    /* ProjectsPage */
+    .works__section .wrapper .projects {
+        padding: 1em;
+    }
+
+    .works__section .wrapper .projects p {
+        font-size: 55%;
+    }
+
+    /* ------------------- WorkDetail ----------------- */
+    #detail__logo {
+	    font-size: 80%;
+	    font-weight: bold;
+	    margin-right: 890px;
+	    cursor: hand;
+    }
+
+    #detail__logo a {
+	    text-decoration: none;
+	    color: #000000;
+    }
+
+    .project_detail_section .wrapper {
+        padding: 2em;
+        display: grid;
+        grid-gap: 2em;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 2fr));
+    }
+
+    .project_detail_section .wrapper .project {
+        padding: 1em;
+        border-radius: .3em;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    }
+
+    .project_detail_section .wrapper .project img {
+        width: 100%;
+    }
+
+    .project_detail_section .wrapper .project h2 {
+        font-size: 100%;
+        font-weight: 400;
+        color: #000000;
+        padding-bottom: 20px;
+        text-align: center;
+    }
+
+    .project_detail_section .wrapper .project p {
+        font-size: 60%;
+    }
+}
+
+/* iPad 810x1080 */
+@media only screen and (max-width: 810px) {
+    /* Header */
+    header {
+        height: 95vh;
+    }
+
+    /* Navigation */
+    nav {
+        min-height: 12vh;
+    }
+
+    .nav__links {
+        width: 100%;
+    }
+
+    /* Logo */
+    #logo {
+        margin-right: 440px;
+    }
+
+    #logo a h3 {
+        font-size: 130%;
+        font-weight: 400;
+        color: #000000;
+    }
+
+    .nav__links {
+        height: 87vh;
+        width: 50%;
+        top: 12vh;
+    }
+
+    .nav__links a {
+        font-size: 140%;
+    }
+
+    .content {
+        height: 55vh;
+    }
+
+    .hero {
+        width: 85%;
+    }
+
+    .hero p {
+        font-size: 265%;
+    }
+
+    /* Projects Section */
+    .selected__projects__section .row h2 {
+        font-size: 160%;
+    }
+
+    .selected__projects__section .wrapper {
+        padding: 4em;
+        grid-gap: 2em;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
+    .selected__projects__section .wrapper .projects {
+        padding: 1em;
+        border-radius: .3em;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    }
+
+    .selected__projects__section .wrapper .projects p {
+        font-size: 50%;
+    }
+
+    /* ApproachPage */
+    .approach__section .row h2 {
+        font-size: 200%;
+        margin-top: 40px;
+    }
+
+    .approach__section .row p {
+        font-size: 180%;
+    }
+
+    /* ContactsPage */
+    .contact__section .row h2 {
+        font-size: 300%;
+        margin-top: 40px;
+    }
+
+    .contact__section .row p {
+        font-size: 220%;
+    }
+
+    .contact__section .row .mail {
+        font-size: 200%;
+    }
+
+    .contact__section .row .cell {
+        font-size: 200%;
+        text-decoration: none;
+    }
+
+    /* ServicesPage */
+    .services__section .row h2 {
+        font-size: 200%;
+        margin-top: 40px;
+    }
+
+    .services__section .row p {
+        font-size: 140%;
+    }
+
+    .services__section .row .col h4 {
+        font-size: 130%;
+    }
+
+    /* ProjectsPage */
+    .works__section .row h1 {
+        font-size: 180%;
+        font-weight: 700;
+        margin-bottom: 40px;
+    }
+
+    .works__section .wrapper {
+        padding: 1em;
+        display: grid;
+        grid-gap: 1em;
+        grid-template-columns: repeat(auto-fit, minmax(330px, 2fr));
+    }
+
+    .works__section .wrapper .projects {
+        padding: 1em;
+        border-radius: .3em;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    }
+
+    .works__section .wrapper .projects p {
+        font-size: 50%;
+    }
+
+    .works__section .wrapper .projects p.skill {
+        padding-top: 10px;
+        font-size: 80%;
+        font-weight: 500;
+        color: #000000;
+    }
+
+    /* ------------------- WorkDetail ----------------- */
+    #detail__logo {
+	    font-size: 80%;
+	    font-weight: bold;
+	    margin-right: 650px;
+        margin-top: 20px;
+	    cursor: hand;
+    }
+
+    #detail__logo a {
+	    text-decoration: none;
+	    color: #000000;
+    }
+
+    .project_detail_section {
+        margin-bottom: 30px;
+    }
+
+    .project_detail_section .wrapper {
+        padding: 3em;
+        display: grid;
+        grid-gap: 2em;
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    }
+
+    .project_detail_section .wrapper .project {
+        padding: 1em;
+        border-radius: .3em;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    }
+
+    .project_detail_section .wrapper .project img {
+        width: 100%;
+    }
+
+    .project_detail_section .wrapper .project h2 {
+        font-size: 100%;
+        font-weight: 400;
+        color: #000000;
+        padding-bottom: 20px;
+        text-align: center;
+    }
+
+    .project_detail_section .wrapper .project p {
+        font-size: 60%;
+        margin-bottom: 40px;
+    }
+}
+
+/* 768px */
+@media only screen and (max-width: 768px) {
+    /* Header */
+    header {
+        height: 95vh;
+    }
+
+    /* Navigation */
+    nav {
+        min-height: 15vh;
+    }
+
+    /* Logo */
+    #logo {
+        margin-right: 400px;
+    }
+
+    .nav__links {
+        height: 84vh;
+        top: 15vh;
+    }
+
+    .nav__links a {
+        font-size: 170%;
+    }
+
+    .content {
+        height: 95vh;
+    }
+
+    .hero {
+        width: 80%;
+    }
+
+    .hero p {
+        font-size: 250%;
+    }
+
+    /* Projects Section */
+    .selected__projects__section .row h2 {
+        font-size: 200%;
+        margin-bottom: 0;
+    }
+
+    .selected__projects__section .wrapper {
+        padding: 2em;
+        grid-gap: 1em;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+    .selected__projects__section .wrapper .projects {
+        padding: 1em;
+        border-radius: .3em;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    }
+
+    .selected__projects__section .wrapper .projects p {
+        font-size: 40%;
+    }
+
+    .selected__projects__section .wrapper .projects p.skill {
+        padding-top: 10px;
+        font-size: 70%;
+        font-weight: 500;
+        color: #000000;
+    }
+
+    /* Footer Section */
+    .footer .row .col {
+        padding-left: 80px;
+    }
+    /* ------------------------------------------------- */
+
+    /* ApproachPage */
+    .approach__section {
+        padding: 8%;
+    }
+
+    .approach__section .row h2 {
+        font-size: 270%;
+        margin-top: 20px;
+    }
+
+    .approach__section .row p {
+        font-size: 180%;
+    }
+
+    .approach__section .row .col p {
+        font-size: 60%;
+    }
+    /* ------------------------------------------------- */
+
+    /* ContactsPage */
+    .contact__section {
+        padding: 8%;
+    }
+
+    .contact__section .row h2 {
+        font-size: 270%;
+        margin-top: 20px;
+    }
+
+    .contact__section .row p {
+        font-size: 160%;
+    }
+
+    .contact__section .row .mail,
+    .contact__section .row .cell {
+	    text-decoration: underline;
+    }
+
+    /* ServicesPage */
+    .services__section {
+        padding: 8%;
+    }
+
+    .services__section .row p {
+        font-size: 160%;
+    }
+
+    .services__section .row .col p {
+        font-size: 60%;
+        font-weight: 200;
+    }
+    /* ------------------------------------------------- */
+
+    /* ProjectsPage */
+    .works__section .row h1 {
+        font-size: 240%;
+        margin-bottom: 0;
+        text-align: center;
+    }
+
+    .works__section .wrapper {
+        padding: 4em;
+        grid-gap: 3em;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+    .works__section .wrapper .projects {
+        padding: 1em;
+        border-radius: .3em;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    }
+
+    .works__section .wrapper .projects p {
+        font-size: 45%;
+    }
+
+    .works__section .wrapper .projects p.skill {
+        font-size: 70%;
+    }
+
+    /* ------------------- WorkDetail ----------------- */
+    #detail__logo {
+	    font-size: 80%;
+	    font-weight: bold;
+	    margin-right: 630px;
+        margin-top: 20px;
+	    cursor: hand;
+    }
+
+    #detail__logo a {
+	    text-decoration: none;
+	    color: #000000;
+    }
+
+    .project_detail_section {
+        margin-bottom: 50px;
+    }
+
+    .project_detail_section .wrapper {
+        padding: 3em;
+        display: grid;
+        grid-gap: 1em;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    }
+
+    .project_detail_section .wrapper .project {
+        padding: 1em;
+        border-radius: .3em;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    }
+
+    .project_detail_section .wrapper .project img {
+        width: 100%;
+    }
+
+    .project_detail_section .wrapper .project h2 {
+        font-size: 100%;
+        font-weight: 400;
+        color: #000000;
+        padding-bottom: 20px;
+        text-align: center;
+    }
+
+    .project_detail_section .wrapper .project p {
+        font-size: 60%;
+        margin-bottom: 50px;
+    }
+}
+
+/* 500px */
+@media only screen and (max-width: 500px) {
+    /* Header */
+    header {
+        height: 95vh;
+    }
+
+    /* Navigation */
+    nav {
+        min-height: 15vh;
+    }
+
+    /* Logo */
+    #logo {
+        margin-right: 180px;
+    }
+
+    #logo a h3 {
+        font-size: 120%;
+    }
+
+    .nav__links {
+        height: 84vh;
+        width: 100%;
+        top: 15vh;
+    }
+
+    .nav__links a {
+        font-size: 160%;
+    }
+
+    .content {
+        height: 95vh;
+    }
+
+    .hero {
+        width: 85%;
+    }
+
+    .hero p {
+        font-size: 200%;
+    }
+
+    /* Projects Section */
+    .selected__projects__section .row h2 {
+        font-size: 150%;
+    }
+
+    /* Footer Section */
+    .footer .row .col {
+	    padding: 5%;
+	    margin-left: 1%;
+    }
+
+    .footer .row .col p {
+        font-size: 50%;
+        color: #000000;
+    }
+
+    .footer .row .col p.contacts {
+	    text-decoration: underline;
+	    color: #ffffff;
+    }
+
+    .socials a {
+	    text-decoration: none;
+	    color: #ffffff;
+    }
+
+    /* ApproachPage */
+    .approach__section {
+        padding: 10%;
+    }
+
+    .approach__section .row h2 {
+        font-size: 200%;
+    }
+
+    .approach__section .row p {
+        font-size: 150%;
+    }
+
+    /* ContactsPage */
+    .contact__section {
+        padding: 10%;
+    }
+
+    .contact__section .row h2 {
+        font-size: 200%;
+        margin-top: 40px;
+    }
+
+    .contact__section .row p {
+        font-size: 140%;
+    }
+
+    .contact__section .row .mail,
+    .contact__section .row .cell {
+	    text-decoration: underline;
+    }
+
+    /* ServicesPage */
+    .services__section {
+        padding: 10%;
+    }
+
+    .services__section .row h2 {
+        font-size: 240%;
+    }
+
+    .services__section .row p {
+        font-size: 140%;
+    }
+
+    .services__section .row .col p {
+        font-size: 60%;
+        font-weight: 200;
+        padding: 2%;
+    }
+    /* ------------------------------------------------- */
+
+    /* ProjectsPage */
+    .works__section .row h1 {
+        font-size: 200%;
+        margin-bottom: 0;
+        text-align: center;
+    }
+
+    .works__section .wrapper {
+        padding: 2em;
+        grid-gap: 2em;
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    }
+
+    .works__section .wrapper .projects {
+        padding: 1em;
+    }
+
+    .works__section .wrapper .projects p {
+        font-size: 50%;
+    }
+
+    /* ------------------- WorkDetail ----------------- */
+    #detail__logo {
+	    font-size: 80%;
+	    font-weight: bold;
+	    margin-right: 380px;
+        margin-top: 20px;
+	    cursor: hand;
+    }
+
+    #detail__logo a {
+	    text-decoration: none;
+	    color: #000000;
+    }
+
+    .project_detail_section {
+        margin-bottom: 70px;
+    }
+
+    .project_detail_section .wrapper {
+        padding: 3em;
+        display: grid;
+        grid-gap: 1em;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+
+    .project_detail_section .wrapper .project {
+        padding: 1em;
+        border-radius: .3em;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    }
+
+    .project_detail_section .wrapper .project img {
+        width: 100%;
+    }
+
+    .project_detail_section .wrapper .project h2 {
+        font-size: 80%;
+        font-weight: 400;
+        color: #000000;
+        padding-bottom: 20px;
+        text-align: center;
+    }
+
+    .project_detail_section .wrapper .project p {
+        font-size: 50%;
+        margin-bottom: 50px;
+    }
+}
+
+/* 480px */
+@media only screen and (max-width: 480px) {
+    /* Header */
+    header {
+        height: 90vh;
+    }
+
+    /* Navigation */
+    nav {
+        min-height: 12vh;
+    }
+
+    /* Logo */
+    #logo {
+        margin-right: 150px;
+    }
+
+    #logo a h3 {
+        font-size: 95%;
+    }
+
+    .nav__links {
+        height: 85vh;
+        width: 100%;
+        top: 12vh;
+    }
+
+    .nav__links a {
+        font-size: 120%;
+    }
+
+    .content {
+        height: 90vh;
+    }
+
+    .hero {
+        width: 80%;
+    }
+
+    .hero p {
+        font-size: 180%;
+        font-weight: 700;
+    }
+
+    /* Projects Section */
+    .selected__projects__section .row h2 {
+        font-size: 140%;
+    }
+
+    /* ApproachPage */
+    .approach__section {
+        padding: 10%;
+    }
+
+    .approach__section .row h2 {
+        font-size: 180%;
+        margin-top: 40px;
+    }
+
+    .approach__section .row p {
+        font-size: 120%;
+    }
+
+    /* ContactsPage */
+    .contact__section {
+        padding: 10%;
+    }
+
+    .contact__section .row h2 {
+        font-size: 170%;
+        margin-top: 40px;
+    }
+
+    .contact__section .row p {
+        font-size: 170%;
+    }
+
+    .contact__section .row .mail,
+    .contact__section .row .cell {
+        font-size: 140%;
+        color: #ffffff
+    }
+
+    /* ServicesPage */
+    .services__section .row h2 {
+        font-size: 180%;
+        margin-top: 40px;
+    }
+
+    .services__section .row p {
+        font-size: 120%;
+    }
+
+    .services__section .row .col h4 {
+        font-size: 130%;
+    }
+
+    /* ProjectsPage */
+    .works__section .row h1 {
+        font-size: 180%;
+        font-weight: 700;
+    }
+
+    .works__section .wrapper .projects p {
+        font-size: 50%;
+    }
+
+    .works__section .wrapper .projects p.skill {
+        padding-top: 10px;
+        font-size: 60%;
+        font-weight: 700;
+        color: #000000;
+        margin-bottom: 10px;
+    }
+
+    /* ------------------- WorkDetail ----------------- */
+    #detail__logo {
+	    font-size: 80%;
+	    font-weight: bold;
+	    margin-right: 380px;
+        margin-top: 20px;
+	    cursor: hand;
+    }
+
+    #detail__logo a {
+	    text-decoration: none;
+	    color: #000000;
+    }
+
+    .project_detail_section {
+        margin-bottom: 70px;
+    }
+
+    .project_detail_section .wrapper {
+        padding: 3em;
+        display: grid;
+        grid-gap: 1em;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+
+    .project_detail_section .wrapper .project {
+        padding: 1em;
+        border-radius: .3em;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    }
+
+    .project_detail_section .wrapper .project img {
+        width: 100%;
+    }
+
+    .project_detail_section .wrapper .project h2 {
+        font-size: 80%;
+        font-weight: 400;
+        color: #000000;
+        padding-bottom: 20px;
+        text-align: center;
+    }
+
+    .project_detail_section .wrapper .project p {
+        font-size: 50%;
+        margin-bottom: 50px;
+    }
+}
+
+/* iPhone12/13ProMax 428 */
+@media only screen and (max-width: 428px) {
+    /* Header */
+    header {
+        height: 90vh;
+    }
+
+    /* Navigation */
+    nav {
+        min-height: 12vh;
+    }
+
+    /* Logo */
+    #logo {
+        margin-right: 150px;
+    }
+
+    #logo a h3 {
+        font-size: 95%;
+    }
+
+    .nav__links {
+        height: 85vh;
+        width: 100%;
+        top: 12vh;
+    }
+
+    .nav__links a {
+        font-size: 120%;
+    }
+
+    .content {
+        height: 90vh;
+    }
+
+    .hero {
+        width: 80%;
+    }
+
+    .hero p {
+        font-size: 180%;
+        font-weight: 700;
+    }
+
+    /* Projects Section */
+    .selected__projects__section .row h2 {
+        font-size: 140%;
+    }
+
+    /* ApproachPage */
+    .approach__section {
+        padding: 10%;
+    }
+
+    .approach__section .row h2 {
+        font-size: 180%;
+        margin-top: 40px;
+    }
+
+    .approach__section .row p {
+        font-size: 120%;
+    }
+
+    /* ContactsPage */
+    .contact__section {
+        padding: 10%;
+    }
+
+    .contact__section .row h2 {
+        font-size: 170%;
+        margin-top: 40px;
+    }
+
+    .contact__section .row p {
+        font-size: 170%;
+    }
+
+    .contact__section .row .mail,
+    .contact__section .row .cell {
+        font-size: 140%;
+        color: #ffffff
+    }
+
+    /* ServicesPage */
+    .services__section .row h2 {
+        font-size: 180%;
+        margin-top: 40px;
+    }
+
+    .services__section .row p {
+        font-size: 120%;
+    }
+
+    .services__section .row .col h4 {
+        font-size: 130%;
+    }
+
+    /* ProjectsPage */
+    .works__section .row h1 {
+        font-size: 180%;
+        font-weight: 700;
+    }
+
+    .works__section .wrapper .projects p {
+        font-size: 50%;
+    }
+
+    .works__section .wrapper .projects p.skill {
+        padding-top: 10px;
+        font-size: 60%;
+        font-weight: 700;
+        color: #000000;
+        margin-bottom: 10px;
+    }
+
+    /* ------------------- WorkDetail ----------------- */
+    #detail__logo {
+	    font-size: 65%;
+	    font-weight: bold;
+	    margin-right: 320px;
+        margin-top: 20px;
+	    cursor: hand;
+    }
+
+    #detail__logo a {
+	    text-decoration: none;
+	    color: #000000;
+    }
+
+    .project_detail_section {
+        margin-bottom: 70px;
+    }
+
+    .project_detail_section .wrapper {
+        padding: 2em;
+        display: grid;
+        grid-gap: 1em;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    }
+
+    .project_detail_section .wrapper .project {
+        padding: .5em;
+        border-radius: .3em;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    }
+
+    .project_detail_section .wrapper .project img {
+        width: 100%;
+    }
+
+    .project_detail_section .wrapper .project h2 {
+        font-size: 75%;
+        font-weight: 400;
+        color: #000000;
+        text-align: center;
+    }
+
+    .project_detail_section .wrapper .project p {
+        font-size: 50%;
+    }
+}
+
+/* GalaxyNote9 414x846 */
+@media only screen and (max-width: 414px) {
+    /* Header */
+    header {
+        height: 90vh;
+    }
+
+    /* Navigation */
+    nav {
+        min-height: 12vh;
+    }
+
+    /* Logo */
+    #logo {
+        margin-right: 150px;
+    }
+
+    #logo a h3 {
+        font-size: 95%;
+    }
+
+    .nav__links {
+        height: 80vh;
+        width: 100%;
+        top: 10vh;
+    }
+
+    .nav__links a {
+        font-size: 140%;
+    }
+
+    .content {
+        height: 90vh;
+    }
+
+    .hero {
+        width: 80%;
+    }
+
+    .hero p {
+        font-size: 180%;
+        font-weight: 700;
+    }
+
+    /* Projects Section */
+    .selected__projects__section .row h2 {
+        font-size: 130%;
+    }
+
+    /* ApproachPage */
+    .approach__section {
+        padding: 10%;
+    }
+
+    .approach__section .row h2 {
+        font-size: 180%;
+        margin-top: 40px;
+    }
+
+    .approach__section .row p {
+        font-size: 120%;
+    }
+
+    /* ContactsPage */
+    .contact__section {
+        padding: 10%;
+    }
+
+    .contact__section .row h2 {
+        font-size: 150%;
+        margin-top: 40px;
+    }
+
+    .contact__section .row p {
+        font-size: 140%;
+    }
+
+    .contact__section .row .mail,
+    .contact__section .row .cell {
+        font-size: 140%;
+        color: #ffffff;
+    }
+
+    /* ServicesPage */
+    .services__section .row h2 {
+        font-size: 180%;
+        margin-top: 40px;
+    }
+
+    .services__section .row p {
+        font-size: 100%;
+    }
+
+    .services__section .row .col h4 {
+        font-size: 120%;
+    }
+
+    /* ProjectsPage */
+    .works__section .row h1 {
+        font-size: 180%;
+        font-weight: 700;
+    }
+
+    .works__section .wrapper .projects p {
+        font-size: 50%;
+    }
+
+    .works__section .wrapper .projects p.skill {
+        padding-top: 10px;
+        font-size: 60%;
+        font-weight: 700;
+        color: #000000;
+        margin-bottom: 10px;
+    }
+
+    /* ------------------- WorkDetail ----------------- */
+    #detail__logo {
+	    font-size: 65%;
+	    font-weight: bold;
+	    margin-right: 320px;
+        margin-top: 20px;
+	    cursor: hand;
+    }
+
+    #detail__logo a {
+	    text-decoration: none;
+	    color: #000000;
+    }
+
+    .project_detail_section {
+        margin-bottom: 50px;
+    }
+
+    .project_detail_section .wrapper {
+        padding: 2em;
+        display: grid;
+        grid-gap: 1em;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    }
+
+    .project_detail_section .wrapper .project {
+        padding: .5em;
+        border-radius: .3em;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    }
+
+    .project_detail_section .wrapper .project img {
+        width: 100%;
+    }
+
+    .project_detail_section .wrapper .project h2 {
+        font-size: 75%;
+        font-weight: 400;
+        color: #000000;
+        text-align: center;
+    }
+
+    .project_detail_section .wrapper .project p {
+        font-size: 50%;
+    }
+}
+
+/* GalaxyNote20 412x915 */
+@media only screen and (max-width: 412px) {
+    /* Header */
+    header {
+        height: 90vh;
+    }
+
+    /* Navigation */
+    nav {
+        min-height: 12vh;
+    }
+
+    /* Logo */
+    #logo {
+        margin-right: 150px;
+    }
+
+    .nav__links {
+        height: 80vh;
+        width: 100%;
+        top: 12vh;
+    }
+
+    .nav__links a {
+        font-size: 140%;
+    }
+
+    .content {
+        height: 70vh;
+    }
+
+    .hero {
+        width: 80%;
+    }
+
+    .hero p {
+        font-size: 170%;
+        font-weight: 700;
+    }
+
+    /* Projects Section */
+    .selected__projects__section .row h2 {
+        font-size: 130%;
+    }
+
+    /* ApproachPage */
+    .approach__section {
+        padding: 10%;
+    }
+
+    .approach__section .row h2 {
+        font-size: 180%;
+        margin-top: 40px;
+    }
+
+    .approach__section .row p {
+        font-size: 120%;
+    }
+
+    /* ContactsPage */
+    .contact__section {
+        padding: 10%;
+    }
+
+    .contact__section .row h2 {
+        font-size: 170%;
+        margin-top: 40px;
+    }
+
+    .contact__section .row p {
+        font-size: 170%;
+    }
+
+    .contact__section .row .mail,
+    .contact__section .row .cell {
+        font-size: 140%;
+        color: #ffffff;
+        text-decoration: underline;
+    }
+
+    /* ServicesPage */
+    .services__section .row h2 {
+        font-size: 180%;
+        margin-top: 40px;
+    }
+
+    .services__section .row p {
+        font-size: 120%;
+    }
+
+    .services__section .row .col h4 {
+        font-size: 130%;
+    }
+
+    /* ProjectsPage */
+    .works__section .row h1 {
+        font-size: 180%;
+        font-weight: 700;
+    }
+
+    .works__section .wrapper .projects p {
+        font-size: 50%;
+    }
+
+    .works__section .wrapper .projects p.skill {
+        padding-top: 10px;
+        font-size: 60%;
+        font-weight: 700;
+        color: #000000;
+        margin-bottom: 10px;
+    }
+
+    /* ------------------- WorkDetail ----------------- */
+    #detail__logo {
+	    font-size: 65%;
+	    font-weight: bold;
+	    margin-right: 320px;
+        margin-top: 20px;
+	    cursor: hand;
+    }
+
+    #detail__logo a {
+	    text-decoration: none;
+	    color: #000000;
+    }
+
+    .project_detail_section {
+        margin-bottom: 70px;
+    }
+
+    .project_detail_section .wrapper {
+        padding: 2em;
+        display: grid;
+        grid-gap: 1em;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    }
+
+    .project_detail_section .wrapper .project {
+        padding: .5em;
+        border-radius: .3em;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    }
+
+    .project_detail_section .wrapper .project img {
+        width: 100%;
+    }
+
+    .project_detail_section .wrapper .project h2 {
+        font-size: 75%;
+        font-weight: 400;
+        color: #000000;
+        text-align: center;
+    }
+
+    .project_detail_section .wrapper .project p {
+        font-size: 50%;
+    }
+}
+
+/* Pixel2 411x731 */
+@media only screen and (max-width: 411px) {
+    /* Header */
+    header {
+        height: 95vh;
+    }
+
+    /* Navigation */
+    nav {
+        min-height: 12vh;
+    }
+
+    /* Logo */
+    #logo {
+        margin-right: 110px;
+    }
+
+    .nav__links {
+        height: 80vh;
+        width: 100%;
+        top: 12vh;
+    }
+
+    .nav__links a {
+        font-size: 140%;
+    }
+
+    .content {
+        height: 95vh;
+    }
+
+    .hero {
+        width: 80%;
+    }
+
+    .hero p {
+        font-size: 180%;
+        margin-top: 0;
+    }
+
+    /* Projects Section */
+    .selected__projects__section .row h2 {
+        font-size: 120%;
+    }
+
+    /* ApproachPage */
+    .approach__section .row h2 {
+        font-size: 180%;
+        margin-top: 30px;
+    }
+
+    .approach__section .row p {
+        font-size: 120%;
+    }
+
+    /* ContactsPage */
+    .contact__section .row h2 {
+        font-size: 150%;
+        margin-top: 40px;
+    }
+
+    .contact__section .row p {
+        font-size: 120%;
+    }
+
+    .contact__section .row .mail,
+    .contact__section .row .cell {
+        font-size: 120%;
+        color: #ffffff
+    }
+
+    .contact__section .row .cell {
+        text-decoration: underline;
+    }
+
+    /* ServicesPage */
+    .services__section .row h2 {
+        font-size: 180%;
+        margin-top: 40px;
+    }
+
+    .services__section .row p {
+        font-size: 120%;
+    }
+
+    .services__section .row .col h4 {
+        font-size: 130%;
+    }
+
+    /* ProjectsPage */
+    .works__section .row h1 {
+        font-size: 180%;
+        font-weight: 700;
+    }
+
+    .works__section .wrapper .projects p {
+        font-size: 50%;
+    }
+
+    .works__section .wrapper .projects p.skill {
+        padding-top: 10px;
+        font-size: 60%;
+        font-weight: 700;
+        color: #000000;
+        margin-bottom: 10px;
+    }
+
+    /* ------------------- WorkDetail ----------------- */
+    #detail__logo {
+	    font-size: 65%;
+	    font-weight: bold;
+	    margin-right: 320px;
+        margin-top: 20px;
+	    cursor: hand;
+    }
+
+    #detail__logo a {
+	    text-decoration: none;
+	    color: #000000;
+    }
+
+    .project_detail_section {
+        margin-bottom: 70px;
+    }
+
+    .project_detail_section .wrapper {
+        padding: 2em;
+        display: grid;
+        grid-gap: 1em;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    }
+
+    .project_detail_section .wrapper .project {
+        padding: .5em;
+        border-radius: .3em;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    }
+
+    .project_detail_section .wrapper .project img {
+        width: 100%;
+    }
+
+    .project_detail_section .wrapper .project h2 {
+        font-size: 75%;
+        font-weight: 400;
+        color: #000000;
+        text-align: center;
+    }
+
+    .project_detail_section .wrapper .project p {
+        font-size: 50%;
+    }
+}
+
+/* Pixel5 393x851 */
+@media only screen and (max-width: 393px) {
+    /* Header */
+    header {
+        height: 90vh;
+    }
+
+    /* Navigation */
+    nav {
+        min-height: 12vh;
+    }
+
+    /* Logo */
+    #logo {
+        margin-right: 110px;
+    }
+
+    .nav__links {
+        height: 80vh;
+        width: 100%;
+        top: 12vh;
+    }
+
+    .nav__links a {
+        font-size: 140%;
+    }
+
+    .content {
+        height: 70vh;
+    }
+
+    .hero {
+        width: 80%;
+    }
+
+    .hero p {
+        font-size: 170%;
+        margin-top: 0;
+    }
+
+    /* Projects Section */
+    .selected__projects__section .row h2 {
+        font-size: 120%;
+    }
+
+    /* ApproachPage */
+    .approach__section .row h2 {
+        font-size: 180%;
+        margin-top: 30px;
+    }
+
+    .approach__section .row p {
+        font-size: 120%;
+    }
+
+    /* ContactsPage */
+    .contact__section .row h2 {
+        font-size: 150%;
+        margin-top: 40px;
+    }
+
+    .contact__section .row p {
+        font-size: 120%;
+    }
+
+    .contact__section .row .mail,
+    .contact__section .row .cell {
+        font-size: 120%;
+        color: #ffffff;
+    }
+
+    .contact__section .row .cell {
+        text-decoration: underline;
+    }
+
+    /* ServicesPage */
+    .services__section .row h2 {
+        font-size: 180%;
+        margin-top: 40px;
+    }
+
+    .services__section .row p {
+        font-size: 120%;
+    }
+
+    .services__section .row .col h4 {
+        font-size: 130%;
+    }
+
+    /* ProjectsPage */
+    .works__section .row h1 {
+        font-size: 180%;
+        font-weight: 700;
+    }
+
+    .works__section .wrapper .projects p {
+        font-size: 50%;
+    }
+
+    .works__section .wrapper .projects p.skill {
+        padding-top: 10px;
+        font-size: 60%;
+        font-weight: 700;
+        color: #000000;
+        margin-bottom: 10px;
+    }
+
+    /* ------------------- WorkDetail ----------------- */
+    #detail__logo {
+	    font-size: 60%;
+	    font-weight: bold;
+	    margin-right: 300px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+	    cursor: hand;
+    }
+
+    #detail__logo a {
+	    text-decoration: none;
+	    color: #000000;
+    }
+
+    .project_detail_section {
+        margin-bottom: 70px;
+    }
+
+    .project_detail_section .wrapper {
+        padding: 1em;
+        display: grid;
+        grid-gap: 1em;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    }
+
+    .project_detail_section .wrapper .project {
+        padding: .5em;
+        border-radius: .3em;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    }
+
+    .project_detail_section .wrapper .project img {
+        width: 100%;
+    }
+
+    .project_detail_section .wrapper .project h2 {
+        font-size: 65%;
+        font-weight: 400;
+        color: #000000;
+        text-align: center;
+    }
+
+    .project_detail_section .wrapper .project p {
+        font-size: 50%;
+    }
+}
+
+/* iPhone12/13 + 12/13Pro 390x844 */
+@media only screen and (max-width: 390px) {
+    /* Header */
+    header {
+        height: 90vh;
+    }
+
+    /* Navigation */
+    nav {
+        min-height: 12vh;
+    }
+
+    /* Logo */
+    #logo {
+        margin-right: 110px;
+    }
+
+    .nav__links {
+        height: 75vh;
+        width: 100%;
+        top: 12vh;
+    }
+
+    .nav__links a {
+        font-size: 140%;
+    }
+
+    .content {
+        height: 70vh;
+    }
+
+    .hero {
+        width: 80%;
+    }
+
+    .hero p {
+        font-size: 170%;
+        margin-top: 0;
+    }
+
+    /* Projects Section */
+    .selected__projects__section .row h2 {
+        font-size: 120%;
+    }
+
+    /* ApproachPage */
+    .approach__section .row h2 {
+        font-size: 180%;
+        margin-top: 30px;
+    }
+
+    .approach__section .row p {
+        font-size: 120%;
+    }
+
+    /* ContactsPage */
+    .contact__section .row h2 {
+        font-size: 150%;
+        margin-top: 40px;
+    }
+
+    .contact__section .row p {
+        font-size: 120%;
+    }
+
+    .contact__section .row .mail,
+    .contact__section .row .cell {
+        font-size: 120%;
+        color: #ffffff;
+    }
+
+    .contact__section .row .cell {
+        text-decoration: underline;
+    }
+
+    /* ServicesPage */
+    .services__section .row h2 {
+        font-size: 180%;
+        margin-top: 40px;
+    }
+
+    .services__section .row p {
+        font-size: 120%;
+    }
+
+    .services__section .row .col h4 {
+        font-size: 130%;
+    }
+
+    /* ProjectsPage */
+    .works__section .row h1 {
+        font-size: 180%;
+        font-weight: 700;
+    }
+
+    .works__section .wrapper .projects p {
+        font-size: 50%;
+    }
+
+    .works__section .wrapper .projects p.skill {
+        padding-top: 10px;
+        font-size: 60%;
+        font-weight: 700;
+        color: #000000;
+        margin-bottom: 10px;
+    }
+
+    /* ------------------- WorkDetail ----------------- */
+    #detail__logo {
+	    font-size: 60%;
+	    font-weight: bold;
+	    margin-right: 300px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+	    cursor: hand;
+    }
+
+    #detail__logo a {
+	    text-decoration: none;
+	    color: #000000;
+    }
+
+    .project_detail_section {
+        margin-bottom: 70px;
+    }
+
+    .project_detail_section .wrapper {
+        padding: 1.5em;
+        display: grid;
+        grid-gap: 1em;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    }
+
+    .project_detail_section .wrapper .project {
+        padding: .9em;
+        border-radius: .3em;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    }
+
+    .project_detail_section .wrapper .project img {
+        width: 100%;
+    }
+
+    .project_detail_section .wrapper .project h2 {
+        font-size: 65%;
+        font-weight: 400;
+        color: #000000;
+        text-align: center;
+    }
+
+    .project_detail_section .wrapper .project p {
+        font-size: 50%;
+    }
+}
+
+/* GalaxyS20+ 384x854 */
+@media only screen and (max-width: 384px) {
+    /* Header */
+    header {
+        height: 90vh;
+    }
+
+    /* Navigation */
+    nav {
+        min-height: 12vh;
+    }
+
+    /* Logo */
+    #logo {
+        margin-right: 110px;
+    }
+
+    .nav__links {
+        height: 80vh;
+        width: 100%;
+        top: 12vh;
+    }
+
+    .nav__links a {
+        font-size: 140%;
+    }
+
+    .content {
+        height: 90vh;
+    }
+
+    .hero {
+        width: 80%;
+    }
+
+    .hero p {
+        font-size: 170%;
+        margin-top: 0;
+    }
+
+    /* Projects Section */
+    .selected__projects__section .row h2 {
+        font-size: 120%;
+    }
+
+    /* ApproachPage */
+    .approach__section .row h2 {
+        font-size: 180%;
+        margin-top: 30px;
+    }
+
+    .approach__section .row p {
+        font-size: 120%;
+    }
+
+    /* ContactsPage */
+    .contact__section .row h2 {
+        font-size: 150%;
+        margin-top: 40px;
+    }
+
+    .contact__section .row p {
+        font-size: 120%;
+    }
+
+    .contact__section .row .mail,
+    .contact__section .row .cell {
+        font-size: 120%;
+        color: #ffffff;
+    }
+
+    .contact__section .row .cell {
+        text-decoration: underline;
+    }
+
+    /* ServicesPage */
+    .services__section .row h2 {
+        font-size: 180%;
+        margin-top: 40px;
+    }
+
+    .services__section .row p {
+        font-size: 120%;
+    }
+
+    .services__section .row .col h4 {
+        font-size: 130%;
+    }
+
+    /* ProjectsPage */
+    .works__section .row h1 {
+        font-size: 180%;
+        font-weight: 700;
+    }
+
+    .works__section .wrapper .projects p {
+        font-size: 50%;
+    }
+
+    .works__section .wrapper .projects p.skill {
+        padding-top: 10px;
+        font-size: 60%;
+        font-weight: 700;
+        color: #000000;
+        margin-bottom: 10px;
+    }
+
+    /* WorkDetail */
+    #detail__logo {
+	    font-size: 60%;
+	    font-weight: bold;
+	    margin-right: 300px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+	    cursor: hand;
+    }
+
+    #detail__logo a {
+	    text-decoration: none;
+	    color: #000000;
+    }
+
+    .project_detail_section {
+        margin-bottom: 70px;
+    }
+
+    .project_detail_section .wrapper {
+        padding: 1.5em;
+        display: grid;
+        grid-gap: 1em;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    }
+
+    .project_detail_section .wrapper .project {
+        padding: .9em;
+        border-radius: .3em;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    }
+
+    .project_detail_section .wrapper .project img {
+        width: 100%;
+    }
+
+    .project_detail_section .wrapper .project h2 {
+        font-size: 65%;
+        font-weight: 400;
+        color: #000000;
+        text-align: center;
+    }
+
+    .project_detail_section .wrapper .project p {
+        font-size: 50%;
+    }
+}
+
+/* iPhone11Pro 375x812 */
+@media only screen and (max-width: 375px) {
+    /* Header */
+    header {
+        height: 90vh;
+    }
+
+    /* Navigation */
+    nav {
+        min-height: 12vh;
+    }
+
+    /* Logo */
+    #logo {
+        margin-right: 90px;
+    }
+
+    #logo a h3 {
+        font-size: 90%;
+        font-weight: 400;
+    }
+
+    .nav__links {
+        height: 85vh;
+        width: 100%;
+        top: 12vh;
+    }
+
+    .nav__links a {
+        font-size: 120%;
+    }
+
+    .content {
+        height: 90vh;
+    }
+
+    .hero {
+        width: 80%;
+        margin-top: 100px;
+    }
+
+    .hero p {
+        font-size: 170%;
+        margin-top: 0;
+    }
+
+    /* Projects Section */
+    .selected__projects__section .row h2 {
+        font-size: 140%;
+    }
+
+    /* ApproachPage */
+    .approach__section .row h2 {
+        font-size: 170%;
+        margin-top: 20px;
+    }
+
+    .approach__section .row p {
+        font-size: 100%;
+    }
+
+    /* ContactsPage */
+    .contact__section .row h2 {
+        font-size: 150%;
+        margin-top: 40px;
+    }
+
+    .contact__section .row p {
+        font-size: 130%;
+    }
+
+    .contact__section .row .mail,
+    .contact__section .row .cell{
+        font-size: 120%;
+        color: #ffffff
+    }
+
+    .contact__section .row .cell {
+        text-decoration: underline;
+    }
+
+    /* ServicesPage */
+    .services__section .row h2 {
+        font-size: 170%;
+        margin-top: 40px;
+    }
+
+    .services__section .row p {
+        font-size: 100%;
+    }
+
+    .services__section .row .col h4 {
+        font-size: 110%;
+    }
+
+    /* ProjectsPage */
+    .works__section .row h1 {
+        font-size: 180%;
+        font-weight: 700;
+    }
+
+    .works__section .wrapper .projects p {
+        font-size: 50%;
+    }
+
+    .works__section .wrapper .projects p.skill {
+        padding-top: 10px;
+        font-size: 60%;
+        font-weight: 700;
+        color: #000000;
+        margin-bottom: 10px;
+    }
+
+    /* WorkDetail */
+    #detail__logo {
+	    font-size: 60%;
+	    font-weight: bold;
+	    margin-right: 290px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+	    cursor: hand;
+    }
+
+    #detail__logo a {
+	    text-decoration: none;
+	    color: #000000;
+    }
+
+    .project_detail_section {
+        margin-bottom: 70px;
+    }
+
+    .project_detail_section .wrapper {
+        padding: 1em;
+        display: grid;
+        grid-gap: 2em;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+
+    .project_detail_section .wrapper .project {
+        padding: .3em;
+        border-radius: .3em;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    }
+
+    .project_detail_section .wrapper .project img {
+        width: 100%;
+    }
+
+    .project_detail_section .wrapper .project h2 {
+        font-size: 60%;
+        font-weight: 400;
+        color: #000000;
+        text-align: center;
+    }
+
+    .project_detail_section .wrapper .project p {
+        font-size: 50%;
+    }
+}
+
+/* GalaxyS10/S10+ 360x760 */
+@media only screen and (max-width: 360px) {
+    /* Header */
+    header {
+        height: 90vh;
+    }
+
+    /* Navigation */
+    nav {
+        min-height: 13vh;
+    }
+
+    /* Logo */
+    #logo {
+        margin-right: 90px;
+    }
+
+    #logo a h3 {
+        font-size: 90%;
+    }
+
+    .nav__links {
+        height: 82vh;
+        width: 100%;
+        top: 13vh;
+    }
+
+    .nav__links a {
+        font-size: 120%;
+    }
+
+    .content {
+        height: 90vh;
+    }
+
+    .hero {
+        width: 80%;
+    }
+
+    .hero p {
+        font-size: 160%;
+        margin-top: 0;
+    }
+
+    /* Projects Section */
+    .selected__projects__section .row h2 {
+        font-size: 120%;
+    }
+
+    /* ApproachPage */
+    .approach__section .row h2 {
+        font-size: 170%;
+        margin-top: 20px;
+    }
+
+    .approach__section .row p {
+        font-size: 100%;
+    }
+
+    /* ContactsPage */
+    .contact__section .row h2 {
+        font-size: 140%;
+        margin-top: 40px;
+    }
+
+    .contact__section .row p {
+        font-size: 130%;
+    }
+
+    .contact__section .row .mail,
+    .contact__section .row .cell {
+        font-size: 120%;
+        color: #ffffff;
+    }
+
+    .contact__section .row .cell {
+        text-decoration: underline;
+    }
+
+    /* ServicesPage */
+    .services__section .row h2 {
+        font-size: 170%;
+        margin-top: 40px;
+    }
+
+    .services__section .row p {
+        font-size: 100%;
+    }
+
+    .services__section .row .col h4 {
+        font-size: 110%;
+    }
+
+    /* ProjectsPage */
+    .works__section .row h1 {
+        font-size: 180%;
+        font-weight: 700;
+    }
+
+    .works__section .wrapper .projects p {
+        font-size: 50%;
+    }
+
+    .works__section .wrapper .projects p.skill {
+        padding-top: 10px;
+        font-size: 60%;
+        font-weight: 700;
+        color: #000000;
+        margin-bottom: 10px;
+    }
+
+    /* WorkDetail */
+    #detail__logo {
+	    font-size: 60%;
+	    font-weight: bold;
+	    margin-right: 270px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+	    cursor: hand;
+    }
+
+    #detail__logo a {
+	    text-decoration: none;
+	    color: #000000;
+    }
+
+    .project_detail_section {
+        margin-bottom: 70px;
+    }
+
+    .project_detail_section .wrapper {
+        padding: 1em;
+        display: grid;
+        grid-gap: 2em;
+        grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    }
+
+    .project_detail_section .wrapper .project {
+        padding: .3em;
+        border-radius: .3em;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    }
+
+    .project_detail_section .wrapper .project img {
+        width: 100%;
+    }
+
+    .project_detail_section .wrapper .project h2 {
+        font-size: 60%;
+        font-weight: 400;
+        color: #000000;
+        text-align: center;
+    }
+
+    .project_detail_section .wrapper .project p {
+        font-size: 50%;
+    }
+}
+
+/* 359px */
+@media only screen and (max-width: 359px) {
+    /* Header */
+    header {
+        height: 90vh;
+    }
+
+    /* Navigation */
+    nav {
+        min-height: 15vh;
+    }
+
+    /* Logo */
+    #logo {
+        margin-right: 140px;
+    }
+
+    #logo a h3 {
+        font-size: 90%;
+    }
+
+    .nav__links {
+        height: 80vh;
+        width: 100%;
+        top: 15vh;
+    }
+
+    .nav__links a {
+        font-size: 120%;
+    }
+
+    .content {
+        height: 90vh;
+    }
+
+    .hero {
+        width: 85%;
+    }
+
+    .hero p {
+        font-size: 170%;
+    }
+
+    /* Projects Section */
+    .selected__projects__section .row h2 {
+        font-size: 140%;
+    }
+
+    /* ApproachPage */
+    .approach__section .row h2 {
+        font-size: 180%;
+        margin-top: 40px;
+    }
+
+    .approach__section .row p {
+        font-size: 120%;
+    }
+
+    /* ContactsPage */
+    .contact__section .row h2 {
+        font-size: 150%;
+        margin-top: 40px;
+    }
+
+    .contact__section .row p {
+        font-size: 120%;
+    }
+
+    .contact__section .row .mail,
+    .contact__section .row .cell {
+        font-size: 120%;
+        color: #ffffff;
+    }
+
+    .contact__section .row .cell {
+        text-decoration: underline;
+    }
+
+    /* ServicesPage */
+    .services__section .row h2 {
+        font-size: 180%;
+        margin-top: 40px;
+    }
+
+    .services__section .row p {
+        font-size: 120%;
+    }
+
+    .services__section .row .col h4 {
+        font-size: 130%;
+    }
+
+    /* ProjectsPage */
+    .works__section .row h1 {
+        font-size: 180%;
+        font-weight: 700;
+    }
+
+    .works__section .wrapper .projects p {
+        font-size: 50%;
+    }
+
+    .works__section .wrapper .projects p.skill {
+        padding-top: 10px;
+        font-size: 60%;
+        font-weight: 700;
+        color: #000000;
+        margin-bottom: 10px;
+    }
+
+    /* WorkDetail */
+    #detail__logo {
+	    font-size: 60%;
+	    font-weight: bold;
+	    margin-right: 270px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+	    cursor: hand;
+    }
+
+    #detail__logo a {
+	    text-decoration: none;
+	    color: #000000;
+    }
+
+    .project_detail_section {
+        margin-bottom: 50px;
+    }
+
+    .project_detail_section .wrapper {
+        padding: 2em;
+        display: grid;
+        grid-gap: 2em;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+    .project_detail_section .wrapper .project {
+        padding: .3em;
+        border-radius: .3em;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    }
+
+    .project_detail_section .wrapper .project img {
+        width: 100%;
+    }
+
+    .project_detail_section .wrapper .project h2 {
+        font-size: 60%;
+        font-weight: 400;
+        color: #000000;
+        text-align: center;
+    }
+
+    .project_detail_section .wrapper .project p {
+        font-size: 50%;
+    }
+}
+
+/* iPhone5/SE 320x568 */
+@media only screen and (max-width: 320px) {
+    /* Header */
+    header {
+        height: 75vh;
+    }
+
+    /* Navigation */
+    nav {
+        min-height: 12vh;
+    }
+
+    /* Logo */
+    #logo {
+        margin-right: 100px;
+    }
+
+    .nav__links {
+        height: 70vh;
+        width: 100%;
+        top: 12vh;
+    }
+
+    .nav__links a {
+        font-size: 100%;
+    }
+
+    .content {
+        height: 75vh;
+    }
+
+    .hero {
+        width: 80%;
+        margin-top: 80px;
+    }
+
+    .hero p {
+        font-size: 140%;
+    }
+
+    /* Projects Section */
+    .selected__projects__section .row h2 {
+        font-size: 120%;
+    }
+
+    /* ApproachPage */
+    .approach__section .row h2 {
+        font-size: 180%;
+        margin-top: 20px;
+        margin-bottom: -20px;
+    }
+
+    .approach__section .row p {
+        font-size: 105%;
+    }
+
+    /* ContactsPage */
+    .contact__section .row h2 {
+        font-size: 120%;
+        margin-top: 40px;
+    }
+
+    .contact__section .row p {
+        font-size: 100%;
+    }
+
+    .contact__section .row .mail,
+    .contact__section .row .cell {
+        font-size: 120%;
+        color: #ffffff;
+    }
+
+    .contact__section .row .cell {
+        text-decoration: underline;
+    }
+
+    /* ServicesPage */
+    .services__section .row h2 {
+        font-size: 180%;
+        margin-top: 20px;
+    }
+
+    .services__section .row p {
+        font-size: 100%;
+    }
+
+    .services__section .row .col h4 {
+        font-size: 120%;
+    }
+
+    /* ProjectsPage */
+    .works__section .row h1 {
+        font-size: 180%;
+        font-weight: 700;
+    }
+
+    .works__section .wrapper .projects p {
+        font-size: 50%;
+    }
+
+    .works__section .wrapper .projects p.skill {
+        padding-top: 10px;
+        font-size: 60%;
+        font-weight: 700;
+        color: #000000;
+        margin-bottom: 10px;
+    }
+
+    /* WorkDetail */
+    #detail__logo {
+	    font-size: 60%;
+	    font-weight: bold;
+	    margin-right: 230px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+	    cursor: hand;
+    }
+
+    #detail__logo a {
+	    text-decoration: none;
+	    color: #000000;
+    }
+
+    .project_detail_section .wrapper {
+        padding: 2em;
+        display: grid;
+        grid-gap: 2em;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+    .project_detail_section .wrapper .project {
+        padding: .3em;
+        border-radius: .3em;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    }
+
+    .project_detail_section .wrapper .project img {
+        width: 100%;
+    }
+
+    .project_detail_section .wrapper .project h2 {
+        font-size: 60%;
+        font-weight: 400;
+        color: #000000;
+        text-align: center;
+    }
+
+    .project_detail_section .wrapper .project p {
+        font-size: 50%;
+    }
+}
