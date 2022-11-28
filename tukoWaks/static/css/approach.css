@@ -1,0 +1,35 @@
+/* --------The Approach Page ---------------------- */
+.header__section {
+	height: 6vh;
+}
+
+.approach__section {
+	padding: 6%;
+}
+
+.approach__section .row {
+	margin-bottom: 10px;
+}
+
+.approach__section .row h2 {
+	font-size: 300%;
+	font-weight: 700;
+	color: #ffffff;
+	padding-bottom: 20px;
+}
+
+.approach__section .row p {
+	font-size: 250%;
+	font-weight: 700;
+}
+
+.approach__section .row .col {
+	padding: 1%;
+}
+
+.approach__section .row .col p {
+	font-size: 70%;
+	font-weight: 100;
+	margin-bottom: 20px;
+}
+/* ------------------------------------------------ */

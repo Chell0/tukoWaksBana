@@ -1,0 +1,207 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: #C5C5C5;
+	font-family: 'Manrope', sans-serif;
+	font-size: 21px;
+	overflow-x: hidden;
+	text-rendering: optimizeLegibility;
+}
+
+/* Re-usable components */
+/* Row */
+.row {
+	margin: 0 auto;
+}
+
+/* Header */
+header {
+	height: 90vh;
+}
+
+/* ------------------- Navigation -------------------------- */
+nav {
+	align-items: center;
+	background-color: #C5C5C5;
+	display: flex;
+	justify-content: space-around;
+	min-height: 12vh;
+	position: fixed;
+	width: 100%;
+	z-index: 999;
+}
+
+/* Logo */
+#logo {
+	margin-right: 880px;
+	cursor: hand;
+}
+
+#logo a {
+	text-decoration: none;
+}
+
+#logo a h3 {
+    font-size: 150%;
+    font-weight: 100;
+    color: #000000;
+}
+
+.nav__links {
+	align-items: center;
+	background-color: #858585;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	height: 88vh;
+	position: absolute;
+	width: 50%;
+	right: 0;
+	top: 12vh;
+	transform: translateX(100%);
+	transition: transform 0.3s ease-in;
+}
+
+.nav__links li {
+	list-style: none;
+	opacity: 0;
+}
+
+.nav__links a {
+	letter-spacing: 2px;
+	font-size: 200%;
+	font-weight: 700;
+	color: #ffffff;
+}
+
+/* ------------ Burger Menu ------------------------ */
+.burger {
+	cursor: default;
+	display: block;
+}
+
+.burger div {
+	width: 25px;
+	height: 3px;
+	background-color: #000000;
+	margin: 5px;
+}
+/* ------------------------------------------------- */
+
+.nav__active {
+	transform: translateX(0%);
+}
+
+/* -------- Animations ----------------------------- */
+@keyframes navLinkFade {
+	from {
+		opacity: 0;
+		transform: translateX(50px);
+	}
+	to {
+		opacity: 1;
+		transform: translateX(0px);
+	}
+}
+
+.toggle .line1 {
+	transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line2 {
+	opacity: 0;
+}
+
+.toggle .line3 {
+	transform: rotate(45deg) translate(-5px, -6px);
+}
+/* ------------------------------------------------ */
+/* ------------------------------------------------------------ */
+
+.content {
+	display: flex;
+	height: 90vh;
+	justify-content: center;
+	align-items: center;
+}
+
+.hero {
+	height: 90%;
+	width: 90%;
+	margin-top: 180px;
+}
+
+.hero p {
+	height: 100%;
+	width: 100%;
+	font-size: 320%;
+	font-weight: 700;
+	color: #000000;
+}
+
+/* --------- Projects Section ----------- */
+.selected__projects__section .row h2 {
+	text-align: center;
+	font-size: 240%;
+	font-weight: 400;
+	color: #ffffff;
+}
+
+.selected__projects__section .wrapper {
+    padding: 4em;
+    display: grid;
+    grid-gap: 4em;
+    grid-template-columns: repeat(auto-fit, minmax(330px, 2fr));
+}
+
+.selected__projects__section .wrapper .projects {
+    padding: 1em;
+    border-radius: .3em;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.selected__projects__section .wrapper .projects a img {
+	width: 100%;
+}
+
+.selected__projects__section .wrapper .projects p {
+	text-align: left;
+	font-size: 50%;
+	font-weight: 200;
+	padding-bottom: 10px;
+	margin-left: 10px;
+	color: #ffffff;
+}
+
+.selected__projects__section .wrapper .projects p.skill {
+    padding-top: 10px;
+	font-size: 80%;
+	font-weight: 500;
+	color: #000000;
+}
+/* ---------------------------------- */
+
+/* -------- Footer Section ------ */
+.footer .row .col {
+	padding: 5%;
+}
+
+.footer .row .col p {
+    font-size: 55%;
+    color: #000000;
+}
+
+.footer .row .col p.contacts {
+	text-decoration: underline;
+	color: #ffffff;
+}
+
+.socials a {
+	text-decoration: none;
+	color: #ffffff;
+}
+/* ------------------------------ */
