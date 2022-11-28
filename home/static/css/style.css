@@ -20,7 +20,7 @@ body {
 
 /* Header */
 header {
-	height: 88vh;
+	height: 90vh;
 }
 
 /* ------------------- Navigation -------------------------- */
@@ -29,7 +29,7 @@ nav {
 	background-color: #C5C5C5;
 	display: flex;
 	justify-content: space-around;
-	min-height: 8vh;
+	min-height: 12vh;
 	position: fixed;
 	width: 100%;
 	z-index: 999;
@@ -37,15 +37,18 @@ nav {
 
 /* Logo */
 #logo {
-	font-size: 80%;
-	font-weight: bold;
-	margin-right: 920px;
+	margin-right: 880px;
 	cursor: hand;
 }
 
 #logo a {
 	text-decoration: none;
-	color: #000000;
+}
+
+#logo a h3 {
+    font-size: 150%;
+    font-weight: 100;
+    color: #000000;
 }
 
 .nav__links {
@@ -54,11 +57,11 @@ nav {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
-	height: 92vh;
+	height: 88vh;
 	position: absolute;
 	width: 50%;
 	right: 0;
-	top: 8vh;
+	top: 12vh;
 	transform: translateX(100%);
 	transition: transform 0.3s ease-in;
 }
@@ -70,8 +73,8 @@ nav {
 
 .nav__links a {
 	letter-spacing: 2px;
-	font-size: 240%;
-	font-weight: bold;
+	font-size: 200%;
+	font-weight: 700;
 	color: #ffffff;
 }
 
@@ -121,7 +124,7 @@ nav {
 
 .content {
 	display: flex;
-	height: 80vh;
+	height: 90vh;
 	justify-content: center;
 	align-items: center;
 }
@@ -129,7 +132,7 @@ nav {
 .hero {
 	height: 90%;
 	width: 90%;
-	margin-top: 90px;
+	margin-top: 180px;
 }
 
 .hero p {
@@ -137,6 +140,7 @@ nav {
 	width: 100%;
 	font-size: 320%;
 	font-weight: 700;
+	color: #000000;
 }
 
 /* --------- Projects Section ----------- */
@@ -145,18 +149,17 @@ nav {
 	font-size: 240%;
 	font-weight: 400;
 	color: #ffffff;
-	padding-bottom: 20px;
 }
 
 .selected__projects__section .wrapper {
-    padding: 3em;
+    padding: 4em;
     display: grid;
-    grid-gap: 2em;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-gap: 4em;
+    grid-template-columns: repeat(auto-fit, minmax(330px, 2fr));
 }
 
 .selected__projects__section .wrapper .projects {
-    padding: 2em;
+    padding: 1em;
     border-radius: .3em;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
@@ -167,19 +170,18 @@ nav {
 
 .selected__projects__section .wrapper .projects p {
 	text-align: left;
-	font-size: 60%;
+	font-size: 50%;
 	font-weight: 200;
 	padding-bottom: 10px;
 	margin-left: 10px;
-	color: #f1f1f1;
+	color: #ffffff;
 }
 
 .selected__projects__section .wrapper .projects p.skill {
     padding-top: 10px;
 	font-size: 80%;
-	font-weight: 700;
-	color: #000;
-	margin-bottom: 10px;
+	font-weight: 500;
+	color: #000000;
 }
 /* ---------------------------------- */
 
@@ -190,16 +192,16 @@ nav {
 
 .footer .row .col p {
     font-size: 55%;
-    color: #000;
+    color: #000000;
 }
 
 .footer .row .col p.contacts {
 	text-decoration: underline;
-	color: #fff;
+	color: #ffffff;
 }
 
 .socials a {
 	text-decoration: none;
-	color: #fff;
+	color: #ffffff;
 }
 /* ------------------------------ */
