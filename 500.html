@@ -1,83 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta
+			name="description"
+			content="Kazifiti is a web development agency that produces high quality web solutions for it's clients."
+		/>
 
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Kazifiti is a web development agency that produces high quality web solutions for it's clients." />
+		<title>Page Not Found</title>
 
-    <title>Page Not Found</title>
+		<!-- VendorCSS -->
+		<!-- Normalize CSS -->
+		<link rel="stylesheet" href="./static/css/vendors/normalize.css" />
+		<!-- Grid CSS -->
+		<link rel="stylesheet" href="./static/css/vendors/grid.css" />
+		<!-- AOS CSS -->
+		<link
+			href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+			rel="stylesheet"
+		/>
 
-    <!-- VendorCSS -->
-    <!-- Normalize CSS -->
-    <link rel="stylesheet" href="./static/css/vendors/normalize.css">
-    <!-- Grid CSS -->
-    <link rel="stylesheet" href="./static/css/vendors/grid.css">
-    <!-- AOS CSS -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+		<!-- MainCSS -->
+		<link rel="stylesheet" href="./static/css/style.css" />
+		<link rel="stylesheet" href="./static/css/500.css" />
+		<!-- MediaQueriesCSS -->
+		<link rel="stylesheet" href="./static/css/queries.css" />
 
-    <!-- MainCSS -->
-    <link rel="stylesheet" href="./static/css/style.css">
-    <link rel="stylesheet" href="./static/css/500.css">
-    <!-- MediaQueriesCSS -->
-    <link rel="stylesheet" href="./static/css/queries.css">
+		<!-- Site Favicon -->
+		<link
+			rel=" apple-touch-icon"
+			sizes="180x180"
+			href="./static/img/favicon_io/apple-touch-icon.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./static/img/favicon_io/favicon-32x32.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="16x16"
+			href="./static/img/favicon_io/favicon-16x16.png"
+		/>
+		<link rel="manifest" href="./static/img/favicon_io/site.webmanifest" />
 
-    <!-- Site Favicon -->
-    <link rel=" apple-touch-icon" sizes="180x180"
-        href="./static/img/favicon_io/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32"
-        href="./static/img/favicon_io/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16"
-        href="./static/img/favicon_io/favicon-16x16.png">
-    <link rel="manifest" href="./static/img/favicon_io/site.webmanifest">
+		<!-- Google Analytics -->
+		<!-- Google tag (gtag.js) -->
+		<script
+			async
+			src="https://www.googletagmanager.com/gtag/js?id=G-D7TB1VBLEM"
+		></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag() {
+				dataLayer.push(arguments);
+			}
+			gtag("js", new Date());
+			gtag("config", "G-D7TB1VBLEM");
+		</script>
+	</head>
 
-    <!-- Google Analytics -->
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-C6D1BNWL7K"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
+	<body>
+		<div id="server_error">
+			<div class="server_error">
+				<div class="server_error-500">
+					<h1>500</h1>
+				</div>
+				<h2>
+					Oh! No, there seems to be a problem accessing the server.
+				</h2>
+				<a href="http://kazifiti.com">Return To Homepage</a>
+			</div>
+		</div>
 
-        gtag('config', 'G-C6D1BNWL7K');
-    </script>
-
-</head>
-
-<body>
-
-    <div id="server_error">
-        <div class="server_error">
-            <div class="server_error-500">
-                <h1>500</h1>
-            </div>
-            <h2>Oh! No, there seems to be a problem accessing the server.</h2>
-            <a href="http://kazifiti.com">Return To Homepage</a>
-        </div>
-    </div>
-
-    <!-- Footer -->
-    <section class="footer">
-        <div class="row">
-            <!-- Address -->
-            <div class="col span-1-of-3">
-                <p>tukoWorks</p>
-                <p>Nairobi+Hamburg</p>
-            </div>
-            <!-- Contacts -->
-            <div class="col span-1-of-3">
-                <p>Contact us</p>
-                <p class="contacts socials">kazifiti@gmail.com</p>
-            </div>
-            <!-- Socials -->
-            <div class="col span-1-of-3">
-                <p>Follow us</p>
-                <p class="socials"><a href="https://twitter.com" target="_blank">Twitter</a></p>
-            </div>
-        </div>
-    </section>
-
-</body>
-
+		<!-- Footer -->
+		<section class="footer">
+			<div class="row">
+				<!-- Address -->
+				<div class="col span-1-of-3">
+					<p>tukoWorks</p>
+					<p>Nairobi+Hamburg</p>
+				</div>
+				<!-- Contacts -->
+				<div class="col span-1-of-3">
+					<p>Contact us</p>
+					<p class="contacts socials">kazifiti@gmail.com</p>
+				</div>
+				<!-- Socials -->
+				<div class="col span-1-of-3">
+					<p>Follow us</p>
+					<p class="socials">
+						<a href="https://twitter.com" target="_blank"
+							>Twitter</a
+						>
+					</p>
+				</div>
+			</div>
+		</section>
+	</body>
 </html>
