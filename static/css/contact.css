@@ -1,31 +1,40 @@
+body {
+  font-family: "Manrope", sans-serif;
+  font-size: 21px;
+  overflow-x: hidden;
+  text-rendering: optimizeLegibility;
+}
+
 /* -----------------Contact Page----------------- */
 .header__section {
-	height: 6vh;
+  height: 6vh;
 }
 
 .contact__section {
-	padding: 6%;
+  padding: 6%;
 }
 
 .contact__section .row h2 {
-	color: #ffffff;
-	font-size: 300%;
-	font-weight: 700;
-	margin-bottom: 20px;
+  color: #ffffff;
+  font-size: 300%;
+  font-weight: 700;
+  margin-bottom: 20px;
+  margin-left: 30px;
 }
 
 .contact__section .row p {
-	font-size: 200%;
-	font-weight: 600;
+  font-size: 300%;
+  font-weight: 600;
+  margin-left: 30px;
 }
 
 .contact__section .row .mail,
 .contact__section .row .cell {
-	text-decoration: underline;
-	font-size: 200%;
-	font-weight: 700;
-	margin-top: 20px;
-	margin-bottom: 20px;
-	color: #ffffff;
+  text-decoration: underline;
+  font-size: 200%;
+  font-weight: 700;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #ffffff;
 }
 /* --------------------------------------------- */
