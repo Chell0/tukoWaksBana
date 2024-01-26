@@ -1,3 +1,4 @@
+/* -----------------Contact Page----------------- */
 body {
   font-family: "Manrope", sans-serif;
   font-size: 21px;
@@ -5,7 +6,6 @@ body {
   text-rendering: optimizeLegibility;
 }
 
-/* -----------------Contact Page----------------- */
 .header__section {
   height: 6vh;
 }
@@ -36,5 +36,9 @@ body {
   margin-top: 20px;
   margin-bottom: 20px;
   color: #ffffff;
+}
+
+.contact-footer {
+  margin-top: 40px;
 }
 /* --------------------------------------------- */
