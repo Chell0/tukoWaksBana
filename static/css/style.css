@@ -45,9 +45,9 @@ nav {
   text-decoration: none;
 }
 
-#logo a h3 {
+#logo a h1 {
   font-size: 100%;
-  font-weight: 300;
+  font-weight: bold;
   color: #000000;
 }
 
@@ -187,7 +187,7 @@ nav {
 
 /* -------- Footer Section ------ */
 .footer .row {
-  margin-left: 100px;
+  margin-left: 150px;
 }
 
 .footer .row .col {
@@ -197,6 +197,10 @@ nav {
 .footer .row .col p {
   font-size: 55%;
   color: #000000;
+}
+
+.footer .row .col p.locations {
+  color: #ffffff;
 }
 
 .footer .row .col p.contacts {

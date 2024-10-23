@@ -1,0 +1,75 @@
+body {
+  font-family: "Manrope", sans-serif;
+  font-size: 21px;
+  overflow-x: hidden;
+  text-rendering: optimizeLegibility;
+}
+
+/* --------------Projects Section------------ */
+.wire_frame_section .row h1 {
+  font-size: 300%;
+  font-weight: 600;
+  color: #ffffff;
+  margin-top: 12rem;
+  margin-bottom: -20px;
+  text-align: center;
+}
+
+.wire_frame_section .wrapper {
+  padding: 4em;
+  display: grid;
+  grid-gap: 4em;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 2fr));
+}
+
+.wire_frame_section .wrapper .projects {
+  padding: 1em;
+  border-radius: 0.3em;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.wire_frame_section .wrapper .projects a img {
+  width: 100%;
+}
+
+.wire_frame_section .wrapper .projects p {
+  text-align: left;
+  padding-bottom: 10px;
+  padding-top: 20px;
+  margin-left: 10px;
+}
+
+.wire_frame_section .wrapper .projects p.skill a {
+  font-size: 100%;
+  font-weight: 500;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.footer .row {
+  margin-left: 150px;
+}
+
+.footer .row .col {
+  padding: 5%;
+}
+
+.footer .row .col p {
+  font-size: 55%;
+  color: #000000;
+}
+
+.footer .row .col p.locations {
+  color: #ffffff;
+}
+
+.footer .row .col p.contacts {
+  text-decoration: underline;
+  color: #ffffff;
+}
+
+.socials a {
+  text-decoration: none;
+  color: #ffffff;
+}
+/* ---------------------------------------------- */
