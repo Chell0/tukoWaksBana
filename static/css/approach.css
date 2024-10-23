@@ -11,18 +11,19 @@ body {
 }
 
 .approach__section {
+  margin-top: 24px;
   padding: 6%;
 }
 
 .approach__section .row {
+  margin-top: 3rem;
   margin-bottom: 10px;
 }
 
 .approach__section .row h2 {
-  font-size: 300%;
-  font-weight: 600;
+  font-size: 500%;
+  font-weight: 700;
   color: #ffffff;
-  padding-bottom: 20px;
   margin-left: 30px;
 }
 
@@ -40,5 +41,32 @@ body {
   font-size: 70%;
   font-weight: 100;
   margin-bottom: 20px;
+}
+
+.footer .row {
+  margin-left: 150px;
+}
+
+.footer .row .col {
+  padding: 5%;
+}
+
+.footer .row .col p {
+  font-size: 55%;
+  color: #000000;
+}
+
+.footer .row .col p.locations {
+  color: #ffffff;
+}
+
+.footer .row .col p.contacts {
+  text-decoration: underline;
+  color: #ffffff;
+}
+
+.socials a {
+  text-decoration: none;
+  color: #ffffff;
 }
 /* ------------------------------------------------ */
