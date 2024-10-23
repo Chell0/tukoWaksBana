@@ -983,6 +983,90 @@
   }
 }
 
+
+/* iPhone11Pro 390x844 */
+@media only screen and (max-width: 390px) {
+  /* Logo */
+  #logo {
+    margin-right: 90px;
+  }
+
+  #logo a h1 {
+    font-size: 95%;
+    font-weight: 400;
+  }
+
+  .nav__links {
+    height: 85vh;
+    width: 100%;
+    top: 12vh;
+  }
+
+  .nav__links a {
+    font-size: 120%;
+  }
+
+  .burger div {
+    width: 23px;
+    height: 2px;
+    background-color: #000000;
+    margin: 5.5px;
+  }
+
+  .hero p {
+    font-size: 250%;
+    margin-top: 0;
+  }
+
+  /* Projects Section */
+  .selected__projects__section .row h2 {
+    margin-top: 50px;
+    font-size: 140%;
+  }
+
+  /* ----------------------------------------------------- */
+  /* ApproachPage */
+  .approach__section .row h2 {
+    margin-top: 20px;
+  }
+
+  /* ---------------------------------------------------- */
+  /* ContactsPage */
+  .contact__section .row h2 {
+    font-size: 200%;
+  }
+
+  .contact__section .row p {
+    font-size: 120%;
+  }
+
+  .contact__section .row .mail {
+    font-size: 120%;
+  }
+
+  /* ----------------------------------------------------- */
+  /* ServicesPage */
+  .services__section .row h2 {
+    /* font-size: 170%; */
+    margin-top: -10px;
+  }
+
+  .services__section .row p {
+    font-size: 100%;
+  }
+
+  .services__section .row .col h4 {
+    font-size: 100%;
+  }
+
+  /* --------------------------------------------------- */
+  /* ProjectsPage */
+  .works__section .row h1 {
+    font-size: 160%;
+  }
+}
+
+
 /* iPhone11Pro 375x812 */
 @media only screen and (max-width: 375px) {
   /* Logo */
