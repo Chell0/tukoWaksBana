@@ -7,7 +7,7 @@
     <meta name="description"
       content="Kazifiti is a web development agency that produces high quality web solutions for it's clients." />
     <meta content="ie=edge" http-equiv="X-UA-Compatible" />
-    <title>Kazifiti | Works</title>
+    <title>Kazifiti | UI</title>
 
     <!-- VendorCSS -->
     <!-- Normalize CSS -->
@@ -25,7 +25,7 @@
     <!-- MainCSS -->
     <link rel="stylesheet" href="./static/css/style.css" />
     <!-- WorksCSS -->
-    <link rel="stylesheet" href="./static/css/work.css" />
+    <link rel="stylesheet" href="./static/css/ui.css" />
     <!-- MediaQueriesCSS -->
     <link rel="stylesheet" href="./static/css/queries.css" />
 
@@ -34,17 +34,14 @@
     <script>
       ((w, d, s, l, i) => {
         w[l] = w[l] || [];
-        w[l].push({
-          'gtm.start': Date.now(),
-          event: 'gtm.js'
-        });
+        w[l].push({ 'gtm.start': Date.now(), event: 'gtm.js' });
         var f = d.getElementsByTagName(s)[0],
           j = d.createElement(s),
           dl = l != 'dataLayer' ? '&l=' + l : '';
         j.async = true;
-        j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
         f.parentNode.insertBefore(j, f);
-      })(window, document, 'script', 'dataLayer', 'GTM-PJ5HNB4');
+      })(window, document, "script", "dataLayer", "GTM-PJ5HNB4");
     </script>
     <!-- End Google Tag Manager -->
   </head>
@@ -58,7 +55,7 @@
           </a>
         </div>
         <ul class="nav__links">
-          <li><a href="/index.html">Home</a></li>
+          <li><a href="/works.html">Works</a></li>
           <li><a href="/approach.html">Approach</a></li>
           <li><a href="/services.html">Services</a></li>
           <li><a href="/contact.html">Contact</a></li>
@@ -71,45 +68,31 @@
       </nav>
     </div>
 
-    <!-- Projects -->
-    <section class="works__section">
+    <!-- UIs -->
+    <section class="ui__section">
       <div class="row">
-        <h1>Our Projects</h1>
+        <h1>UI Development</h1>
       </div>
       <div class="wrapper">
-        <div class="projects" data-aos="fade-up" data-aos-duration="600">
-          <a href="/blog_projects.html"><img src="./static/img/project-images/blog-development/blog_development.webp"
-              alt="blog-development" /></a>
-          <p class="skill">Blogs Development</p>
+        <div class="uis" data-aos="fade-up" data-aos-duration="900">
+          <a href="/works.html">
+            <img src="./static/img/project-images/web-portfolios/kazifiti.png" alt="Portfolio projects" />
+          </a>
+          <p class="skill">
+            <a href="/index.html" target="_blank" rel="noopener noreferrer">
+              Kazifiti Web Portfolio
+            </a>
+          </p>
         </div>
-
-        <div class="projects" data-aos="fade-up" data-aos-duration="600">
-          <a href="#"><img src="./static/img/project-images/ecommerce/ecommerce_development.webp" alt="ecommerce" /></a>
-          <p class="skill">Ecommerce Development</p>
-        </div>
-
-        <div class="projects" data-aos="fade-up" data-aos-duration="600">
-          <a href="#"><img src="./static/img/project-images/product-development/product_web_portfolio.webp"
-              alt="products web portfolio" /></a>
-          <p class="skill">Product Web Portfolio</p>
-        </div>
-
-        <div class="projects" data-aos="fade-up" data-aos-duration="600">
-          <a href="/port_projects.html"><img src="./static/img/project-images/web-portfolios/web_portfolio.webp"
-              alt="products web portfolio" /></a>
-          <p class="skill">Web Portfolio Development</p>
-        </div>
-
-        <div class="projects" data-aos="fade-up" data-aos-duration="600">
-          <a href="/ui.html"><img src="./static/img/project-images/ui-development/ui_development.webp"
-              alt="web projects" /></a>
-          <p class="skill">UI Development</p>
-        </div>
-
-        <div class="projects" data-aos="fade-up" data-aos-duration="600">
-          <a href="/wire_framing.html"><img src="./static/img/project-images/wire-framing/wire_framing.webp"
-              alt="project wire framing" /></a>
-          <p class="skill">Wire Framing</p>
+        <div class="uis" data-aos="fade-up" data-aos-duration="900">
+          <a href="/works.html">
+            <img src="./static/img/project-images/web-portfolios/surveyor_portfolio.png" alt="Surveying portfolios" />
+          </a>
+          <p class="skill">
+            <a href="https://surveyor-portfolio.machelgabriel.workers.dev/" target="_blank" rel="noopener noreferrer">
+              Surveyor Portfolio
+            </a>
+          </p>
         </div>
       </div>
     </section>
@@ -137,6 +120,7 @@
       </div>
     </section>
 
+
     <!-- Scripts -->
     <!-- Main JS -->
     <script src="./static/js/app.js"></script>
@@ -149,8 +133,10 @@
       });
     </script>
     <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PJ5HNB4" height="0" width="0"
-        style="display: none; visibility: hidden;"></iframe></noscript>
+    <noscript>
+      <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PJ5HNB4" height="0" title="Inline frame" width="0"
+        style="display: none; visibility: hidden"></iframe>
+    </noscript>
     <!-- End Google Tag Manager (noscript) -->
   </body>
 
